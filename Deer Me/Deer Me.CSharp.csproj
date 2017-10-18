@@ -92,6 +92,9 @@
   <ItemGroup>
     <Compile Include="Assets\2DPlatformer\Scripts\DeadzoneCamera.cs" />
     <Compile Include="Assets\2DPlatformer\Scripts\PerfectPixel.cs" />
+    <Compile Include="Assets\CollisionHelp.cs" />
+    <Compile Include="Assets\Grabbable.cs" />
+    <Compile Include="Assets\GrabScript.cs" />
     <Compile Include="Assets\MoveRight.cs" />
     <Compile Include="Assets\PhysicsObject.cs" />
     <Compile Include="Assets\PlayerController.cs" />
