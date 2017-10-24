@@ -41,6 +41,9 @@ namespace UnityStandardAssets._2D
             {
                m_Rigidbody2D.AddForce(new Vector2(0f, -m_JumpForce * 0.25f));
             }
+            if (Input.GetKeyDown(KeyCode.R)) {
+                Application.LoadLevel(Application.loadedLevel);
+            }
         }
 
 
