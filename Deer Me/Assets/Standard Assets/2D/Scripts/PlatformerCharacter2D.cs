@@ -19,7 +19,10 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-
+        public bool climbing;
+        private float gravity;
+        public float climbSpeed;
+        public float climbVelocity;
         private void Awake()
         {
             // Setting up references.
@@ -27,6 +30,7 @@ namespace UnityStandardAssets._2D
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+            gravity = m_Rigidbody2D.gravityScale;
         }
         public void Update()
         {
@@ -43,6 +47,16 @@ namespace UnityStandardAssets._2D
             }
             if (Input.GetKeyDown(KeyCode.R)) {
                 Application.LoadLevel(Application.loadedLevel);
+            }
+            if (climbing)
+            {
+                m_Rigidbody2D.gravityScale = 0;
+                climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, climbVelocity);
+            }
+            if (!climbing)
+            {
+                m_Rigidbody2D.gravityScale = gravity;
             }
         }
 
