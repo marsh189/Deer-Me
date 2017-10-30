@@ -170,7 +170,7 @@ public class WaterTest : MonoBehaviour {
 
             //Add a WaterDetector and make sure they're triggers
             colliders[i].GetComponent<BoxCollider2D>().isTrigger = true;
-            colliders[i].AddComponent<WaterDetector>();
+            colliders[i].AddComponent<WaterDetectorTest>();
 
         }
 
