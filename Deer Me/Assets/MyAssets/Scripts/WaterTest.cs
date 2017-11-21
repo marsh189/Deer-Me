@@ -41,7 +41,7 @@ public class WaterTest : MonoBehaviour {
     void Start()
     {
         //Spawning our water
-        SpawnWater(-10,20,0,-3);
+        SpawnWater(transform.position.x,20,transform.position.y,transform.position.y-3);
     }
 
     
