@@ -83,7 +83,7 @@ public class WaterTest : MonoBehaviour {
     {
         //Bonus exercise: Add a box collider to the water that will allow things to float in it.
         gameObject.AddComponent<BoxCollider2D>();
-        gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(Left + Width / 2, (Top + Bottom) / 2);
+        gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(Width / 2, (Top + Bottom) / 4);
         gameObject.GetComponent<BoxCollider2D>().size = new Vector2(Width, Top - Bottom);
         gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
 
@@ -243,10 +243,13 @@ public class WaterTest : MonoBehaviour {
         UpdateMeshes();
 	}
 
-    void OnTriggerStay2D(Collider2D Hit)
+    void OnTriggerStay2D(Collider2D col)
     {
-        //Bonus exercise. Fill in your code here for making things float in your water.
-        //You might want to even include a buoyancy constant unique to each object!
+       if(col.gameObject.tag == "Floatable")
+        {
+            Debug.Log("Floating");
+            col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -(50 * (col.gameObject.transform.position.y - this.transform.position.y))));
+        }
     }
 
 

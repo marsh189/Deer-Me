@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour {
     public GameManager gm;
+
+    public bool isPaused = false;
+
 	// Use this for initialization
 	void Start () {
 		

@@ -4,9 +4,12 @@ using UnityEngine;
 //https://vilbeyli.github.io/Unity3D-How-to-Make-a-Pause-Menu/
 public class GameManager : MonoBehaviour {
     public UIManager UI;
+    public GameObject pauseScreen;
+
 	// Use this for initialization
 	void Start () {
-        UI.GetComponentInChildren<Canvas>().enabled = false;
+        pauseScreen.SetActive(false);
+
 	}
 	
 	// Update is called once per frame
@@ -16,14 +19,16 @@ public class GameManager : MonoBehaviour {
 
     public void TogglePauseMenu()
     {
-        if (UI.GetComponentInChildren<Canvas>().enabled)
+        if (UI.isPaused)
         {
-            UI.GetComponentInChildren<Canvas>().enabled = false;
+            pauseScreen.SetActive(false);
+            UI.isPaused = false;
             Time.timeScale = 1.0f;
         }
         else
         {
-            UI.GetComponentInChildren<Canvas>().enabled = true;
+            pauseScreen.SetActive(true);
+            UI.isPaused = true;
             Time.timeScale = 0f;
         }
     }
