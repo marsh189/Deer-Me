@@ -36,12 +36,14 @@ public class WaterTest : MonoBehaviour {
     float baseheight;
     float left;
     float bottom;
-    
+
+    public float inputWidth;
+    public float inputDepth;
 
     void Start()
     {
         //Spawning our water
-        SpawnWater(transform.position.x,20,transform.position.y,transform.position.y-3);
+        SpawnWater(transform.position.x,inputWidth,transform.position.y,transform.position.y-inputDepth);
     }
 
     
