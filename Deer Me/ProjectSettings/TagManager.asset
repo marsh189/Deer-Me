@@ -17,9 +17,9 @@ TagManager:
   - 
   - Pickup
   - Ignore4Trigger
-  - 
-  - 
-  - 
+  - Foreground
+  - Middleground
+  - Background
   - 
   - 
   - 

@@ -249,7 +249,6 @@ public class WaterTest : MonoBehaviour {
     {
        if(col.gameObject.tag == "Floatable")
         {
-            Debug.Log("Floating");
             col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -((50 * (col.gameObject.transform.position.y - this.transform.position.y)) -(damping * col.gameObject.GetComponent<Rigidbody2D>().velocity.y))));
         }
     }
