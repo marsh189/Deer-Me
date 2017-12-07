@@ -28,7 +28,7 @@ public class LeverScript : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
-            Debug.Log("Colliding");
+
             if (Input.GetKeyDown(KeyCode.X))
             {
                 Debug.Log("pressing x");

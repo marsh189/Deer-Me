@@ -30,7 +30,7 @@ public class WaterTest : MonoBehaviour {
     const float springconstant = 0.02f;
     const float damping = 0.04f;
     const float spread = 0.05f;
-    const float z = -1f;
+    const float z = 1f;
 
     //The properties of our water
     float baseheight;
@@ -44,9 +44,16 @@ public class WaterTest : MonoBehaviour {
     {
         //Spawning our water
         SpawnWater(transform.position.x,inputWidth,transform.position.y,transform.position.y-inputDepth);
+        MoveToLayer(this.transform, 4);
     }
-
-    
+    void MoveToLayer(Transform root, int layer)
+    {
+        root.gameObject.layer = layer;
+        foreach(Transform child in root)
+        {
+            MoveToLayer(child, layer);
+        }
+    }
     public void Splash(float xpos, float velocity)
     {
         //If the position is within the bounds of the water:

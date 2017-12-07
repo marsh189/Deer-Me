@@ -6,7 +6,7 @@ public class ScrollingBackground : MonoBehaviour {
     public bool scrolling, parallax;
     public Transform cameraTransform;
     private Transform[] layers;
-    private float viewZone = 10;
+    private float viewZone;
     private int leftIndex;
     private int rightIndex;
     public float backgroundSize;
@@ -14,7 +14,7 @@ public class ScrollingBackground : MonoBehaviour {
     private float lastCameraX;
     // Use this for initialization
     void Start () {
-        
+        viewZone = backgroundSize / 2;
         lastCameraX = cameraTransform.position.x;
         layers = new Transform[transform.childCount];
         for(int i = 0; i < transform.childCount; i++)
@@ -47,7 +47,6 @@ public class ScrollingBackground : MonoBehaviour {
     }
     private void ScrollLeft()
     {
-        int lastRight = rightIndex;
         layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize);
         leftIndex = rightIndex;
         rightIndex--;
@@ -58,7 +57,6 @@ public class ScrollingBackground : MonoBehaviour {
     }
     private void ScrollRight()
     {
-        int lastLight = leftIndex;
         layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize);
         rightIndex = leftIndex;
         leftIndex++;
