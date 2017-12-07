@@ -47,7 +47,10 @@ public class ScrollingBackground : MonoBehaviour {
     }
     private void ScrollLeft()
     {
+        float oldy = layers[leftIndex].position.y;
+        float oldz = layers[leftIndex].position.z;
         layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize);
+        layers[rightIndex].position = new Vector3(1 * layers[rightIndex].position.x, oldy, oldz);
         leftIndex = rightIndex;
         rightIndex--;
         if(rightIndex < 0)
@@ -57,7 +60,10 @@ public class ScrollingBackground : MonoBehaviour {
     }
     private void ScrollRight()
     {
+        float oldy = layers[leftIndex].position.y;
+        float oldz = layers[leftIndex].position.z;
         layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize);
+        layers[leftIndex].position = new Vector3(1 * layers[leftIndex].position.x, oldy, oldz); 
         rightIndex = leftIndex;
         leftIndex++;
         if (leftIndex == layers.Length)
