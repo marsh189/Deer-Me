@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour {
     public GameManager gm;
-
+    public CheckpointManager cm;
     public bool isPaused = false;
 
 	// Use this for initialization
 	void Start () {
-		
+        cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
 	}
 	
 	// Update is called once per frame
@@ -27,5 +27,9 @@ public class UIManager : MonoBehaviour {
     public void Quit()
     {
         //Application.quit?? Or maybe go to a menu
+    }
+    public void Restart()
+    {
+        cm.RespawnToActiveCheckpoint();
     }
 }
