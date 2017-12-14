@@ -50,12 +50,15 @@ namespace UnityStandardAssets._2D
             {
                 m_Rigidbody2D.gravityScale = 0;
                 climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+                m_Anim.SetFloat("ClimbSpeed", Mathf.Abs (climbVelocity));
                 m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, climbVelocity);
             }
             if (!climbing)
             {
+                m_Anim.SetFloat("ClimbSpeed", 0);
                 m_Rigidbody2D.gravityScale = gravity;
             }
+         
         }
 
 

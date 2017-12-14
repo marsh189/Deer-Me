@@ -183,7 +183,6 @@ public class WaterTest : MonoBehaviour {
 
         }
 
-        this.GetComponent<LineRenderer>().enabled = false;
         
         
     }
@@ -254,7 +253,7 @@ public class WaterTest : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D col)
     {
-       if(col.gameObject.tag == "Floatable" || col.gameObject.tag == "Grabbable")
+       if(col.gameObject.tag == "Floatable" || col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog")
         {
             col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -((20 * (col.gameObject.transform.position.y - this.transform.position.y)) -(damping * col.gameObject.GetComponent<Rigidbody2D>().velocity.y))));
         }

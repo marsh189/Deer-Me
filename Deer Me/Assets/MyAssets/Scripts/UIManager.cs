@@ -26,10 +26,11 @@ public class UIManager : MonoBehaviour {
     }
     public void Quit()
     {
-        //Application.quit?? Or maybe go to a menu
+        Application.Quit();
     }
     public void Restart()
     {
+        gm.TogglePauseMenu();
         cm.RespawnToActiveCheckpoint();
     }
 }

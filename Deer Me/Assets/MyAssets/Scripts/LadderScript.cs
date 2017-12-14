@@ -19,6 +19,7 @@ public class LadderScript : MonoBehaviour {
         if(col.gameObject.tag == "Player")
         {
             player.climbing = true;
+           
         }
     }
     

@@ -7,9 +7,18 @@ public class LeverScript : MonoBehaviour {
     public bool leverActive = false;
     public GameObject NewPositionObj;
     public GameObject OldPositionObj;
+    Vector3 beginPosOffset;
+    Vector3 endPosOffset;
+    LineRenderer waterLine;
 	// Use this for initialization
 	void Start () {
-		
+        
+        if(gameObjectReference.gameObject.name == "WaterManager (10)")
+        {
+            waterLine = gameObjectReference.GetComponent<LineRenderer>();
+            beginPosOffset = gameObjectReference.transform.position - waterLine.GetPosition(0);
+            endPosOffset = gameObjectReference.transform.position - waterLine.GetPosition(1);
+        } 
 	}
 	
 	// Update is called once per frame
@@ -21,8 +30,21 @@ public class LeverScript : MonoBehaviour {
         
         if (leverActive && NewPositionObj.transform.position != gameObjectReference.transform.position)
         {
-            gameObjectReference.transform.position = Vector3.MoveTowards(gameObjectReference.transform.position, NewPositionObj.transform.position, Time.deltaTime * 2);          
+            gameObjectReference.transform.position = Vector3.MoveTowards(gameObjectReference.transform.position, NewPositionObj.transform.position, Time.deltaTime * 2);
+            if (gameObjectReference.gameObject.name == "WaterManager (10)")
+            {
+                Vector3 newBeginPos = gameObjectReference.transform.position + beginPosOffset;
+                Vector3 newEndPos = gameObjectReference.transform.position + endPosOffset;
+                waterLine.SetPosition(0, newBeginPos);
+                waterLine.SetPosition(1, newEndPos);
+            }
+            Debug.Log("moving up");
         }
+        if(gameObjectReference.gameObject.tag == "buttonLog")
+        {
+            StartCoroutine("stopLOG");
+        }
+        
 	}
     void OnTriggerStay2D(Collider2D col)
     {
@@ -50,6 +72,7 @@ public class LeverScript : MonoBehaviour {
     {
         if(col.gameObject.tag == "buttonLog")
         {
+            this.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("PushedInButton");
             if (leverActive && OldPositionObj.transform.position.x != gameObjectReference.transform.position.x)
             {
                 Debug.Log("moving down");
@@ -57,19 +80,18 @@ public class LeverScript : MonoBehaviour {
             }
             else if (!leverActive && NewPositionObj.transform.position.x != gameObjectReference.transform.position.x)
             {
-                Debug.Log("moving up");
+                
                 leverActive = true;
             }
             Destroy(col.gameObject.GetComponent<BoxCollider2D>());
             col.gameObject.AddComponent<PolygonCollider2D>();
             Destroy(GameObject.Find("WaterWall (11)"));
             Destroy(GameObject.Find("WaterWall (12)"));
-            StartCoroutine("stopLOG");
         }
     }
     IEnumerator stopLOG()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         gameObjectReference = null;
     }
 }
