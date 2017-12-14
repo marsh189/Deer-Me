@@ -8,6 +8,7 @@ TagManager:
   - Floatable
   - Checkpoint
   - CheckpointManager
+  - buttonLog
   layers:
   - Default
   - TransparentFX

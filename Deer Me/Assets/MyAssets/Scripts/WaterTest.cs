@@ -92,7 +92,7 @@ public class WaterTest : MonoBehaviour {
     {
         //Bonus exercise: Add a box collider to the water that will allow things to float in it.
         gameObject.AddComponent<BoxCollider2D>();
-        gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(Width / 2, (Top + Bottom) / 4);
+        gameObject.GetComponent<BoxCollider2D>().offset = new Vector2((Left + Width) -(Left + Width / 2), -(Top - Bottom)/2);
         gameObject.GetComponent<BoxCollider2D>().size = new Vector2(Width, Top - Bottom);
         gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
 
@@ -183,7 +183,7 @@ public class WaterTest : MonoBehaviour {
 
         }
 
-        
+        this.GetComponent<LineRenderer>().enabled = false;
         
         
     }
@@ -254,9 +254,9 @@ public class WaterTest : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D col)
     {
-       if(col.gameObject.tag == "Floatable")
+       if(col.gameObject.tag == "Floatable" || col.gameObject.tag == "Grabbable")
         {
-            col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -((50 * (col.gameObject.transform.position.y - this.transform.position.y)) -(damping * col.gameObject.GetComponent<Rigidbody2D>().velocity.y))));
+            col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -((20 * (col.gameObject.transform.position.y - this.transform.position.y)) -(damping * col.gameObject.GetComponent<Rigidbody2D>().velocity.y))));
         }
     }
 

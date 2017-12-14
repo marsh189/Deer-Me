@@ -46,4 +46,31 @@ public class LeverScript : MonoBehaviour {
             }
         }
     }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.tag == "buttonLog")
+        {
+            if (leverActive && OldPositionObj.transform.position.x != gameObjectReference.transform.position.x)
+            {
+                Debug.Log("moving down");
+                leverActive = false;
+            }
+            else if (!leverActive && NewPositionObj.transform.position.x != gameObjectReference.transform.position.x)
+            {
+                Debug.Log("moving up");
+                leverActive = true;
+            }
+            Destroy(col.gameObject.GetComponent<BoxCollider2D>());
+            col.gameObject.AddComponent<PolygonCollider2D>();
+            Destroy(GameObject.Find("WaterWall (11)"));
+            Destroy(GameObject.Find("WaterWall (12)"));
+            StartCoroutine("stopLOG");
+        }
+    }
+    IEnumerator stopLOG()
+    {
+        yield return new WaitForSeconds(1f);
+        gameObjectReference = null;
+    }
 }
+
