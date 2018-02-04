@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
     public GameManager gm;
@@ -28,9 +29,14 @@ public class UIManager : MonoBehaviour {
     {
         Application.Quit();
     }
-    public void Restart()
+    public void RestartCheckPoint()
     {
         gm.TogglePauseMenu();
         cm.RespawnToActiveCheckpoint();
     }
+
+	public void Restart()
+	{
+		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+	}
 }
