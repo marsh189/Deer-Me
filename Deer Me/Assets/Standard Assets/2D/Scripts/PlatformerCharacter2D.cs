@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityStandardAssets._2D
 {
@@ -23,6 +24,11 @@ namespace UnityStandardAssets._2D
         private float gravity;
         public float climbSpeed;
         public float climbVelocity;
+		public bool isDead;
+		public RawImage fadeScreen;
+		public Canvas deathScreen;
+		private Color tempColor;
+
         private void Awake()
         {
             // Setting up references.
@@ -31,33 +37,53 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             gravity = m_Rigidbody2D.gravityScale;
+			isDead = false;
+			tempColor = Color.black;
+			tempColor.a = 0f;
         }
+
         public void Update()
         {
-            if (m_Grounded && Input.GetKeyDown(KeyCode.Space) && m_Anim.GetBool("Ground"))
-            {
-                // Add a vertical force to the player.
-                m_Grounded = false;
-                m_Anim.SetBool("Ground", false);
-                m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-            }
-            if(!m_Grounded && Input.GetKeyUp(KeyCode.Space))
-            {
-               m_Rigidbody2D.AddForce(new Vector2(0f, -m_JumpForce * 0.25f));
-            }
+			if (!isDead) 
+			{
+				if (m_Grounded && Input.GetKeyDown (KeyCode.Space) && m_Anim.GetBool ("Ground")) 
+				{
+					// Add a vertical force to the player.
+					m_Grounded = false;
+					m_Anim.SetBool ("Ground", false);
+					m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
+				}
+				if (!m_Grounded && Input.GetKeyUp (KeyCode.Space)) 
+				{
+					m_Rigidbody2D.AddForce (new Vector2 (0f, -m_JumpForce * 0.25f));
+				}
             
-            if (climbing)
-            {
-                m_Rigidbody2D.gravityScale = 0;
-                climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
-                m_Anim.SetFloat("ClimbSpeed", Mathf.Abs (climbVelocity));
-                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, climbVelocity);
-            }
-            if (!climbing)
-            {
-                m_Anim.SetFloat("ClimbSpeed", 0);
-                m_Rigidbody2D.gravityScale = gravity;
-            }
+				if (climbing) 
+				{
+					m_Rigidbody2D.gravityScale = 0;
+					climbVelocity = climbSpeed * Input.GetAxisRaw ("Vertical");
+					m_Anim.SetFloat ("ClimbSpeed", Mathf.Abs (climbVelocity));
+					m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, climbVelocity);
+				}
+				if (!climbing) 
+				{
+					m_Anim.SetFloat ("ClimbSpeed", 0);
+					m_Rigidbody2D.gravityScale = gravity;
+				}
+			} 
+			else 
+			{
+
+				if (fadeScreen.color.a < 0.8f) 
+				{
+					tempColor.a += Time.deltaTime;
+					fadeScreen.color = tempColor;
+				} 
+				else 
+				{
+					deathScreen.gameObject.SetActive (true);
+				}
+			}
          
         }
 
@@ -83,44 +109,52 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-            // If crouching, check to see if the character can stand up
-            if (!crouch && m_Anim.GetBool("Crouch"))
-            {
-                // If the character has a ceiling preventing them from standing up, keep them crouching
-                if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
-                {
-                    crouch = true;
-                }
-            }
+			if (!isDead) 
+			{
+				// If crouching, check to see if the character can stand up
+				if (!crouch && m_Anim.GetBool ("Crouch")) 
+				{
+					// If the character has a ceiling preventing them from standing up, keep them crouching
+					if (Physics2D.OverlapCircle (m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround)) 
+					{
+						crouch = true;
+					}
+				}
 
-            // Set whether or not the character is crouching in the animator
-            m_Anim.SetBool("Crouch", crouch);
+				// Set whether or not the character is crouching in the animator
+				m_Anim.SetBool ("Crouch", crouch);
 
-            //only control the player if grounded or airControl is turned on
-            if (m_Grounded || m_AirControl)
-            {
-                // Reduce the speed if crouching by the crouchSpeed multiplier
-                move = (crouch ? move*m_CrouchSpeed : move);
+				//only control the player if grounded or airControl is turned on
+				if (m_Grounded || m_AirControl) 
+				{
+					// Reduce the speed if crouching by the crouchSpeed multiplier
+					move = (crouch ? move * m_CrouchSpeed : move);
 
-                // The Speed animator parameter is set to the absolute value of the horizontal input.
-                m_Anim.SetFloat("Speed", Mathf.Abs(move));
+					// The Speed animator parameter is set to the absolute value of the horizontal input.
+					m_Anim.SetFloat ("Speed", Mathf.Abs (move));
 
-                // Move the character
-                m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
+					// Move the character
+					m_Rigidbody2D.velocity = new Vector2 (move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
-                // If the input is moving the player right and the player is facing left...
-                if (move > 0 && !m_FacingRight)
-                {
-                    // ... flip the player.
-                    Flip();
-                }
+					// If the input is moving the player right and the player is facing left...
+					if (move > 0 && !m_FacingRight) 
+					{
+						// ... flip the player.
+						Flip ();
+					}
                     // Otherwise if the input is moving the player left and the player is facing right...
-                else if (move < 0 && m_FacingRight)
-                {
-                    // ... flip the player.
-                    Flip();
-                }
-            }
+                else if (move < 0 && m_FacingRight) 
+					{
+						// ... flip the player.
+						Flip ();
+					}
+				}
+			} 
+			else 
+			{
+				m_Rigidbody2D.velocity = Vector2.zero;
+				m_Anim.Play ("IdleAnimation");
+			}
         }
 
 

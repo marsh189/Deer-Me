@@ -17,7 +17,8 @@ public class Obstacle : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            cm.RespawnToActiveCheckpoint();
+			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D> ().isDead = true;
+            //cm.RespawnToActiveCheckpoint();
         }
     }
 }

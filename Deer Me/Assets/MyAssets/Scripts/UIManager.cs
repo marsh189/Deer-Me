@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) && !GameObject.FindGameObjectWithTag("Player").GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().isDead)
         {
             gm.TogglePauseMenu();
         }
@@ -31,8 +31,10 @@ public class UIManager : MonoBehaviour {
     }
     public void RestartCheckPoint()
     {
-        gm.TogglePauseMenu();
+        gm.CloseDeathScreen();
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D> ().isDead = false;
         cm.RespawnToActiveCheckpoint();
+
     }
 
 	public void Restart()
