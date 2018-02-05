@@ -766,11 +766,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.65
+      value: 277.4
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.66
+      value: 14.4
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7087,7 +7087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &625460172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7152,8 +7152,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625460171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.024473, y: 3.633143, z: -13.328174}
-  m_LocalScale: {x: 0.045773383, y: 0.045773383, z: 0.045773383}
+  m_LocalPosition: {x: 0, y: 0, z: -13.328174}
+  m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
   m_Children:
   - {fileID: 179997546}
   m_Father: {fileID: 0}
@@ -13994,7 +13994,7 @@ GameObject:
   - component: {fileID: 1198469018}
   m_Layer: 0
   m_Name: Puzzle Metal (2)
-  m_TagString: Grabbable
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18215,7 +18215,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1565283176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 84.23379, z: 0}
+  m_LocalPosition: {x: 0, y: -25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 179997546}
@@ -18938,7 +18938,7 @@ GameObject:
   - component: {fileID: 1616052072}
   m_Layer: 0
   m_Name: Puzzle Metal
-  m_TagString: Grabbable
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19446,7 +19446,7 @@ GameObject:
   - component: {fileID: 1663861253}
   m_Layer: 0
   m_Name: Puzzle Metal (1)
-  m_TagString: Grabbable
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20807,7 +20807,7 @@ GameObject:
   - component: {fileID: 1767797809}
   m_Layer: 0
   m_Name: CementMetal2 (2)
-  m_TagString: Grabbable
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23465,7 +23465,7 @@ GameObject:
   - component: {fileID: 1968165339}
   m_Layer: 0
   m_Name: CementMetal2 (3)
-  m_TagString: Grabbable
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26018,6 +26018,7 @@ MonoBehaviour:
   grabObj: {fileID: 0}
   carryPoint: {fileID: 1034177301}
   Player: {fileID: 660701811}
+  tagName: 
 --- !u!61 &2137061054
 BoxCollider2D:
   m_ObjectHideFlags: 0

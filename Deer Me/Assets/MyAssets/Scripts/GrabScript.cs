@@ -15,6 +15,7 @@ public class GrabScript : MonoBehaviour {
     private float scaleY;
     private float scaleZ;
     private PlatformerCharacter2D pScript;
+    public string tagName;
     
 	// Use this for initialization
 	void Start () {
@@ -33,7 +34,7 @@ public class GrabScript : MonoBehaviour {
             droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
             droppedObj.AddComponent<Rigidbody2D>();
             droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
-            droppedObj.gameObject.tag = "Grabbable";
+            droppedObj.gameObject.tag = tagName;
            // droppedObj.transform.parent.parent = null;
             droppedObj.transform.position = Player.transform.position;
             if (pScript.m_FacingRight)
@@ -53,7 +54,7 @@ public class GrabScript : MonoBehaviour {
         }
         else if (Input.GetButtonDown("Grab") && !grabbed && canGrab)
         {
-            
+            tagName = grabObj.gameObject.tag;
             carryPoint.GetComponent<SpriteRenderer>().sprite = grabObj.gameObject.GetComponent<SpriteRenderer>().sprite;
             carryPoint.transform.localScale = new Vector3(grabObj.transform.localScale.x * (1 / 0.3833752f), grabObj.transform.localScale.y * (1 / 0.3833752f), grabObj.transform.localScale.z * (1 / 0.3833752f));
             scaleX = grabObj.transform.localScale.x;
@@ -66,10 +67,11 @@ public class GrabScript : MonoBehaviour {
     }
     void OnTriggerStay2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog")
+        if(col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog" || col.gameObject.tag == "Metal")
         {
 
             grabObj = col.gameObject;
+            tagName = col.gameObject.tag;
             canGrab = true;
 
         }

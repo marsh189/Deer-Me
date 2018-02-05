@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - CheckpointManager
   - buttonLog
+  - Metal
   layers:
   - Default
   - TransparentFX
