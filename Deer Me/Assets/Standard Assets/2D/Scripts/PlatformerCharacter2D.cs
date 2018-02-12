@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,8 +29,9 @@ namespace UnityStandardAssets._2D
 		public RawImage fadeScreen;
 		public Canvas deathScreen;
 		private Color tempColor;
-
-		public Transform startPosition;
+        public bool swinging = false;
+        public bool canswing = true;
+        public Transform startPosition;
 
         private void Awake()
         {
@@ -52,32 +54,48 @@ namespace UnityStandardAssets._2D
 
         public void Update()
         {
+
 			if (!isDead) 
 			{
-				if (m_Grounded && Input.GetKeyDown (KeyCode.Space) && m_Anim.GetBool ("Ground")) 
-				{
-					// Add a vertical force to the player.
-					m_Grounded = false;
-					m_Anim.SetBool ("Ground", false);
-					m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
-				}
-				if (!m_Grounded && Input.GetKeyUp (KeyCode.Space)) 
-				{
-					m_Rigidbody2D.AddForce (new Vector2 (0f, -m_JumpForce * 0.25f));
-				}
-            
-				if (climbing) 
-				{
-					m_Rigidbody2D.gravityScale = 0;
-					climbVelocity = climbSpeed * Input.GetAxisRaw ("Vertical");
-					m_Anim.SetFloat ("ClimbSpeed", Mathf.Abs (climbVelocity));
-					m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, climbVelocity);
-				}
-				if (!climbing) 
-				{
-					m_Anim.SetFloat ("ClimbSpeed", 0);
-					m_Rigidbody2D.gravityScale = gravity;
-				}
+                if (!swinging)
+                {
+
+
+                    if (m_Grounded && Input.GetKeyDown(KeyCode.Space) && m_Anim.GetBool("Ground"))
+                    {
+                        // Add a vertical force to the player.
+                        m_Grounded = false;
+                        m_Anim.SetBool("Ground", false);
+                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                    }
+                    if (!m_Grounded && Input.GetKeyUp(KeyCode.Space))
+                    {
+                        m_Rigidbody2D.AddForce(new Vector2(0f, -m_JumpForce * 0.25f));
+                    }
+
+                    if (climbing)
+                    {
+                        m_Rigidbody2D.gravityScale = 0;
+                        climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
+                        m_Anim.SetFloat("ClimbSpeed", Mathf.Abs(climbVelocity));
+                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, climbVelocity);
+                    }
+                    if (!climbing)
+                    {
+                        m_Anim.SetFloat("ClimbSpeed", 0);
+                        m_Rigidbody2D.gravityScale = gravity;
+                    }
+                }
+                else if (swinging)
+                {
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        swinging = false;
+                        Destroy(this.gameObject.GetComponent<HingeJoint2D>());
+                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                        StartCoroutine(DelayedSwing());
+                    }
+                }
 			} 
 			else 
 			{
@@ -176,5 +194,21 @@ namespace UnityStandardAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+        void OnCollisionEnter2D(Collision2D col)
+        {
+            if(col.gameObject.tag == "Rope" && canswing)
+            {
+                canswing = false;
+                swinging = true;
+                HingeJoint2D hinge = this.gameObject.AddComponent<HingeJoint2D>() as HingeJoint2D;
+                hinge.connectedBody = col.gameObject.GetComponent<Rigidbody2D>();
+            }
+        }
+        IEnumerator DelayedSwing()
+        {
+            yield return new WaitForSeconds(0.1f);
+            canswing = true;
+        }
     }
+    
 }

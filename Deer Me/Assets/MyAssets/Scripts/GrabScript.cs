@@ -16,6 +16,7 @@ public class GrabScript : MonoBehaviour {
     private float scaleZ;
     private PlatformerCharacter2D pScript;
     public string tagName;
+
     
 	// Use this for initialization
 	void Start () {
