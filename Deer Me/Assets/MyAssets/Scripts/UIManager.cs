@@ -27,18 +27,20 @@ public class UIManager : MonoBehaviour {
     }
     public void Quit()
     {
+		PlayerPrefs.SetString ("Level1_Checkpoint", null);
         Application.Quit();
     }
     public void RestartCheckPoint()
     {
         gm.CloseDeathScreen();
 		GameObject.FindGameObjectWithTag ("Player").GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D> ().isDead = false;
-        cm.RespawnToActiveCheckpoint();
-
+		cm.SetActiveSpawnPoint();
+		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
     }
 
 	public void Restart()
 	{
+		PlayerPrefs.SetString ("Level1_Checkpoint", null);
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 	}
 }

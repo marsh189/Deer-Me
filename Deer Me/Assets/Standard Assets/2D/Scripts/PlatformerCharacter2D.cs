@@ -29,6 +29,8 @@ namespace UnityStandardAssets._2D
 		public Canvas deathScreen;
 		private Color tempColor;
 
+		public Transform startPosition;
+
         private void Awake()
         {
             // Setting up references.
@@ -40,6 +42,12 @@ namespace UnityStandardAssets._2D
 			isDead = false;
 			tempColor = Color.black;
 			tempColor.a = 0f;
+
+			if (PlayerPrefs.GetString ("Level1_Checkpoint") != null && PlayerPrefs.GetString ("Level1_Checkpoint") != "") 
+			{
+				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level1_Checkpoint"));
+				this.gameObject.transform.position = cp.transform.position;
+			}
         }
 
         public void Update()

@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
-    CheckpointManager cm;
+
 	// Use this for initialization
 	void Start () {
-        cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
+      
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player")
         {
 			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D> ().isDead = true;
-            //cm.RespawnToActiveCheckpoint();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckpointManager : MonoBehaviour {
     public GameObject[] checkpoints;
@@ -25,13 +26,13 @@ public class CheckpointManager : MonoBehaviour {
         }
         current.GetComponent<Checkpoint>().state = Checkpoint.Status.Active;
     }
-    public void RespawnToActiveCheckpoint()
+    public void SetActiveSpawnPoint()
     {
         foreach (GameObject checkpoint in checkpoints)
         {
             if (checkpoint.GetComponent<Checkpoint>().state == Checkpoint.Status.Active)
             {
-                Player.transform.position = checkpoint.transform.position;
+				PlayerPrefs.SetString ("Level1_Checkpoint", checkpoint.name);
             }
         }
     }
