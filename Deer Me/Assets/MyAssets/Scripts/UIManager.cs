@@ -27,8 +27,8 @@ public class UIManager : MonoBehaviour {
     }
     public void Quit()
     {
-		PlayerPrefs.SetString ("Level1_Checkpoint", null);
-        Application.Quit();
+		PlayerPrefs.SetString ("Level_Checkpoint", null);
+		SceneManager.LoadScene ("MainMenu");
     }
     public void RestartCheckPoint()
     {
@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour {
 
 	public void Restart()
 	{
-		PlayerPrefs.SetString ("Level1_Checkpoint", null);
+		PlayerPrefs.SetString ("Level_Checkpoint", null);
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 	}
 }

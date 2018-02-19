@@ -32,7 +32,7 @@ public class CheckpointManager : MonoBehaviour {
         {
             if (checkpoint.GetComponent<Checkpoint>().state == Checkpoint.Status.Active)
             {
-				PlayerPrefs.SetString ("Level1_Checkpoint", checkpoint.name);
+				PlayerPrefs.SetString ("Level_Checkpoint", checkpoint.name);
             }
         }
     }

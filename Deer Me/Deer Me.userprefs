@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyAssets\Scripts\UIManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyAssets\Scripts\Checkpoint.cs">
     <Files>
       <File FileName="Assets\MyAssets\Scripts\Obstacle.cs" Line="1" Column="1" />
-      <File FileName="Assets\MyAssets\Scripts\UIManager.cs" Line="38" Column="63" />
-      <File FileName="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="49" Column="64" />
-      <File FileName="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" Line="16" Column="65" />
-      <File FileName="Assets\MyAssets\Scripts\GameManager.cs" Line="47" Column="24" />
-      <File FileName="Assets\MyAssets\Scripts\CheckpointManager.cs" Line="29" Column="36" />
+      <File FileName="Assets\MyAssets\Scripts\UIManager.cs" Line="30" Column="32" />
+      <File FileName="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\MyAssets\Scripts\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\MyAssets\Scripts\CheckpointManager.cs" Line="35" Column="34" />
       <File FileName="Assets\MyAssets\Scripts\WaterTest.cs" Line="1" Column="1" />
       <File FileName="Assets\MyAssets\Scripts\Checkpoint.cs" Line="11" Column="101" />
     </Files>
