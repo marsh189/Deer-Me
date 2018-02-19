@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 791
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 741
-  m_MinSize: {x: 711, y: 492}
-  m_MaxSize: {x: 18006, y: 14042}
+  m_MinSize: {x: 713, y: 471}
+  m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
-  controlID: 3687
+  controlID: 951
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -131,10 +131,10 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 741
-  m_MinSize: {x: 232, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 232, y: 471}
+  m_MaxSize: {x: 10002, y: 14021}
   vertical: 1
-  controlID: 3722
+  controlID: 853
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 321}
   m_MaxSize: {x: 4004, y: 8021}
   vertical: 1
-  controlID: 3688
+  controlID: 952
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -391,9 +391,9 @@ MonoBehaviour:
     height: 439
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60320000
-    m_LastClickedID: 12896
-    m_ExpandedIDs: f2f2ffffa6fbffff00000000ee2f00005e30000078300000e83000006032000030330000f8340000f2380000e63900005e3a0000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 8cfbffff00000000d8380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,19 +454,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/MyAssets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/MyAssets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\GitHub\Deer-Me\Deer Me
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec270000
-    m_LastClickedID: 10220
-    m_ExpandedIDs: 00000000ec270000c0290000fc290000302f0000322f000000ca9a3bffffff7f
+    m_SelectedIDs: dc290000
+    m_LastClickedID: 10716
+    m_ExpandedIDs: 0000000000280000d4290000102a00001a3a00001c3a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -494,7 +494,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ec270000c0290000fc290000302f0000322f000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000000280000d4290000102a00001a3a00001c3a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,7 +546,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 161}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 110
 --- !u!114 &16
@@ -576,14 +576,14 @@ MonoBehaviour:
     width: 1018
     height: 404
   m_SceneLighting: 1
-  lastFramingTime: 846.4565726030255
+  lastFramingTime: 47.12355617015039
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.518527, y: 1.1281203, z: 89.8904}
+    m_Target: {x: 23.55179, y: 2.5296416, z: -3.0566406}
     speed: 2
-    m_Value: {x: -4.518527, y: 1.1281203, z: 89.8904}
+    m_Value: {x: 23.55179, y: 2.5296416, z: -3.0566406}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -610,9 +610,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.751387
+    m_Target: 8.903386
     speed: 2
-    m_Value: 15.751387
+    m_Value: 8.903386
   m_Ortho:
     m_Target: 1
     speed: 2

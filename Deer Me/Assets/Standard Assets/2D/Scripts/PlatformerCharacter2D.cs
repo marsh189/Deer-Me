@@ -45,9 +45,9 @@ namespace UnityStandardAssets._2D
 			tempColor = Color.black;
 			tempColor.a = 0f;
 
-			if (PlayerPrefs.GetString ("Level1_Checkpoint") != null && PlayerPrefs.GetString ("Level1_Checkpoint") != "") 
+			if (PlayerPrefs.GetString ("Level_Checkpoint") != null && PlayerPrefs.GetString ("Level_Checkpoint") != "") 
 			{
-				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level1_Checkpoint"));
+				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level_Checkpoint"));
 				this.gameObject.transform.position = cp.transform.position;
 			}
         }
