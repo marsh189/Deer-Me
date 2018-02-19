@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400000}
   - component: {fileID: 114136224960407088}
+  - component: {fileID: 253737969799468794}
   m_Layer: 0
   m_Name: WaterManager
   m_TagString: Untagged
@@ -54,3 +55,23 @@ MonoBehaviour:
   splash: {fileID: 100000, guid: a0d090f424ce06b4d8bcc391812b4c82, type: 2}
   mat: {fileID: 2100000, guid: 1004461fdbbc1db4786ebf7e98097914, type: 2}
   watermesh: {fileID: 100000, guid: f30cdb48aec60674b8b6544c1acf3d9e, type: 2}
+  inputWidth: 0
+  inputDepth: 0
+--- !u!253 &253737969799468794
+BuoyancyEffector2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 256
+  m_SurfaceLevel: -0.05
+  m_Density: 5
+  m_LinearDrag: 6
+  m_AngularDrag: 5
+  m_FlowAngle: 0
+  m_FlowMagnitude: 0
+  m_FlowVariation: 0

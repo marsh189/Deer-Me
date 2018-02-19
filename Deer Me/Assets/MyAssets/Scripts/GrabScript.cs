@@ -87,6 +87,7 @@ public class GrabScript : MonoBehaviour {
         yield return new WaitForSeconds(0.7f);
         droppedObj.AddComponent<PolygonCollider2D>();
         droppedObj.AddComponent<freezeZ>();
+        droppedObj.layer = 8;
         yield return null;
     }
 }

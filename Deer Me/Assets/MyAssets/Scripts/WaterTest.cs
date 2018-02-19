@@ -95,6 +95,7 @@ public class WaterTest : MonoBehaviour {
         gameObject.GetComponent<BoxCollider2D>().offset = new Vector2((Left + Width) -(Left + Width / 2), -(Top - Bottom)/2);
         gameObject.GetComponent<BoxCollider2D>().size = new Vector2(Width, Top - Bottom);
         gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+        gameObject.GetComponent<BoxCollider2D>().usedByEffector = true;
 
 
         //Calculating the number of edges and nodes we have
@@ -182,7 +183,11 @@ public class WaterTest : MonoBehaviour {
             colliders[i].AddComponent<WaterDetectorTest>();
 
         }
-
+       /* gameObject.AddComponent<BuoyancyEffector2D>();
+        gameObject.GetComponent<BuoyancyEffector2D>().surfaceLevel = -.05f;
+        gameObject.GetComponent<BuoyancyEffector2D>().density = 5;
+        gameObject.GetComponent<BuoyancyEffector2D>().colliderMask = 8;
+        */
         
         
     }
@@ -253,10 +258,10 @@ public class WaterTest : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D col)
     {
-       if(col.gameObject.tag == "Floatable" || col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog")
-        {
-            col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -((20 * (col.gameObject.transform.position.y - this.transform.position.y)) -(damping * col.gameObject.GetComponent<Rigidbody2D>().velocity.y))));
-        }
+       //if(col.gameObject.tag == "Floatable" || col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog")
+        //{
+         //   col.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -((20 * (col.gameObject.transform.position.y - this.transform.position.y)) -(damping * col.gameObject.GetComponent<Rigidbody2D>().velocity.y))));
+        //}
     }
 
 
