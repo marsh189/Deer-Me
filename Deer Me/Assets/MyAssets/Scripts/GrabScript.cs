@@ -84,6 +84,10 @@ public class GrabScript : MonoBehaviour {
     }
     IEnumerator DelayedEffects(GameObject droppedObj)
     {
+        if(droppedObj.gameObject.tag == "Grabbable")
+        {
+            droppedObj.layer = 8;
+        }
         yield return new WaitForSeconds(0.7f);
         droppedObj.AddComponent<PolygonCollider2D>();
         droppedObj.AddComponent<freezeZ>();
