@@ -43,4 +43,9 @@ public class UIManager : MonoBehaviour {
 		PlayerPrefs.SetString ("Level_Checkpoint", null);
 		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 	}
+
+	void OnApplicationQuit()
+	{
+		PlayerPrefs.SetString ("Level_Checkpoint", null);
+	}
 }
