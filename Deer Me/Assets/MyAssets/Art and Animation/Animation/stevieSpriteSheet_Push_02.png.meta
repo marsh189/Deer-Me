@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3f53bcb0555c71a4ba68d754b708820e
-timeCreated: 1513208025
+timeCreated: 1519277008
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,7 @@ TextureImporter:
     21300018: stevieSpriteSheet_Push_02_9
     21300020: stevieSpriteSheet_Push_02_10
     21300022: stevieSpriteSheet_Push_02_11
+    21300024: stevieSpriteSheet_Push_02_12
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -113,10 +114,10 @@ TextureImporter:
         serializedVersion: 2
         x: 41
         y: 103
-        width: 424
-        height: 426
+        width: 425
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -127,10 +128,10 @@ TextureImporter:
         serializedVersion: 2
         x: 475
         y: 103
-        width: 421
-        height: 440
+        width: 425
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,12 +140,12 @@ TextureImporter:
       name: stevieSpriteSheet_Push_02_2
       rect:
         serializedVersion: 2
-        x: 906
+        x: 900
         y: 103
-        width: 416
-        height: 449
+        width: 425
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,10 +156,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1339
         y: 103
-        width: 404
-        height: 454
+        width: 408
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,10 +170,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1751
         y: 103
-        width: 394
-        height: 458
+        width: 404
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +182,12 @@ TextureImporter:
       name: stevieSpriteSheet_Push_02_5
       rect:
         serializedVersion: 2
-        x: 2157
+        x: 2146
         y: 103
-        width: 372
-        height: 459
+        width: 388
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -198,9 +199,9 @@ TextureImporter:
         x: 2541
         y: 103
         width: 364
-        height: 458
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,9 +213,9 @@ TextureImporter:
         x: 2916
         y: 103
         width: 383
-        height: 458
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,9 +227,9 @@ TextureImporter:
         x: 3310
         y: 103
         width: 401
-        height: 456
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,9 +241,9 @@ TextureImporter:
         x: 3733
         y: 110
         width: 419
-        height: 452
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,9 +255,9 @@ TextureImporter:
         x: 4167
         y: 103
         width: 436
-        height: 451
+        height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,7 +269,21 @@ TextureImporter:
         x: 4618
         y: 103
         width: 433
-        height: 434
+        height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Push_02_12
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 4
+        width: 4297
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
