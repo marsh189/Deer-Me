@@ -183,11 +183,13 @@ public class WaterTest : MonoBehaviour {
             colliders[i].AddComponent<WaterDetectorTest>();
 
         }
-       /* gameObject.AddComponent<BuoyancyEffector2D>();
-        gameObject.GetComponent<BuoyancyEffector2D>().surfaceLevel = -.05f;
-        gameObject.GetComponent<BuoyancyEffector2D>().density = 5;
-        gameObject.GetComponent<BuoyancyEffector2D>().colliderMask = 8;
-        */
+        /* gameObject.AddComponent<BuoyancyEffector2D>();
+         gameObject.GetComponent<BuoyancyEffector2D>().surfaceLevel = -.05f;
+         gameObject.GetComponent<BuoyancyEffector2D>().density = 5;
+         gameObject.GetComponent<BuoyancyEffector2D>().colliderMask = 8;
+         */
+
+        gameObject.GetComponent<LineRenderer>().enabled = false;
         
         
     }
