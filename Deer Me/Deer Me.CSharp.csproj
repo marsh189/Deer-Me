@@ -232,6 +232,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\destroyDESTROY.cs" />
+    <Compile Include="Assets\LeverActivate.cs" />
+    <Compile Include="Assets\LeverManager.cs" />
     <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Checkpoint.cs" />

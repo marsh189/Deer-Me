@@ -11,6 +11,8 @@ TagManager:
   - buttonLog
   - Metal
   - Rope
+  - Lever
+  - LeverManager
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,7 @@ TagManager:
   - Background
   - Rope
   - Checkpoint
-  - 
+  - Ignore
   - 
   - 
   - 
