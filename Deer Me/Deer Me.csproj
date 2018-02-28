@@ -87,6 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonScript.cs" />
     <Compile Include="Assets\destroyDESTROY.cs" />
     <Compile Include="Assets\LeverActivate.cs" />
     <Compile Include="Assets\LeverManager.cs" />
