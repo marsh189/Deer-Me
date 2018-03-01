@@ -17,7 +17,13 @@ public class GrabScript : MonoBehaviour {
     private PlatformerCharacter2D pScript;
     public string tagName;
 
-    
+	public RuntimeAnimatorController woodAnim;
+
+	public GameObject Icon;
+	public float maxSize;
+	Vector3 temp = new Vector3 (1, 1, 1);
+	public bool isMax;
+
 	// Use this for initialization
 	void Start () {
         grabbed = false;
@@ -31,12 +37,22 @@ public class GrabScript : MonoBehaviour {
         {
             Debug.Log("trying to drop");
             GameObject droppedObj = new GameObject("Dropped Thing");
+			Icon.GetComponent<SpriteRenderer> ().sprite = null; 
+			Icon.SetActive (false);
+			carryPoint.SetActive (true);
             droppedObj.AddComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite;
             droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
             droppedObj.AddComponent<Rigidbody2D>();
             //droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
             droppedObj.gameObject.tag = tagName;
            // droppedObj.transform.parent.parent = null;
+
+			if (droppedObj.gameObject.tag == "Grabbable") 
+			{
+				droppedObj.AddComponent<Animator> ().runtimeAnimatorController = woodAnim as RuntimeAnimatorController;
+				droppedObj.AddComponent<BreakingWood> ();
+			}
+
             droppedObj.transform.position = Player.transform.position;
             if (pScript.m_FacingRight)
             {
@@ -62,9 +78,40 @@ public class GrabScript : MonoBehaviour {
             scaleY = grabObj.transform.localScale.y;
             scaleZ = grabObj.transform.localScale.z;
             Destroy(grabObj.gameObject);
+			carryPoint.SetActive (false);
+			Icon.GetComponent<SpriteRenderer> ().sprite = carryPoint.GetComponent<SpriteRenderer> ().sprite; 
+			Icon.SetActive (true);
             grabbed = true;
             grabObj = null;
         }
+
+		/* IN PROGRESS
+		 if (Icon.activeInHierarchy && Icon.GetComponent<SpriteRenderer> ().sprite != null) 
+		{
+
+			if (!isMax && Icon.transform.localScale.x < maxSize && Icon.transform.localScale.y < maxSize) 
+			{
+				temp.x += 0.1f;
+				temp.y += 0.1f;
+				Icon.transform.localScale = temp;
+
+			}
+			else if (!isMax && Icon.transform.localScale.x == maxSize && Icon.transform.localScale.y == maxSize) 
+			{
+				isMax = true;
+			}
+			else if (isMax && Icon.transform.localScale.x == 1 && Icon.transform.localScale.y == 1) 
+			{
+				isMax = false;
+			}
+			else if (isMax &&Icon.transform.localScale.x > 1 && Icon.transform.localScale.y > 1) 
+			{
+				temp.x -= 0.1f;
+				temp.y -= 0.1f;
+				Icon.transform.localScale = temp;
+			}
+		}
+		*/
     }
     void OnTriggerStay2D(Collider2D col)
     {

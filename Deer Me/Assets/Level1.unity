@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 293824}
   m_Layer: 0
   m_Name: BearTrap (3)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +430,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 7603912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 135.50005, y: -18, z: -1.9629647}
+  m_LocalPosition: {x: 139.38, y: -18, z: -1.9629647}
   m_LocalScale: {x: 3.2854702, y: 0.94404936, z: 1}
   m_Children: []
   m_Father: {fileID: 570188582}
@@ -986,7 +986,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -20.87
+      value: -20.8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3031,7 +3031,7 @@ GameObject:
   - component: {fileID: 130134583}
   m_Layer: 0
   m_Name: FlatRock (4)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3227,7 +3227,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05792059, y: -5.926668}
+  m_Offset: {x: -0.05792059, y: -0.86455464}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3238,7 +3238,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34165874, y: 16.645298}
+  m_Size: {x: 0.34165874, y: 6.521072}
   m_EdgeRadius: 0
 --- !u!114 &132987909
 MonoBehaviour:
@@ -3780,7 +3780,7 @@ GameObject:
   - component: {fileID: 176862032}
   m_Layer: 0
   m_Name: BearTrap (1)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5162,7 +5162,6 @@ Transform:
   - {fileID: 271834244}
   - {fileID: 888138367}
   - {fileID: 678972747}
-  - {fileID: 1903538716}
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5208,10 +5207,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.22999999, y: -0.48499998}
-      - {x: 0.87, y: -0.475}
-      - {x: 1.53, y: -0.465}
-      - {x: 2.21, y: -0.45499998}
+    - - {x: 0.22998312, y: -0.5338974}
+      - {x: 0.91251534, y: -0.5116739}
+      - {x: 1.5725442, y: -0.5016737}
+      - {x: 2.2312994, y: -0.5038986}
       - {x: 2.37, y: -0.445}
       - {x: 2.77, y: -0.39499998}
       - {x: 2.82, y: -0.36499998}
@@ -5261,10 +5260,10 @@ PolygonCollider2D:
       - {x: -2.8, y: -0.375}
       - {x: -2.7, y: -0.42499998}
       - {x: -2.6399999, y: -0.475}
-      - {x: -2.55, y: -0.525}
-      - {x: -2.25, y: -0.525}
-      - {x: -1.01, y: -0.505}
-      - {x: -0.39999998, y: -0.49499997}
+      - {x: -2.571265, y: -0.54944897}
+      - {x: -2.2500079, y: -0.56167316}
+      - {x: -0.98875624, y: -0.54167366}
+      - {x: -0.40000582, y: -0.53167343}
 --- !u!212 &255946015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5316,7 +5315,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 255946013}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 120, y: -14.6, z: -2}
+  m_LocalPosition: {x: 120.62, y: -14.95, z: -2}
   m_LocalScale: {x: 0.575, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 675816892}
@@ -5827,7 +5826,7 @@ Transform:
   m_LocalScale: {x: 1.14766, y: 1.13538, z: 1.32721}
   m_Children: []
   m_Father: {fileID: 2048358301}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &272322623
 BoxCollider2D:
@@ -10230,7 +10229,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495182983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.244474, y: 3.143143, z: -3.3281736}
+  m_LocalPosition: {x: -21.174473, y: 3.143143, z: -3.3281736}
   m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
   m_Children:
   - {fileID: 275731760}
@@ -10745,6 +10744,74 @@ EdgeCollider2D:
   m_Points:
   - {x: -1.5637428, y: 0.3905244}
   - {x: 3.0690694, y: 0.50768185}
+--- !u!1 &540908047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 540908048}
+  - component: {fileID: 540908050}
+  - component: {fileID: 540908049}
+  m_Layer: 14
+  m_Name: CheckPoint (16)
+  m_TagString: Checkpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &540908048
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540908047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 433.8, y: -0.76, z: 0}
+  m_LocalScale: {x: 1.14766, y: 1.13538, z: 1.32721}
+  m_Children: []
+  m_Father: {fileID: 2048358301}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &540908049
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540908047}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.7918693}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.496516}
+  m_EdgeRadius: 0
+--- !u!114 &540908050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 540908047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd6e596ee2ca864bbc32ddbf0a9b0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  cm: {fileID: 0}
 --- !u!1 &542522629
 GameObject:
   m_ObjectHideFlags: 0
@@ -12371,7 +12438,7 @@ GameObject:
   - component: {fileID: 628147583}
   m_Layer: 0
   m_Name: Spikes2 (2)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13754,7 +13821,7 @@ GameObject:
   - component: {fileID: 712078215}
   m_Layer: 0
   m_Name: Spikes1
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15560,7 +15627,7 @@ GameObject:
   - component: {fileID: 775229000}
   m_Layer: 0
   m_Name: FlatRock
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16858,6 +16925,74 @@ Transform:
   m_Father: {fileID: 767174776}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &817365265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 817365266}
+  - component: {fileID: 817365268}
+  - component: {fileID: 817365267}
+  m_Layer: 14
+  m_Name: CheckPoint (15)
+  m_TagString: Checkpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &817365266
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817365265}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 387, y: -14.080006, z: 0}
+  m_LocalScale: {x: 1.14766, y: 1.13538, z: 1.32721}
+  m_Children: []
+  m_Father: {fileID: 2048358301}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &817365267
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817365265}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.7918693}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.496516}
+  m_EdgeRadius: 0
+--- !u!114 &817365268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817365265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd6e596ee2ca864bbc32ddbf0a9b0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  cm: {fileID: 0}
 --- !u!1 &820015716
 GameObject:
   m_ObjectHideFlags: 0
@@ -17168,7 +17303,7 @@ GameObject:
   - component: {fileID: 830072736}
   m_Layer: 0
   m_Name: BearTrap (8)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17759,7 +17894,7 @@ GameObject:
   - component: {fileID: 850929332}
   m_Layer: 0
   m_Name: BearTrap (4)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18727,7 +18862,7 @@ GameObject:
   - component: {fileID: 893272750}
   m_Layer: 0
   m_Name: BearTrap (10)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18986,7 +19121,7 @@ Transform:
   m_LocalScale: {x: 1.147661, y: 1.1353836, z: 1.327207}
   m_Children: []
   m_Father: {fileID: 2048358301}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &904471218
 GameObject:
@@ -20175,7 +20310,7 @@ Transform:
   m_LocalScale: {x: 1.14766, y: 1.13538, z: 1.32721}
   m_Children: []
   m_Father: {fileID: 2048358301}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &952234285
 BoxCollider2D:
@@ -21302,7 +21437,7 @@ GameObject:
   - component: {fileID: 997287328}
   m_Layer: 0
   m_Name: Spikes2 (1)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21716,7 +21851,7 @@ GameObject:
   - component: {fileID: 1011877398}
   m_Layer: 0
   m_Name: BearTrap (12)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22465,7 +22600,7 @@ GameObject:
   - component: {fileID: 1053035365}
   m_Layer: 0
   m_Name: Spikes2 (5)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22821,7 +22956,7 @@ GameObject:
   - component: {fileID: 1071653254}
   m_Layer: 0
   m_Name: Spikes2 (4)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23724,7 +23859,7 @@ GameObject:
   - component: {fileID: 1122627753}
   m_Layer: 0
   m_Name: Spikes3
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23786,6 +23921,79 @@ Transform:
   m_Father: {fileID: 570188582}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1123700714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1123700715}
+  - component: {fileID: 1123700716}
+  m_Layer: 0
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1123700715
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123700714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 382536811}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1123700716
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123700714}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
 --- !u!1 &1132636713
 GameObject:
   m_ObjectHideFlags: 0
@@ -23877,74 +24085,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -2.8702059, y: 0.5857868}
   - {x: 1.6204722, y: 0.4881556}
---- !u!1 &1133916484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1133916487}
-  - component: {fileID: 1133916486}
-  - component: {fileID: 1133916485}
-  m_Layer: 14
-  m_Name: CheckPoint (6)
-  m_TagString: Checkpoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1133916485
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1133916484}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.257678}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 6.403349}
-  m_EdgeRadius: 0
---- !u!114 &1133916486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1133916484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfd6e596ee2ca864bbc32ddbf0a9b0db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  cm: {fileID: 0}
---- !u!4 &1133916487
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1133916484}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 235.2, y: -14.200006, z: 0}
-  m_LocalScale: {x: 1.147661, y: 1.1353836, z: 1.327207}
-  m_Children: []
-  m_Father: {fileID: 2048358301}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134027443
 GameObject:
   m_ObjectHideFlags: 0
@@ -24382,7 +24522,7 @@ Transform:
   m_LocalScale: {x: 1.147661, y: 1.1353836, z: 1.327207}
   m_Children: []
   m_Father: {fileID: 2048358301}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1165944405
 GameObject:
@@ -24563,7 +24703,7 @@ GameObject:
   - component: {fileID: 1172431701}
   m_Layer: 0
   m_Name: BearTrap (9)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24930,7 +25070,7 @@ GameObject:
   - component: {fileID: 1182110590}
   m_Layer: 0
   m_Name: BearTrap (7)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25106,7 +25246,7 @@ Transform:
   m_LocalScale: {x: 1.147661, y: 1.1353836, z: 1.327207}
   m_Children: []
   m_Father: {fileID: 2048358301}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191254022
 GameObject:
@@ -26007,7 +26147,7 @@ GameObject:
   - component: {fileID: 1240391407}
   m_Layer: 0
   m_Name: BearTrap (6)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27047,7 +27187,7 @@ GameObject:
   - component: {fileID: 1283269938}
   m_Layer: 0
   m_Name: FlatRock (3)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27271,7 +27411,7 @@ GameObject:
   - component: {fileID: 1290918591}
   m_Layer: 0
   m_Name: BearTrap (11)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29997,7 +30137,7 @@ GameObject:
   - component: {fileID: 1398083574}
   m_Layer: 0
   m_Name: BearTrap (14)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31832,7 +31972,7 @@ GameObject:
   - component: {fileID: 1490849390}
   m_Layer: 0
   m_Name: BearTrap (13)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32107,74 +32247,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -2.9332385, y: 0.6516919}
   - {x: 2.0907314, y: 0.16895723}
---- !u!1 &1504879663
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1504879664}
-  - component: {fileID: 1504879666}
-  - component: {fileID: 1504879665}
-  m_Layer: 14
-  m_Name: CheckPoint (12)
-  m_TagString: Checkpoint
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1504879664
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504879663}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 238.7, y: -14.080006, z: 0}
-  m_LocalScale: {x: 1.14766, y: 1.13538, z: 1.32721}
-  m_Children: []
-  m_Father: {fileID: 2048358301}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1504879665
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504879663}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7918693}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 6.496516}
-  m_EdgeRadius: 0
---- !u!114 &1504879666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504879663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfd6e596ee2ca864bbc32ddbf0a9b0db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  cm: {fileID: 0}
 --- !u!1 &1505041425
 GameObject:
   m_ObjectHideFlags: 0
@@ -33218,6 +33290,74 @@ Transform:
   m_Father: {fileID: 743721572}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1529497080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1529497081}
+  - component: {fileID: 1529497083}
+  - component: {fileID: 1529497082}
+  m_Layer: 14
+  m_Name: CheckPoint (17)
+  m_TagString: Checkpoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1529497081
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529497080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 437.43, y: -13.86, z: 0}
+  m_LocalScale: {x: 1.14766, y: 1.13538, z: 1.32721}
+  m_Children: []
+  m_Father: {fileID: 2048358301}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1529497082
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529497080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.7918693}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.496516}
+  m_EdgeRadius: 0
+--- !u!114 &1529497083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1529497080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd6e596ee2ca864bbc32ddbf0a9b0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  cm: {fileID: 0}
 --- !u!1001 &1536409504
 Prefab:
   m_ObjectHideFlags: 0
@@ -34005,7 +34145,7 @@ GameObject:
   - component: {fileID: 1562873407}
   m_Layer: 0
   m_Name: FlatRock (1)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34171,7 +34311,7 @@ GameObject:
   - component: {fileID: 1566592248}
   m_Layer: 0
   m_Name: Spikes2 (3)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37144,7 +37284,7 @@ GameObject:
   - component: {fileID: 1712067744}
   m_Layer: 0
   m_Name: BearTrap (2)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37552,7 +37692,7 @@ Transform:
   m_LocalScale: {x: 1.147661, y: 1.1353836, z: 1.327207}
   m_Children: []
   m_Father: {fileID: 2048358301}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733944787
 GameObject:
@@ -40046,7 +40186,7 @@ GameObject:
   - component: {fileID: 1836374333}
   m_Layer: 0
   m_Name: BearTrap (5)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40645,7 +40785,7 @@ GameObject:
   - component: {fileID: 1859234211}
   m_Layer: 0
   m_Name: Spikes1
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40981,7 +41121,7 @@ GameObject:
   - component: {fileID: 1870831679}
   m_Layer: 0
   m_Name: Spikes2
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41548,146 +41688,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1903538715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1903538716}
-  - component: {fileID: 1903538720}
-  - component: {fileID: 1903538719}
-  - component: {fileID: 1903538718}
-  - component: {fileID: 1903538717}
-  m_Layer: 0
-  m_Name: Puzzle Metal (6)
-  m_TagString: Metal
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1903538716
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1903538715}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.40001, y: -7.12, z: -2}
-  m_LocalScale: {x: 1.4990599, y: 0.41250998, z: 1}
-  m_Children: []
-  m_Father: {fileID: 255807188}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &1903538717
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1903538715}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -2.021242, y: -0.47880456}
-  - {x: -1.606264, y: 0.21371496}
-  - {x: 1.7055184, y: 0.21295667}
-  - {x: 2.018677, y: -0.41105488}
---- !u!50 &1903538718
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1903538715}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 100
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1903538719
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1903538715}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.05973816, y: -0.08276704}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.12, y: 1.61}
-    newSize: {x: 4.12, y: 1.61}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.3176575, y: 0.69957024}
-  m_EdgeRadius: 0
---- !u!212 &1903538720
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1903538715}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 810416ab1cc64ce458fdf21cb59287fd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.12, y: 1.61}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
 --- !u!1 &1908126704
 GameObject:
   m_ObjectHideFlags: 0
@@ -43452,7 +43452,7 @@ GameObject:
   - component: {fileID: 2013095080}
   m_Layer: 0
   m_Name: FlatRock (2)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44615,14 +44615,15 @@ Transform:
   - {fileID: 1244834053}
   - {fileID: 300440947}
   - {fileID: 925240094}
-  - {fileID: 1133916487}
   - {fileID: 1730923030}
   - {fileID: 1163193380}
   - {fileID: 901652452}
   - {fileID: 1184945920}
-  - {fileID: 1504879664}
   - {fileID: 272322622}
   - {fileID: 952234284}
+  - {fileID: 817365266}
+  - {fileID: 540908048}
+  - {fileID: 1529497081}
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44956,7 +44957,7 @@ GameObject:
   - component: {fileID: 2063767287}
   m_Layer: 0
   m_Name: Spikes1 (1)
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45264,7 +45265,7 @@ GameObject:
   - component: {fileID: 2074601582}
   m_Layer: 0
   m_Name: Spikes3
-  m_TagString: Untagged
+  m_TagString: BreaksWood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46530,7 +46531,13 @@ MonoBehaviour:
   grabObj: {fileID: 0}
   carryPoint: {fileID: 1034177301}
   Player: {fileID: 660701811}
+  scaleX: 0
+  scaleY: 0
+  scaleZ: 0
   tagName: 
+  woodAnim: {fileID: 9100000, guid: 84c50824bba8eea4b98e45a5852ab800, type: 2}
+  Icon: {fileID: 1123700714}
+  maxSize: 1.5
 --- !u!61 &2137061054
 BoxCollider2D:
   m_ObjectHideFlags: 0
