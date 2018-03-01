@@ -29,8 +29,11 @@ namespace UnityStandardAssets._2D
 		public RawImage fadeScreen;
 		public Canvas deathScreen;
 		private Color tempColor;
+
         public bool swinging = false;
         public bool canswing = true;
+		public GameObject onRope;
+
         public Transform startPosition;
 
         private void Awake()
@@ -91,8 +94,9 @@ namespace UnityStandardAssets._2D
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         swinging = false;
+						onRope.GetComponent<Rope> ().letGo = true;
                         Destroy(this.gameObject.GetComponent<HingeJoint2D>());
-                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+						m_Rigidbody2D.AddForce(new Vector2(m_JumpForce, m_JumpForce));
                         StartCoroutine(DelayedSwing());
                     }
                 }
@@ -200,14 +204,17 @@ namespace UnityStandardAssets._2D
             {
                 canswing = false;
                 swinging = true;
+				onRope = col.gameObject.transform.parent.gameObject;
                 HingeJoint2D hinge = this.gameObject.AddComponent<HingeJoint2D>() as HingeJoint2D;
                 hinge.connectedBody = col.gameObject.GetComponent<Rigidbody2D>();
             }
         }
         IEnumerator DelayedSwing()
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
             canswing = true;
+			onRope.GetComponent<Rope> ().letGo = false;
+			onRope = null;
         }
     }
     

@@ -10,6 +10,10 @@ public class LeverScript : MonoBehaviour {
     Vector3 beginPosOffset;
     Vector3 endPosOffset;
     LineRenderer waterLine;
+
+	public GameObject activeSprite;
+	public GameObject notActiveSprite;
+
 	// Use this for initialization
 	void Start () {
         /*if(gameObjectReference.gameObject.name == "WaterManager (10)")
@@ -59,11 +63,15 @@ public class LeverScript : MonoBehaviour {
                 {
                     Debug.Log("moving down");
                     leverActive = false;
+					activeSprite.SetActive (false);
+					notActiveSprite.SetActive (true);
                 }
                 else if(!leverActive && NewPositionObj.transform.position != gameObjectReference.transform.position)
                 {
                     Debug.Log("moving up");
                     leverActive = true;
+					notActiveSprite.SetActive (false);
+					activeSprite.SetActive (true);
                 }
 
                
