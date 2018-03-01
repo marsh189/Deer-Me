@@ -231,14 +231,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\destroyDESTROY.cs" />
-    <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\ButtonScript.cs" />
     <Compile Include="Assets\MyAssets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\MyAssets\Scripts\CheckpointManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\CollisionHelp.cs" />
     <Compile Include="Assets\MyAssets\Scripts\DarknessTrigger.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\destroyDESTROY.cs" />
     <Compile Include="Assets\MyAssets\Scripts\freezeZ.cs" />
     <Compile Include="Assets\MyAssets\Scripts\GameManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Grabbable.cs" />
@@ -248,6 +247,7 @@
     <Compile Include="Assets\MyAssets\Scripts\LeverManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\LeverScript.cs" />
     <Compile Include="Assets\MyAssets\Scripts\LockRotation.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\MoveRight.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\MyAssets\Scripts\PhysicsObject.cs" />

@@ -34,7 +34,7 @@ public class GrabScript : MonoBehaviour {
             droppedObj.AddComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite;
             droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
             droppedObj.AddComponent<Rigidbody2D>();
-            droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
+            //droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
             droppedObj.gameObject.tag = tagName;
            // droppedObj.transform.parent.parent = null;
             droppedObj.transform.position = Player.transform.position;
