@@ -54,7 +54,7 @@ public class WaterTest : MonoBehaviour {
             MoveToLayer(child, layer);
         }
     }
-    public void Splash(float xpos, float velocity)
+    public void Splash(float xpos, float velocity, float ypos)
     {
         //If the position is within the bounds of the water:
         if (xpos >= xpositions[0] && xpos <= xpositions[xpositions.Length-1])
@@ -64,6 +64,7 @@ public class WaterTest : MonoBehaviour {
 
             //Find which spring we're touching
             int index = Mathf.RoundToInt((xpositions.Length-1)*(xpos / (xpositions[xpositions.Length-1] - xpositions[0])));
+
 
             //Add the velocity of the falling object to the spring
             velocities[index] += velocity;
@@ -77,7 +78,7 @@ public class WaterTest : MonoBehaviour {
             splash.GetComponent<ParticleSystem>().startLifetime = lifetime;
 
             //Set the correct position of the particle system.
-            Vector3 position = new Vector3(xpositions[index],ypositions[index]-0.35f,5);
+            Vector3 position = new Vector3(xpositions[index],ypos-0.35f,5);
 
             //This line aims the splash towards the middle. Only use for small bodies of water:
             Quaternion rotation = Quaternion.LookRotation(new Vector3(xpositions[Mathf.FloorToInt(xpositions.Length / 2)], baseheight + 8, 5) - position);

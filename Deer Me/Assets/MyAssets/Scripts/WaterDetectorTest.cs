@@ -7,7 +7,7 @@ public class WaterDetectorTest : MonoBehaviour {
     {
         if (Hit.GetComponent<Rigidbody2D>() != null)
         {
-          transform.parent.GetComponent<WaterTest>().Splash(transform.position.x, Hit.GetComponent<Rigidbody2D>().velocity.y*Hit.GetComponent<Rigidbody2D>().mass / 40f);
+          transform.parent.GetComponent<WaterTest>().Splash(transform.position.x, Hit.GetComponent<Rigidbody2D>().velocity.y*Hit.GetComponent<Rigidbody2D>().mass / 40f, transform.position.y);
         }
     }
 
