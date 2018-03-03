@@ -119,7 +119,6 @@ public class GrabScript : MonoBehaviour {
         {
 
             grabObj = col.gameObject;
-            tagName = col.gameObject.tag;
             canGrab = true;
 
         }
