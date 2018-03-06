@@ -26,6 +26,7 @@ namespace UnityStandardAssets._2D
         public float climbSpeed;
         public float climbVelocity;
 		public bool isDead;
+		public bool isDrowning;
 		public RawImage fadeScreen;
 		public Canvas deathScreen;
 		private Color tempColor;
@@ -58,52 +59,71 @@ namespace UnityStandardAssets._2D
         public void Update()
         {
 
-			if (!isDead) 
+			if (!isDead && !isDrowning) 
 			{
-                if (!swinging)
-                {
+				if (!swinging) 
+				{
 
 
-                    if (m_Grounded && Input.GetKeyDown(KeyCode.Space) && m_Anim.GetBool("Ground"))
-                    {
-                        // Add a vertical force to the player.
-                        m_Grounded = false;
-                        m_Anim.SetBool("Ground", false);
-                        m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-                    }
-                    if (!m_Grounded && Input.GetKeyUp(KeyCode.Space))
-                    {
-                        m_Rigidbody2D.AddForce(new Vector2(0f, -m_JumpForce * 0.25f));
-                    }
+					if (m_Grounded && Input.GetKeyDown (KeyCode.Space) && m_Anim.GetBool ("Ground")) 
+					{
+						// Add a vertical force to the player.
+						m_Grounded = false;
+						m_Anim.SetBool ("Ground", false);
+						m_Rigidbody2D.AddForce (new Vector2 (0f, m_JumpForce));
+					}
+					if (!m_Grounded && Input.GetKeyUp (KeyCode.Space)) 
+					{
+						m_Rigidbody2D.AddForce (new Vector2 (0f, -m_JumpForce * 0.25f));
+					}
 
-                    if (climbing)
-                    {
-                        m_Rigidbody2D.gravityScale = 0;
-                        climbVelocity = climbSpeed * Input.GetAxisRaw("Vertical");
-                        m_Anim.SetFloat("ClimbSpeed", Mathf.Abs(climbVelocity));
-                        m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, climbVelocity);
-                    }
-                    if (!climbing)
-                    {
-                        m_Anim.SetFloat("ClimbSpeed", 0);
-                        m_Rigidbody2D.gravityScale = gravity;
-                    }
-                }
-                else if (swinging)
-                {
-                    if (Input.GetKeyDown(KeyCode.Space))
-                    {
-                        swinging = false;
+					if (climbing) 
+					{
+						m_Rigidbody2D.gravityScale = 0;
+						climbVelocity = climbSpeed * Input.GetAxisRaw ("Vertical");
+						m_Anim.SetFloat ("ClimbSpeed", Mathf.Abs (climbVelocity));
+						m_Rigidbody2D.velocity = new Vector2 (m_Rigidbody2D.velocity.x, climbVelocity);
+					}
+					if (!climbing) 
+					{
+						m_Anim.SetFloat ("ClimbSpeed", 0);
+						m_Rigidbody2D.gravityScale = gravity;
+					}
+				} 
+
+				else if (swinging) 
+				{
+					if (Input.GetKeyDown (KeyCode.Space)) 
+					{
+						swinging = false;
 						onRope.GetComponent<Rope> ().letGo = true;
-                        Destroy(this.gameObject.GetComponent<HingeJoint2D>());
-						m_Rigidbody2D.AddForce(new Vector2(m_JumpForce, m_JumpForce));
-                        StartCoroutine(DelayedSwing());
-                    }
-                }
+						Destroy (this.gameObject.GetComponent<HingeJoint2D> ());
+						m_Rigidbody2D.AddForce (new Vector2 (m_JumpForce, m_JumpForce));
+						StartCoroutine (DelayedSwing ());
+					}
+				}
 			} 
-			else 
-			{
 
+			else if (isDead) 
+			{
+				
+				if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("DEAD"))
+				{
+					if (fadeScreen.color.a < 0.8f) 
+					{
+						tempColor.a += Time.deltaTime;
+						fadeScreen.color = tempColor;
+					} 
+
+					else 
+					{
+						deathScreen.gameObject.SetActive (true);
+					}
+				}
+			} 
+
+			else if (isDrowning) 
+			{
 				if (fadeScreen.color.a < 0.8f) 
 				{
 					tempColor.a += Time.deltaTime;
@@ -114,6 +134,7 @@ namespace UnityStandardAssets._2D
 					deathScreen.gameObject.SetActive (true);
 				}
 			}
+
          
         }
 
@@ -139,7 +160,7 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-			if (!isDead) 
+			if (!isDead &&  !isDrowning) 
 			{
 				// If crouching, check to see if the character can stand up
 				if (!crouch && m_Anim.GetBool ("Crouch")) 
@@ -183,7 +204,10 @@ namespace UnityStandardAssets._2D
 			else 
 			{
 				m_Rigidbody2D.velocity = Vector2.zero;
-				m_Anim.Play ("IdleAnimation");
+				if (!m_Anim.GetBool ("isDying")) 
+				{
+					m_Anim.SetBool ("isDying", true);
+				}
 			}
         }
 
