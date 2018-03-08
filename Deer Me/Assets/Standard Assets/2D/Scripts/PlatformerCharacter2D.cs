@@ -34,7 +34,8 @@ namespace UnityStandardAssets._2D
         public bool swinging = false;
         public bool canswing = true;
 		public GameObject onRope;
-
+		public Sprite onRopeSprite;
+		public Sprite idleSprite;
         public Transform startPosition;
 
         private void Awake()
@@ -93,8 +94,12 @@ namespace UnityStandardAssets._2D
 
 				else if (swinging) 
 				{
+					m_Anim.enabled = false;
+					GetComponent<SpriteRenderer> ().sprite = onRopeSprite;
+
 					if (Input.GetKeyDown (KeyCode.Space)) 
 					{
+						m_Anim.enabled = true;
 						swinging = false;
 						onRope.GetComponent<Rope> ().letGo = true;
 						Destroy (this.gameObject.GetComponent<HingeJoint2D> ());
@@ -109,6 +114,7 @@ namespace UnityStandardAssets._2D
 				
 				if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("DEAD"))
 				{
+					m_Anim.SetBool ("DEAD", true);
 					if (fadeScreen.color.a < 0.8f) 
 					{
 						tempColor.a += Time.deltaTime;
@@ -214,13 +220,16 @@ namespace UnityStandardAssets._2D
 
         private void Flip()
         {
-            // Switch the way the player is labelled as facing.
-            m_FacingRight = !m_FacingRight;
+			if (!swinging) 
+			{
+				// Switch the way the player is labelled as facing.
+				m_FacingRight = !m_FacingRight;
 
-            // Multiply the player's x local scale by -1.
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
+				// Multiply the player's x local scale by -1.
+				Vector3 theScale = transform.localScale;
+				theScale.x *= -1;
+				transform.localScale = theScale;
+			}
         }
         void OnCollisionEnter2D(Collision2D col)
         {

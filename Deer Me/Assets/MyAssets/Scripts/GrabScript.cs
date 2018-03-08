@@ -36,6 +36,7 @@ public class GrabScript : MonoBehaviour {
         if (Input.GetButtonDown("Grab") && grabbed)
         {
             Debug.Log("trying to drop");
+			transform.parent.GetComponent<Animator> ().SetTrigger ("isThrowing");
             GameObject droppedObj = new GameObject("Dropped Thing");
 			Icon.GetComponent<SpriteRenderer> ().sprite = null; 
 			Icon.SetActive (false);
@@ -83,6 +84,7 @@ public class GrabScript : MonoBehaviour {
 			Icon.SetActive (true);
             grabbed = true;
             grabObj = null;
+			transform.parent.GetComponent<Animator> ().SetTrigger ("isPickingUp");
         }
 
 		/* IN PROGRESS

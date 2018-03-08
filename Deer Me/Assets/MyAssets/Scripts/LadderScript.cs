@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityStandardAssets._2D;
 
 public class LadderScript : MonoBehaviour {
-    public PlatformerCharacter2D player;
+ 
 	// Use this for initialization
 	void Start () {
 		
@@ -18,8 +18,8 @@ public class LadderScript : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            player.climbing = true;
-           
+			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().climbing = true;
+			col.gameObject.GetComponent<Animator> ().SetBool ("isClimbing", true);
         }
     }
     
@@ -27,7 +27,8 @@ public class LadderScript : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            player.climbing = false;
+			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().climbing = false;
+			col.gameObject.GetComponent<Animator> ().SetBool ("isClimbing", false);
         }
     }
 }

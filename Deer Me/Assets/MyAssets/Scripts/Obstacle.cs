@@ -18,8 +18,7 @@ public class Obstacle : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player")
-        {
-			Debug.Log ("HERE");
+		{
 			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D> ().isDead = true;
         }
     }
