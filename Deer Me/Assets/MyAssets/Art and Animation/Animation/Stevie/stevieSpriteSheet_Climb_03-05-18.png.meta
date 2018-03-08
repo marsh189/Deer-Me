@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: e1780fd2ccc78b44aa0bf885caa921cd
+timeCreated: 1520478588
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: stevieSpriteSheet_Climb_03-05-18_0
+    21300002: stevieSpriteSheet_Climb_03-05-18_1
+    21300004: stevieSpriteSheet_Climb_03-05-18_2
+    21300006: stevieSpriteSheet_Climb_03-05-18_3
+    21300008: stevieSpriteSheet_Climb_03-05-18_4
+    21300010: stevieSpriteSheet_Climb_03-05-18_5
+    21300012: stevieSpriteSheet_Climb_03-05-18_6
+    21300014: stevieSpriteSheet_Climb_03-05-18_7
+    21300016: stevieSpriteSheet_Climb_03-05-18_8
+    21300018: stevieSpriteSheet_Climb_03-05-18_9
+    21300020: stevieSpriteSheet_Climb_03-05-18_10
+    21300022: stevieSpriteSheet_Climb_03-05-18_11
+    21300024: stevieSpriteSheet_Climb_03-05-18_12
+    21300026: stevieSpriteSheet_Climb_03-05-18_13
+    21300028: stevieSpriteSheet_Climb_03-05-18_14
+    21300030: stevieSpriteSheet_Climb_03-05-18_15
+    21300032: stevieSpriteSheet_Climb_03-05-18_16
+    21300034: stevieSpriteSheet_Climb_03-05-18_17
+    21300036: stevieSpriteSheet_Climb_03-05-18_18
+    21300038: stevieSpriteSheet_Climb_03-05-18_19
+    21300040: stevieSpriteSheet_Climb_03-05-18_20
+    21300042: stevieSpriteSheet_Climb_03-05-18_21
+    21300044: stevieSpriteSheet_Climb_03-05-18_22
+    21300046: stevieSpriteSheet_Climb_03-05-18_23
+    21300048: stevieSpriteSheet_Climb_03-05-18_24
+    21300050: stevieSpriteSheet_Climb_03-05-18_25
+    21300052: stevieSpriteSheet_Climb_03-05-18_26
+    21300054: stevieSpriteSheet_Climb_03-05-18_27
+    21300056: stevieSpriteSheet_Climb_03-05-18_28
+    21300058: stevieSpriteSheet_Climb_03-05-18_29
+    21300060: stevieSpriteSheet_Climb_03-05-18_30
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_0
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 110
+        width: 244
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_1
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 110
+        width: 244
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_2
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 120
+        width: 260
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_3
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 120
+        width: 259
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_4
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 135
+        width: 275
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_5
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 135
+        width: 279
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_6
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 151
+        width: 290
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_7
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 151
+        width: 290
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_8
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 151
+        width: 285
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_9
+      rect:
+        serializedVersion: 2
+        x: 3915
+        y: 503
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_10
+      rect:
+        serializedVersion: 2
+        x: 4073
+        y: 151
+        width: 300
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_11
+      rect:
+        serializedVersion: 2
+        x: 4363
+        y: 503
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_12
+      rect:
+        serializedVersion: 2
+        x: 4526
+        y: 135
+        width: 275
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_13
+      rect:
+        serializedVersion: 2
+        x: 4964
+        y: 135
+        width: 279
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_14
+      rect:
+        serializedVersion: 2
+        x: 5378
+        y: 110
+        width: 243
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_15
+      rect:
+        serializedVersion: 2
+        x: 5771
+        y: 110
+        width: 243
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_16
+      rect:
+        serializedVersion: 2
+        x: 6146
+        y: 120
+        width: 260
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_17
+      rect:
+        serializedVersion: 2
+        x: 6538
+        y: 120
+        width: 260
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_18
+      rect:
+        serializedVersion: 2
+        x: 6977
+        y: 135
+        width: 279
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_19
+      rect:
+        serializedVersion: 2
+        x: 7369
+        y: 135
+        width: 279
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_20
+      rect:
+        serializedVersion: 2
+        x: 7776
+        y: 151
+        width: 290
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_21
+      rect:
+        serializedVersion: 2
+        x: 8169
+        y: 151
+        width: 290
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_22
+      rect:
+        serializedVersion: 2
+        x: 8632
+        y: 151
+        width: 285
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_23
+      rect:
+        serializedVersion: 2
+        x: 9081
+        y: 151
+        width: 285
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_24
+      rect:
+        serializedVersion: 2
+        x: 9514
+        y: 135
+        width: 279
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_25
+      rect:
+        serializedVersion: 2
+        x: 9885
+        y: 135
+        width: 275
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_26
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 464
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_27
+      rect:
+        serializedVersion: 2
+        x: 9496
+        y: 464
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_28
+      rect:
+        serializedVersion: 2
+        x: 9866
+        y: 464
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_29
+      rect:
+        serializedVersion: 2
+        x: 2721
+        y: 429
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stevieSpriteSheet_Climb_03-05-18_30
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 429
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
