@@ -1060,7 +1060,7 @@ Prefab:
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: onRopeSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0a2d3725d4630094e884836f5a317066,
+      objectReference: {fileID: 21300000, guid: 0a31a5a3f6a2a334aad8fddebf71c552,
         type: 3}
     - target: {fileID: 21200000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -29078,11 +29078,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4626102394167298, guid: 2a62a0d2f216d354d9581bee13ac264b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 499.93
+      value: 499.74
       objectReference: {fileID: 0}
     - target: {fileID: 4626102394167298, guid: 2a62a0d2f216d354d9581bee13ac264b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.25
+      value: 7.09
       objectReference: {fileID: 0}
     - target: {fileID: 4626102394167298, guid: 2a62a0d2f216d354d9581bee13ac264b, type: 2}
       propertyPath: m_LocalPosition.z
