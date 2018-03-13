@@ -15,6 +15,7 @@ TagManager:
   - LeverManager
   - Box
   - BreaksWood
+  - Torch
   layers:
   - Default
   - TransparentFX

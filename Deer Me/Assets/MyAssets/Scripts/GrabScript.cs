@@ -24,6 +24,8 @@ public class GrabScript : MonoBehaviour {
 	Vector3 temp = new Vector3 (1, 1, 1);
 	public bool isMax;
 
+    public GameObject Torch;
+
 	// Use this for initialization
 	void Start () {
         grabbed = false;
@@ -72,54 +74,35 @@ public class GrabScript : MonoBehaviour {
         }
         else if (Input.GetButtonDown("Grab") && !grabbed && canGrab)
         {
-            tagName = grabObj.gameObject.tag;
-            carryPoint.GetComponent<SpriteRenderer>().sprite = grabObj.gameObject.GetComponent<SpriteRenderer>().sprite;
-            carryPoint.transform.localScale = new Vector3(grabObj.transform.localScale.x * (1 / 0.3833752f), grabObj.transform.localScale.y * (1 / 0.3833752f), grabObj.transform.localScale.z * (1 / 0.3833752f));
-            scaleX = grabObj.transform.localScale.x;
-            scaleY = grabObj.transform.localScale.y;
-            scaleZ = grabObj.transform.localScale.z;
-            Destroy(grabObj.gameObject);
-			carryPoint.SetActive (false);
-			Icon.GetComponent<SpriteRenderer> ().sprite = carryPoint.GetComponent<SpriteRenderer> ().sprite; 
-			Icon.SetActive (true);
-            grabbed = true;
-            grabObj = null;
-			transform.parent.GetComponent<Animator> ().SetTrigger ("isPickingUp");
+            if (grabObj.tag == "Torch")
+            {
+                transform.parent.GetComponent<Animator> ().SetBool ("hasTorch", true);
+                Torch.SetActive(true);
+                Destroy(grabObj);
+            }
+            else
+            {
+                tagName = grabObj.gameObject.tag;
+                carryPoint.GetComponent<SpriteRenderer>().sprite = grabObj.gameObject.GetComponent<SpriteRenderer>().sprite;
+                carryPoint.transform.localScale = new Vector3(grabObj.transform.localScale.x * (1 / 0.3833752f), grabObj.transform.localScale.y * (1 / 0.3833752f), grabObj.transform.localScale.z * (1 / 0.3833752f));
+                scaleX = grabObj.transform.localScale.x;
+                scaleY = grabObj.transform.localScale.y;
+                scaleZ = grabObj.transform.localScale.z;
+                Destroy(grabObj.gameObject);
+                carryPoint.SetActive(false);
+                Icon.GetComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite; 
+                Icon.SetActive(true);
+                grabbed = true;
+                grabObj = null;
+                transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
+            }
         }
-
-		/* IN PROGRESS
-		 if (Icon.activeInHierarchy && Icon.GetComponent<SpriteRenderer> ().sprite != null) 
-		{
-
-			if (!isMax && Icon.transform.localScale.x < maxSize && Icon.transform.localScale.y < maxSize) 
-			{
-				temp.x += 0.1f;
-				temp.y += 0.1f;
-				Icon.transform.localScale = temp;
-
-			}
-			else if (!isMax && Icon.transform.localScale.x == maxSize && Icon.transform.localScale.y == maxSize) 
-			{
-				isMax = true;
-			}
-			else if (isMax && Icon.transform.localScale.x == 1 && Icon.transform.localScale.y == 1) 
-			{
-				isMax = false;
-			}
-			else if (isMax &&Icon.transform.localScale.x > 1 && Icon.transform.localScale.y > 1) 
-			{
-				temp.x -= 0.1f;
-				temp.y -= 0.1f;
-				Icon.transform.localScale = temp;
-			}
-		}
-		*/
+            
     }
     void OnTriggerStay2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog" || col.gameObject.tag == "Metal")
+        if(col.gameObject.tag == "Grabbable" || col.gameObject.tag == "buttonLog" || col.gameObject.tag == "Metal" || col.gameObject.tag == "Torch")
         {
-
             grabObj = col.gameObject;
             canGrab = true;
 
