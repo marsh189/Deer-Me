@@ -882,11 +882,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -18.9
+      value: 663.7
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 14.9
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10227,8 +10227,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495182983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.274473, y: 2.5731428, z: -3.3281736}
-  m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
+  m_LocalPosition: {x: 663.32556, y: 14.873142, z: -3.3281736}
+  m_LocalScale: {x: 0.024390243, y: 0.024390243, z: 0.024390243}
   m_Children:
   - {fileID: 275731760}
   - {fileID: 747083712}
@@ -16608,7 +16608,7 @@ Prefab:
         type: 2}
       propertyPath: OldPositionObj
       value: 
-      objectReference: {fileID: 86101758}
+      objectReference: {fileID: 339499137}
     - target: {fileID: 1140731173893356, guid: 7e5e6145c5a16d64cb7196eadf3f65f6, type: 2}
       propertyPath: m_Name
       value: Lever (2)
@@ -17989,16 +17989,16 @@ Prefab:
         type: 2}
       propertyPath: NewPositionObj
       value: 
-      objectReference: {fileID: 261467000}
+      objectReference: {fileID: 339499137}
     - target: {fileID: 114382055213634928, guid: 7e5e6145c5a16d64cb7196eadf3f65f6,
         type: 2}
       propertyPath: OldPositionObj
       value: 
-      objectReference: {fileID: 339499137}
+      objectReference: {fileID: 261467000}
     - target: {fileID: 114382055213634928, guid: 7e5e6145c5a16d64cb7196eadf3f65f6,
         type: 2}
       propertyPath: leverActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1110091072043442, guid: 7e5e6145c5a16d64cb7196eadf3f65f6, type: 2}
       propertyPath: m_IsActive
@@ -39217,7 +39217,7 @@ Prefab:
         type: 2}
       propertyPath: NewPositionObj
       value: 
-      objectReference: {fileID: 86101758}
+      objectReference: {fileID: 339499137}
     - target: {fileID: 114382055213634928, guid: 7e5e6145c5a16d64cb7196eadf3f65f6,
         type: 2}
       propertyPath: OldPositionObj
@@ -42936,7 +42936,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860681099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 440.6, y: -31.4, z: 0}
+  m_LocalPosition: {x: 440.6, y: -31.4, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 767174776}
@@ -45566,10 +45566,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2000677409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb09c3d9bb2cb84cb5d24753f9a4322, type: 3}
+  m_Script: {fileID: 11500000, guid: f50f922ec6a5d0f43af763abcbdd3a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lm: {fileID: 0}
 --- !u!1 &2008612122
 GameObject:
   m_ObjectHideFlags: 0
