@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 683, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 22
+  controlID: 9
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 731
-  m_MinSize: {x: 404, y: 492}
+  m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 23
+  controlID: 10
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,10 +230,10 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 442
-  m_MinSize: {x: 404, y: 221}
-  m_MaxSize: {x: 8004, y: 4021}
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 24
+  controlID: 11
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,19 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/MyAssets/Art and Animation/mo art
+    - Assets/MyAssets/Art and Animation
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MyAssets/Art and Animation/mo art
+  - Assets/MyAssets/Art and Animation
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Charlie\Documents\GitHub\Deer-Me\Deer Me
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 15}
-    m_SelectedIDs: 722d0000
-    m_LastClickedID: 11634
-    m_ExpandedIDs: 000000004e280000702b0000d82b0000022e0000e2390000e439000000ca9a3bffffff7f
+    m_SelectedIDs: 702b0000
+    m_LastClickedID: 11120
+    m_ExpandedIDs: 000000004e280000702b0000d82b0000022e00004a3b00004c3b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e280000702b0000d82b0000022e0000e2390000e4390000
+    m_ExpandedIDs: 000000004e280000702b0000d82b0000022e00004a3b00004c3b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -484,10 +484,10 @@ MonoBehaviour:
     height: 421
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 3132}
-    m_SelectedIDs: 8602dfff
-    m_LastClickedID: -2162042
-    m_ExpandedIDs: 9a25dfff5434e0ff0c4be0ff424fedff76e0f5ff6430fdff4653feffe086feff02e5feffc0e0ffff9efbffff0000000026320000563200000c3300003033000082360000
+    scrollPos: {x: 0, y: 3516}
+    m_SelectedIDs: ba43f3ff
+    m_LastClickedID: -834630
+    m_ExpandedIDs: ce47f6ff62c4f9ff8a21faffb664fdff9efbffff00000000543100005a320000683300008c3300007835000084350000ca380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -538,14 +538,14 @@ MonoBehaviour:
     height: 421
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 4349.679953362071
+  lastFramingTime: 4476.24136318303
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 302.71936, y: 61.896824, z: 2.4453125}
+    m_Target: {x: 470.1987, y: 70.36024, z: 1.9375}
     speed: 2
-    m_Value: {x: 302.71936, y: 61.896824, z: 2.4453125}
+    m_Value: {x: 470.1987, y: 70.36024, z: 1.9375}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -573,9 +573,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 63.725136
+    m_Target: 115.26577
     speed: 2
-    m_Value: 63.725136
+    m_Value: 115.26577
   m_Ortho:
     m_Target: 1
     speed: 2
