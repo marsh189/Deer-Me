@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class CheckpointManager : MonoBehaviour {
     public GameObject[] checkpoints;
     public GameObject Player;
+    public WendigoManager WendigoManager;
 	// Use this for initialization
 	void Start () {
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        WendigoManager = GameObject.FindGameObjectWithTag("WendigoManager").GetComponent<WendigoManager>();
 	}
 	
 	// Update is called once per frame
@@ -17,6 +19,7 @@ public class CheckpointManager : MonoBehaviour {
 	}
     public void UpdateCheckpoints(GameObject current)
     {
+        WendigoManager.ResetTimer();
         foreach(GameObject checkpoint in checkpoints)
         {
             if(checkpoint.GetComponent<Checkpoint>().state != Checkpoint.Status.Inactive)
