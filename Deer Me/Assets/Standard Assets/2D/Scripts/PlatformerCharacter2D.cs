@@ -38,6 +38,10 @@ namespace UnityStandardAssets._2D
 		public Sprite idleSprite;
         public Transform startPosition;
 
+        public bool hasTorch;
+        public GameObject torchHandle;
+        public GameObject torchFlame;
+
         private void Awake()
         {
             // Setting up references.
@@ -112,7 +116,8 @@ namespace UnityStandardAssets._2D
 			} 
 
 			else if (isDead) 
-			{
+            {
+                HideTorch(false);
 				
 				if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("DEAD"))
 				{
@@ -132,6 +137,8 @@ namespace UnityStandardAssets._2D
 
 			else if (isDrowning) 
 			{
+                HideTorch(false);
+
 				if (fadeScreen.color.a < 0.8f) 
 				{
 					tempColor.a += Time.deltaTime;
@@ -146,6 +153,14 @@ namespace UnityStandardAssets._2D
          
         }
 
+        public void HideTorch(bool t)
+        {
+            if (hasTorch)
+            {
+                torchFlame.SetActive(t);
+                torchHandle.SetActive(t);
+            }
+        }
 
         private void FixedUpdate()
         {

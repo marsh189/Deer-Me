@@ -25,6 +25,8 @@ public class GrabScript : MonoBehaviour {
 	public bool isMax;
 
     public GameObject Torch;
+    public RuntimeAnimatorController normalAnims;
+    public RuntimeAnimatorController torchAnims;
 
 	// Use this for initialization
 	void Start () {
@@ -76,7 +78,8 @@ public class GrabScript : MonoBehaviour {
         {
             if (grabObj.tag == "Torch")
             {
-                transform.parent.GetComponent<Animator> ().SetBool ("hasTorch", true);
+                transform.parent.GetComponent<Animator> ().runtimeAnimatorController = torchAnims as RuntimeAnimatorController;
+                transform.parent.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().hasTorch = true;
                 Torch.SetActive(true);
                 Destroy(grabObj);
             }

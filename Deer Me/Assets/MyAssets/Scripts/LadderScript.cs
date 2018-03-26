@@ -18,7 +18,9 @@ public class LadderScript : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
+            
 			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().climbing = true;
+            col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(false);
 			col.gameObject.GetComponent<Animator> ().SetBool ("isClimbing", true);
         }
     }
@@ -28,6 +30,7 @@ public class LadderScript : MonoBehaviour {
         if(col.gameObject.tag == "Player")
         {
 			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().climbing = false;
+            col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(true);
 			col.gameObject.GetComponent<Animator> ().SetBool ("isClimbing", false);
         }
     }

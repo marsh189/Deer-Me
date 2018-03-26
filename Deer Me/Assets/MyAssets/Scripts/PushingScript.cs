@@ -21,6 +21,7 @@ public class PushingScript : MonoBehaviour {
         if(col.gameObject.tag == "Player")
         {
             anim.SetBool("Pushing", true);
+            Player.GetComponent< UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(false);
         }
        
     }
@@ -29,6 +30,7 @@ public class PushingScript : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             anim.SetBool("Pushing", false);
+            Player.GetComponent< UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(true);
         }
     }
 }
