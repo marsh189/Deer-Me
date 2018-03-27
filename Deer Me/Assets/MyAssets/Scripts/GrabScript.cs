@@ -37,67 +37,83 @@ public class GrabScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Grab") && grabbed)
+        if (!transform.parent.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().hasTorch)
         {
-            Debug.Log("trying to drop");
-			transform.parent.GetComponent<Animator> ().SetTrigger ("isThrowing");
-            GameObject droppedObj = new GameObject("Dropped Thing");
-			Icon.GetComponent<SpriteRenderer> ().sprite = null; 
-			Icon.SetActive (false);
-			carryPoint.SetActive (true);
-            droppedObj.AddComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite;
-            droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
-            droppedObj.AddComponent<Rigidbody2D>();
-            //droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
-            droppedObj.gameObject.tag = tagName;
-           // droppedObj.transform.parent.parent = null;
-
-			if (droppedObj.gameObject.tag == "Grabbable") 
-			{
-				droppedObj.AddComponent<Animator> ().runtimeAnimatorController = woodAnim as RuntimeAnimatorController;
-				droppedObj.AddComponent<BreakingWood> ();
-			}
-
-            droppedObj.transform.position = Player.transform.position;
-            if (pScript.m_FacingRight)
+            if (Input.GetButtonDown("Grab") && grabbed)
             {
-                droppedObj.GetComponent<Rigidbody2D>().velocity = (new Vector2(3f, 3f));
+                Debug.Log("trying to drop");
+                transform.parent.GetComponent<Animator>().SetTrigger("isThrowing");
+                GameObject droppedObj = new GameObject("Dropped Thing");
+                Icon.GetComponent<SpriteRenderer>().sprite = null; 
+                Icon.SetActive(false);
+                carryPoint.SetActive(true);
+                droppedObj.AddComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite;
+                droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
+                droppedObj.AddComponent<Rigidbody2D>();
+                //droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
+                droppedObj.gameObject.tag = tagName;
+                // droppedObj.transform.parent.parent = null;
+
+                if (droppedObj.gameObject.tag == "Grabbable")
+                {
+                    droppedObj.AddComponent<Animator>().runtimeAnimatorController = woodAnim as RuntimeAnimatorController;
+                    droppedObj.AddComponent<BreakingWood>();
+                }
+
+                droppedObj.transform.position = Player.transform.position;
+                if (pScript.m_FacingRight)
+                {
+                    droppedObj.GetComponent<Rigidbody2D>().velocity = (new Vector2(3f, 3f));
+                }
+                else
+                {
+                    droppedObj.GetComponent<Rigidbody2D>().velocity = (new Vector2(-3f, 3f));
+                }
+                IEnumerator co = DelayedEffects(droppedObj);
+                StartCoroutine(co);
+                carryPoint.GetComponent<SpriteRenderer>().sprite = null;
+                grabbed = false;
+
+
             }
-            else
+            else if (Input.GetButtonDown("Grab") && !grabbed && canGrab)
             {
-                droppedObj.GetComponent<Rigidbody2D>().velocity = (new Vector2(-3f, 3f));
+                if (grabObj.tag == "Torch")
+                {
+                    if (grabObj.GetComponent<TreeTorch>().hasTorch)
+                    {
+                        transform.parent.GetComponent<Animator>().runtimeAnimatorController = torchAnims as RuntimeAnimatorController;
+                        transform.parent.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().hasTorch = true;
+                        grabObj.GetComponent<TreeTorch>().torch.SetActive(false);
+                        Torch.SetActive(true);
+                    }
+                }
+                else
+                {
+                    tagName = grabObj.gameObject.tag;
+                    carryPoint.GetComponent<SpriteRenderer>().sprite = grabObj.gameObject.GetComponent<SpriteRenderer>().sprite;
+                    carryPoint.transform.localScale = new Vector3(grabObj.transform.localScale.x * (1 / 0.3833752f), grabObj.transform.localScale.y * (1 / 0.3833752f), grabObj.transform.localScale.z * (1 / 0.3833752f));
+                    scaleX = grabObj.transform.localScale.x;
+                    scaleY = grabObj.transform.localScale.y;
+                    scaleZ = grabObj.transform.localScale.z;
+                    Destroy(grabObj.gameObject);
+                    carryPoint.SetActive(false);
+                    Icon.GetComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite; 
+                    Icon.SetActive(true);
+                    grabbed = true;
+                    grabObj = null;
+                    transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
+                }
             }
-            IEnumerator co = DelayedEffects(droppedObj);
-            StartCoroutine(co);
-            carryPoint.GetComponent<SpriteRenderer>().sprite = null;
-            grabbed = false;
-
-
         }
-        else if (Input.GetButtonDown("Grab") && !grabbed && canGrab)
+        else
         {
-            if (grabObj.tag == "Torch")
+            if (Input.GetButtonDown("Grab") && grabObj.tag == "Torch" && !grabObj.GetComponent<TreeTorch>().hasTorch)
             {
-                transform.parent.GetComponent<Animator> ().runtimeAnimatorController = torchAnims as RuntimeAnimatorController;
-                transform.parent.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().hasTorch = true;
-                Torch.SetActive(true);
-                Destroy(grabObj);
-            }
-            else
-            {
-                tagName = grabObj.gameObject.tag;
-                carryPoint.GetComponent<SpriteRenderer>().sprite = grabObj.gameObject.GetComponent<SpriteRenderer>().sprite;
-                carryPoint.transform.localScale = new Vector3(grabObj.transform.localScale.x * (1 / 0.3833752f), grabObj.transform.localScale.y * (1 / 0.3833752f), grabObj.transform.localScale.z * (1 / 0.3833752f));
-                scaleX = grabObj.transform.localScale.x;
-                scaleY = grabObj.transform.localScale.y;
-                scaleZ = grabObj.transform.localScale.z;
-                Destroy(grabObj.gameObject);
-                carryPoint.SetActive(false);
-                Icon.GetComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite; 
-                Icon.SetActive(true);
-                grabbed = true;
-                grabObj = null;
-                transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
+                transform.parent.GetComponent<Animator>().runtimeAnimatorController = normalAnims as RuntimeAnimatorController;
+                transform.parent.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().hasTorch = false;
+                grabObj.GetComponent<TreeTorch>().torch.SetActive(true);
+                Torch.SetActive(false);
             }
         }
             
