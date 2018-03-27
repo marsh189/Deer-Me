@@ -324,6 +324,7 @@
     <Compile Include="Assets\MyAssets\Scripts\WaterDetector.cs" />
     <Compile Include="Assets\MyAssets\Scripts\WaterDetectorTest.cs" />
     <Compile Include="Assets\MyAssets\Scripts\WaterTest.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\WendigoManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
