@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212251006370925974}
   - component: {fileID: 61483278311020194}
   - component: {fileID: 114896158744048638}
+  - component: {fileID: 114714107824524612}
   m_Layer: 0
   m_Name: Wendigo
   m_TagString: Untagged
@@ -67,6 +68,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.11, y: 8.45}
   m_EdgeRadius: 0
+--- !u!114 &114714107824524612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781857719182082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91799ecda5c1a3649b5b0c9a996fc991, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114896158744048638
 MonoBehaviour:
   m_ObjectHideFlags: 1
