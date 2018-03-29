@@ -7,6 +7,8 @@ public class WendigoManager : MonoBehaviour {
     float timer = 0.0f;
     public GameObject Player;
     bool wendigoSpawn = false;
+    public float spawnTime;
+
 	// Use this for initialization
 	void Start () {
         timer = 0.0f;
@@ -17,7 +19,7 @@ public class WendigoManager : MonoBehaviour {
 	void Update () {
         timer += Time.deltaTime;
         Debug.Log(timer);
-        if(timer > 30 && !wendigoSpawn)
+        if(timer > spawnTime && !wendigoSpawn)
         {
            
             SpawnWendigo();
