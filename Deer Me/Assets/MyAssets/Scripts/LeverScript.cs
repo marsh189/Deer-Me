@@ -56,9 +56,9 @@ public class LeverScript : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("pressing x");
+                Debug.Log("pressing e");
                 if (leverActive && OldPositionObj.transform.position != gameObjectReference.transform.position)
                 {
                     Debug.Log("moving down");

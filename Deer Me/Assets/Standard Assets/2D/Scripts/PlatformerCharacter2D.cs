@@ -42,6 +42,8 @@ namespace UnityStandardAssets._2D
         public GameObject torchHandle;
         public GameObject torchFlame;
 
+        public AudioSource source;
+
         private void Awake()
         {
             // Setting up references.
@@ -59,6 +61,31 @@ namespace UnityStandardAssets._2D
 				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level_Checkpoint"));
 				this.gameObject.transform.position = cp.transform.position;
 			}
+        }
+
+        void Start()
+        {
+            /*while (true)
+            {
+                StartCoroutine(PlayFootSteps());
+                yield return null;
+            }*/
+        }
+
+        IEnumerator PlayFootSteps()
+        {
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) && m_Grounded)
+            {
+                if (!source.isPlaying)
+                {
+                    source.Play();
+                }
+                else if (source.isPlaying)
+                {
+                    yield return new WaitForSeconds(1);
+                    source.Stop();
+                }
+            }
         }
 
         public void Update()
@@ -178,6 +205,7 @@ namespace UnityStandardAssets._2D
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+
         }
 
 
