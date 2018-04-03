@@ -15,7 +15,6 @@ public class WoodSounds : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.layer);
         if (col.gameObject.layer == 4)
         {
             isFloating = true;

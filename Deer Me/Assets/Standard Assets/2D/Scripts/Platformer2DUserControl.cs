@@ -9,11 +9,14 @@ namespace UnityStandardAssets._2D
     {
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
-
+        private AudioSource source;
+        public AudioClip jump;
+        public AudioClip walk;
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
+            source = GetComponent<AudioSource>();
         }
 
 
@@ -32,6 +35,20 @@ namespace UnityStandardAssets._2D
             // Read the inputs.
             bool crouch = Input.GetKey(KeyCode.LeftControl);
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
+            if (h != 0 && GetComponent<Animator>().GetBool("Ground"))
+            {
+                source.UnPause();
+            }
+            else
+            {
+                source.Pause();
+
+            }
+
+            if (m_Jump)
+            {
+                source.PlayOneShot(jump);
+            }
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;

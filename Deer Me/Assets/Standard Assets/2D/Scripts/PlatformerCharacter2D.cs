@@ -37,12 +37,10 @@ namespace UnityStandardAssets._2D
 		public Sprite onRopeSprite;
 		public Sprite idleSprite;
         public Transform startPosition;
-
+     
         public bool hasTorch;
         public GameObject torchHandle;
         public GameObject torchFlame;
-
-        public AudioSource source;
 
         private void Awake()
         {
@@ -61,33 +59,9 @@ namespace UnityStandardAssets._2D
 				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level_Checkpoint"));
 				this.gameObject.transform.position = cp.transform.position;
 			}
+                
         }
-
-        void Start()
-        {
-            /*while (true)
-            {
-                StartCoroutine(PlayFootSteps());
-                yield return null;
-            }*/
-        }
-
-        IEnumerator PlayFootSteps()
-        {
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) && m_Grounded)
-            {
-                if (!source.isPlaying)
-                {
-                    source.Play();
-                }
-                else if (source.isPlaying)
-                {
-                    yield return new WaitForSeconds(1);
-                    source.Stop();
-                }
-            }
-        }
-
+            
         public void Update()
         {
 
@@ -240,6 +214,7 @@ namespace UnityStandardAssets._2D
                         // Move the character
                         m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
+
                         // If the input is moving the player right and the player is facing left...
                         if (move > 0 && !m_FacingRight)
                         {
@@ -247,8 +222,8 @@ namespace UnityStandardAssets._2D
                             Flip();
                         }
                     // Otherwise if the input is moving the player left and the player is facing right...
-                else if (move < 0 && m_FacingRight)
-                        {
+                    else if (move < 0 && m_FacingRight)
+                    {
                             // ... flip the player.
                             Flip();
                         }

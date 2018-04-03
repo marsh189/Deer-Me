@@ -50,10 +50,11 @@ public class GrabScript : MonoBehaviour {
                 droppedObj.AddComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite;
                 droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
                 droppedObj.AddComponent<Rigidbody2D>();
-                //droppedObj.AddComponent<BoxCollider2D>().isTrigger = true;
                 droppedObj.gameObject.tag = tagName;
-                // droppedObj.transform.parent.parent = null;
-
+                if (tagName == "Metal")
+                {
+                    droppedObj.gameObject.layer = 0;
+                }
                 if (droppedObj.gameObject.tag == "Grabbable")
                 {
                     droppedObj.AddComponent<Animator>().runtimeAnimatorController = woodAnim as RuntimeAnimatorController;

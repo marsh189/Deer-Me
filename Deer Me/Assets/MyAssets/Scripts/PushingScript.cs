@@ -16,18 +16,18 @@ public class PushingScript : MonoBehaviour {
 		
 	}
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.name == "GrabZone")
         {
             anim.SetBool("Pushing", true);
             Player.GetComponent< UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(false);
         }
        
     }
-    void OnCollisionExit2D(Collision2D col)
+    void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.name == "GrabZone")
         {
             anim.SetBool("Pushing", false);
             Player.GetComponent< UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(true);
