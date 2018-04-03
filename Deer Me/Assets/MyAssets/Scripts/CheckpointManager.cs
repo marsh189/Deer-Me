@@ -17,9 +17,9 @@ public class CheckpointManager : MonoBehaviour {
 	void Update () {
 		
 	}
-    public void UpdateCheckpoints(GameObject current)
+    public void UpdateCheckpoints(GameObject current, float time)
     {
-        WendigoManager.ResetTimer();
+        WendigoManager.ResetTimer(time);
         foreach(GameObject checkpoint in checkpoints)
         {
             if(checkpoint.GetComponent<Checkpoint>().state != Checkpoint.Status.Inactive)

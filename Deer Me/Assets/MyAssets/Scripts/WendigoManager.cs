@@ -32,8 +32,8 @@ public class WendigoManager : MonoBehaviour {
         
         GameObject Wendigo = (GameObject)Instantiate(Resources.Load("Wendigo"), new Vector3(Player.transform.position.x - 10, Player.transform.position.y, Player.transform.position.z), Quaternion.Euler(0, 180, 0));
     }
-    public void ResetTimer()
+    public void ResetTimer(float time)
     {
-        timer -= 10;
+        timer -= time;
     }
 }

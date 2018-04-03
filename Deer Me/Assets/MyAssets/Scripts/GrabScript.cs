@@ -139,6 +139,10 @@ public class GrabScript : MonoBehaviour {
         {
             droppedObj.layer = 8;
         }
+        if(droppedObj.gameObject.tag == "Metal")
+        {
+            droppedObj.layer = LayerMask.NameToLayer("Default");
+        }
         yield return new WaitForSeconds(0.7f);
         droppedObj.AddComponent<PolygonCollider2D>();
         droppedObj.AddComponent<freezeZ>();

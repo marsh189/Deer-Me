@@ -6,6 +6,7 @@ public class Checkpoint : MonoBehaviour {
     public enum Status { Inactive, Active };
     public Status state;
     public CheckpointManager cm;
+    public float time;
 	// Use this for initialization
 	void Start () {
         cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
@@ -19,7 +20,7 @@ public class Checkpoint : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            cm.UpdateCheckpoints(this.gameObject);
+            cm.UpdateCheckpoints(this.gameObject, time);
         }
     }
     
