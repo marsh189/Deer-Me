@@ -25,13 +25,22 @@ public class DarknessTrigger : MonoBehaviour {
 	public GameObject player;
 	public Image darknessImage;
 
+	public Light worldLight;
+
+	public bool hasTorch;
+	private bool hitTrigger;
+
 	private void Start() {
 		minVisibility /= 100f;
 		minVisibility = 1f - minVisibility;
 	}
 
 	void Update() {
-		CheckPosition();
+//		CheckPosition();
+
+		if (hitTrigger) {
+			printPos();
+		}
 	}
 
 	void CheckPosition() {
@@ -42,5 +51,24 @@ public class DarknessTrigger : MonoBehaviour {
 		if (tempColor.a <= minVisibility) {
 			darknessImage.color = tempColor;
 		}
+	}
+
+	void printPos() {
+		print(player.transform.position.x);
+	}
+
+	private void OnTriggerEnter2D(Collider2D other) {
+		if (!other.CompareTag("Player")) return;
+
+		hitTrigger = true;
+
+		print("TRIGGER DARK");
+
+		// CHANGE BRIGHTNESS OF WORLD LIGHT AS PLAYER MOVES FORWARD
+		worldLight.intensity = 0.5f;
+	}
+
+	public void setHasTorch(bool val) {
+		hasTorch = val;
 	}
 }
