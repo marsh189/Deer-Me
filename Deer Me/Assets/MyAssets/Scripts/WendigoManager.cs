@@ -34,6 +34,6 @@ public class WendigoManager : MonoBehaviour {
     }
     public void ResetTimer(float time)
     {
-        timer -= time;
+        timer += time;
     }
 }
