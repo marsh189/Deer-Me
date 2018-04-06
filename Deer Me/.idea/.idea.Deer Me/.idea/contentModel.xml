@@ -34,6 +34,10 @@
             <e p="PlayerController.cs" t="Include" />
             <e p="PushingScript.cs" t="Include" />
             <e p="ScrollingBackground.cs" t="Include" />
+            <e p="Sound" t="Include">
+              <e p="PlayFootSteps.cs" t="Include" />
+              <e p="WoodSounds.cs" t="Include" />
+            </e>
             <e p="TorchLight.cs" t="Include" />
             <e p="TreeTorch.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
