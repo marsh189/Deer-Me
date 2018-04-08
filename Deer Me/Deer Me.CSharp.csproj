@@ -268,6 +268,7 @@
     <Compile Include="Assets\MyAssets\Scripts\WaterTest.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Wendigo.cs" />
     <Compile Include="Assets\MyAssets\Scripts\WendigoManager.cs" />
+    <Compile Include="Assets\WendigoDisabler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
