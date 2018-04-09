@@ -18,6 +18,7 @@ TagManager:
   - Torch
   - WendigoManager
   - DarknessTrigger
+  - TextBoxManager
   layers:
   - Default
   - TransparentFX
