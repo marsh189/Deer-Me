@@ -101,6 +101,7 @@ public class GrabScript : MonoBehaviour {
                     carryPoint.SetActive(false);
                     Icon.GetComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite; 
                     Icon.SetActive(true);
+                    Icon.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
                     grabbed = true;
                     grabObj = null;
                     transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
