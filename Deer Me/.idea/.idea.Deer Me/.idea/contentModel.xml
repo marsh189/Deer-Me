@@ -6,7 +6,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="LeverFix.cs" t="Include" />
         <e p="MyAssets" t="Include">
           <e p="Scripts" t="Include">
             <e p="BreakingWood.cs" t="Include" />
@@ -24,6 +23,7 @@
             <e p="GrabScript.cs" t="Include" />
             <e p="LadderScript.cs" t="Include" />
             <e p="LeverActivate.cs" t="Include" />
+            <e p="LeverFix.cs" t="Include" />
             <e p="LeverManager.cs" t="Include" />
             <e p="LeverScript.cs" t="Include" />
             <e p="LockRotation.cs" t="Include" />
@@ -46,6 +46,7 @@
             <e p="WaterDetectorTest.cs" t="Include" />
             <e p="WaterTest.cs" t="Include" />
             <e p="Wendigo.cs" t="Include" />
+            <e p="WendigoDisabler.cs" t="Include" />
             <e p="WendigoManager.cs" t="Include" />
           </e>
         </e>
@@ -117,6 +118,8 @@
             <e p="WaypointProgressTracker.cs" t="Include" />
           </e>
         </e>
+        <e p="WendigoPause.cs" t="Include" />
+        <e p="WendigoUnPause.cs" t="Include" />
       </e>
       <e p="Deer Me.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

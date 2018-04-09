@@ -14,20 +14,23 @@
       <file leaf-file-name="DarknessTrigger.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/MyAssets/Scripts/DarknessTrigger.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="594">
+              <caret line="50" column="88" lean-forward="false" selection-start-line="50" selection-start-column="88" selection-end-line="50" selection-end-column="88" />
               <folding>
-                <marker date="1522909397687" expanded="true" signature="0:253" ph="/* Vince Carpino ... */" />
-                <marker date="1522909397687" expanded="false" signature="261:295" ph="..." />
-                <marker date="1522909397687" expanded="true" signature="342:1362" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="580:647" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="664:729" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="706:726" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="753:1000" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="956:997" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="1019:1061" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="1112:1301" ph="{...}" />
-                <marker date="1522909397687" expanded="true" signature="1338:1360" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="0:228" ph="/* Vince Carpino ... */" />
+                <marker date="1523259601245" expanded="true" signature="236:334" ph="..." />
+                <marker date="1523259601245" expanded="true" signature="381:1919" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="659:730" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="661:727" ph="/* minVisibility /= 100f; ... */" />
+                <marker date="1523259601245" expanded="true" signature="747:856" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="768:853" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="880:1481" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="1008:1262" ph="/* if (player.transform.position.x &lt;= startXPos) return; ... */" />
+                <marker date="1523259601245" expanded="true" signature="1500:1542" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="1593:1784" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="1689:1781" ph="/* CHANGE BRIGHTNESS OF WORLD LIGHT AS PLAYER MOVES FORWARD ... */" />
+                <marker date="1523259601245" expanded="true" signature="1821:1843" ph="{...}" />
+                <marker date="1523259601245" expanded="true" signature="1872:1917" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -46,7 +49,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-57" />
     <option name="y" value="22" />
     <option name="width" value="2560" />
     <option name="height" value="878" />
@@ -66,7 +68,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -80,6 +81,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -119,26 +121,26 @@
     <frame x="0" y="22" width="2560" height="1418" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872728" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -151,40 +153,69 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/MyAssets/Scripts/DarknessTrigger.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1098">
+          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
           <folding>
-            <marker date="1522909397687" expanded="true" signature="0:253" ph="/* Vince Carpino ... */" />
-            <marker date="1522909397687" expanded="false" signature="261:295" ph="..." />
-            <marker date="1522909397687" expanded="true" signature="342:1362" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="580:647" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="664:729" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="706:726" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="753:1000" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="956:997" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="1019:1061" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="1112:1301" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="1338:1360" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="0:228" ph="/* Vince Carpino ... */" />
+            <marker date="1523259601245" expanded="true" signature="236:334" ph="..." />
+            <marker date="1523259601245" expanded="true" signature="381:1919" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="659:730" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="661:727" ph="/* minVisibility /= 100f; ... */" />
+            <marker date="1523259601245" expanded="true" signature="747:856" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="768:853" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="880:1481" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1008:1262" ph="/* if (player.transform.position.x &lt;= startXPos) return; ... */" />
+            <marker date="1523259601245" expanded="true" signature="1500:1542" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1593:1784" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1689:1781" ph="/* CHANGE BRIGHTNESS OF WORLD LIGHT AS PLAYER MOVES FORWARD ... */" />
+            <marker date="1523259601245" expanded="true" signature="1821:1843" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1872:1917" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MyAssets/Scripts/DarknessTrigger.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522909397687" expanded="true" signature="0:253" ph="/* Vince Carpino ... */" />
-            <marker date="1522909397687" expanded="false" signature="261:295" ph="..." />
-            <marker date="1522909397687" expanded="true" signature="342:1362" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="580:647" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="664:729" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="706:726" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="753:1000" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="956:997" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="1019:1061" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="1112:1301" ph="{...}" />
-            <marker date="1522909397687" expanded="true" signature="1338:1360" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="0:228" ph="/* Vince Carpino ... */" />
+            <marker date="1523259601245" expanded="true" signature="236:334" ph="..." />
+            <marker date="1523259601245" expanded="true" signature="381:1919" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="659:730" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="661:727" ph="/* minVisibility /= 100f; ... */" />
+            <marker date="1523259601245" expanded="true" signature="747:856" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="768:853" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="880:1481" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1008:1262" ph="/* if (player.transform.position.x &lt;= startXPos) return; ... */" />
+            <marker date="1523259601245" expanded="true" signature="1500:1542" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1593:1784" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1689:1781" ph="/* CHANGE BRIGHTNESS OF WORLD LIGHT AS PLAYER MOVES FORWARD ... */" />
+            <marker date="1523259601245" expanded="true" signature="1821:1843" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1872:1917" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MyAssets/Scripts/DarknessTrigger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="50" column="88" lean-forward="false" selection-start-line="50" selection-start-column="88" selection-end-line="50" selection-end-column="88" />
+          <folding>
+            <marker date="1523259601245" expanded="true" signature="0:228" ph="/* Vince Carpino ... */" />
+            <marker date="1523259601245" expanded="true" signature="236:334" ph="..." />
+            <marker date="1523259601245" expanded="true" signature="381:1919" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="659:730" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="661:727" ph="/* minVisibility /= 100f; ... */" />
+            <marker date="1523259601245" expanded="true" signature="747:856" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="768:853" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="880:1481" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1008:1262" ph="/* if (player.transform.position.x &lt;= startXPos) return; ... */" />
+            <marker date="1523259601245" expanded="true" signature="1500:1542" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1593:1784" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1689:1781" ph="/* CHANGE BRIGHTNESS OF WORLD LIGHT AS PLAYER MOVES FORWARD ... */" />
+            <marker date="1523259601245" expanded="true" signature="1821:1843" ph="{...}" />
+            <marker date="1523259601245" expanded="true" signature="1872:1917" ph="{...}" />
           </folding>
         </state>
       </provider>

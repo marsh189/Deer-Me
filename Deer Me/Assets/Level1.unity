@@ -51,7 +51,7 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 0
+    m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 9
@@ -960,11 +960,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.66
+      value: 573.6
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.06
+      value: 2.53
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1004,11 +1004,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_JumpForce
@@ -10414,7 +10414,7 @@ GameObject:
   - component: {fileID: 402827876}
   m_Layer: 0
   m_Name: DarknessTrigger
-  m_TagString: Untagged
+  m_TagString: DarknessTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10430,11 +10430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5871d610da0d45e580998345fe47104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startXPos: 560
-  divisor: 35
-  minVisibility: 0
+  divisor: 500
   player: {fileID: 660701811}
-  darknessImage: {fileID: 747083710}
   worldLight: {fileID: 931574398}
   hasTorch: 0
 --- !u!4 &402827875
@@ -12552,8 +12549,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495182983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.034473, y: 1.0331428, z: -3.3281736}
-  m_LocalScale: {x: 0.025316456, y: 0.025316456, z: 0.025316456}
+  m_LocalPosition: {x: 573.2255, y: 2.5031428, z: -3.3281736}
+  m_LocalScale: {x: 0.012886598, y: 0.012886598, z: 0.012886598}
   m_Children:
   - {fileID: 275731760}
   - {fileID: 747083712}

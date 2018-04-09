@@ -17,6 +17,7 @@ TagManager:
   - BreaksWood
   - Torch
   - WendigoManager
+  - DarknessTrigger
   layers:
   - Default
   - TransparentFX
