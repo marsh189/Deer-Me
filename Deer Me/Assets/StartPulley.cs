@@ -7,7 +7,7 @@ public class StartPulley : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<Pulley>().onPlatform = true;
         }
@@ -15,7 +15,7 @@ public class StartPulley : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<Pulley>().onPlatform = false;
         }
