@@ -316,6 +316,13 @@
     <Compile Include="Assets\MyAssets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\MyAssets\Scripts\PhysicsObject.cs" />
     <Compile Include="Assets\MyAssets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\ObjectOnEnd\ObjectPulley.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\ObjectOnEnd\ObjectPulleyTrigger.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\OnePlatform\LowerPlatform.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\OnePlatform\PlatformTrigger.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\TwoPlatforms\PlatformOne.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\TwoPlatforms\PlatformPulley.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\Pulleys\TwoPlatforms\PlatformTwo.cs" />
     <Compile Include="Assets\MyAssets\Scripts\PushingScript.cs" />
     <Compile Include="Assets\MyAssets\Scripts\ScrollingBackground.cs" />
     <Compile Include="Assets\MyAssets\Scripts\Sound\PlayFootSteps.cs" />
@@ -332,8 +339,6 @@
     <Compile Include="Assets\MyAssets\Scripts\WendigoManager.cs" />
     <Compile Include="Assets\MyAssets\Scripts\WendigoPause.cs" />
     <Compile Include="Assets\MyAssets\Scripts\WendigoUnPause.cs" />
-    <Compile Include="Assets\Pulley.cs" />
-    <Compile Include="Assets\StartPulley.cs" />
     <Compile Include="Assets\TextBoxManager.cs" />
     <Compile Include="Assets\TextSetter.cs" />
   </ItemGroup>
