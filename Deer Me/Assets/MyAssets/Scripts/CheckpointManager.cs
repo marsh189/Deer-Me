@@ -7,16 +7,16 @@ public class CheckpointManager : MonoBehaviour {
     public GameObject[] checkpoints;
     public GameObject Player;
     public WendigoManager WendigoManager;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         WendigoManager = GameObject.FindGameObjectWithTag("WendigoManager").GetComponent<WendigoManager>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    // Update is called once per frame
+    void Update () {
+
+    }
     public void UpdateCheckpoints(GameObject current, float time)
     {
         WendigoManager.ResetTimer(time);
@@ -35,7 +35,7 @@ public class CheckpointManager : MonoBehaviour {
         {
             if (checkpoint.GetComponent<Checkpoint>().state == Checkpoint.Status.Active)
             {
-				PlayerPrefs.SetString ("Level_Checkpoint", checkpoint.name);
+                PlayerPrefs.SetString ("Level_Checkpoint", checkpoint.name);
             }
         }
     }

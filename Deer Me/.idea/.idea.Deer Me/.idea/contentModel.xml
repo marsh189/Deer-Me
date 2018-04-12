@@ -32,6 +32,21 @@
             <e p="Obstacle.cs" t="Include" />
             <e p="PhysicsObject.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="Pulleys" t="Include">
+              <e p="ObjectOnEnd" t="Include">
+                <e p="ObjectPulley.cs" t="Include" />
+                <e p="ObjectPulleyTrigger.cs" t="Include" />
+              </e>
+              <e p="OnePlatform" t="Include">
+                <e p="LowerPlatform.cs" t="Include" />
+                <e p="PlatformTrigger.cs" t="Include" />
+              </e>
+              <e p="TwoPlatforms" t="Include">
+                <e p="PlatformOne.cs" t="Include" />
+                <e p="PlatformPulley.cs" t="Include" />
+                <e p="PlatformTwo.cs" t="Include" />
+              </e>
+            </e>
             <e p="PushingScript.cs" t="Include" />
             <e p="ScrollingBackground.cs" t="Include" />
             <e p="Sound" t="Include">
@@ -48,6 +63,8 @@
             <e p="Wendigo.cs" t="Include" />
             <e p="WendigoDisabler.cs" t="Include" />
             <e p="WendigoManager.cs" t="Include" />
+            <e p="WendigoPause.cs" t="Include" />
+            <e p="WendigoUnPause.cs" t="Include" />
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -118,8 +135,11 @@
             <e p="WaypointProgressTracker.cs" t="Include" />
           </e>
         </e>
-        <e p="WendigoPause.cs" t="Include" />
-        <e p="WendigoUnPause.cs" t="Include" />
+        <e p="Text" t="Include">
+          <e p="Test.txt" t="Include" />
+        </e>
+        <e p="TextBoxManager.cs" t="Include" />
+        <e p="TextSetter.cs" t="Include" />
       </e>
       <e p="Deer Me.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
