@@ -56,6 +56,7 @@ namespace UnityStandardAssets._2D
 
 			if (PlayerPrefs.GetString ("Level_Checkpoint") != null && PlayerPrefs.GetString ("Level_Checkpoint") != "") 
 			{
+                Debug.Log("HERE");
 				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level_Checkpoint"));
 				this.gameObject.transform.position = cp.transform.position;
 			}
