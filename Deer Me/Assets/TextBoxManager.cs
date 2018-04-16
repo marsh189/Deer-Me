@@ -7,19 +7,44 @@ public class TextBoxManager : MonoBehaviour {
     public TextAsset file;
     public string[] line;
     public Text TextBoxText;
-    public GameManager textBoxObj;
+    public GameObject textBoxObj;
     public int curr = 0;
     public int fileLength;
+    public bool canRead;
+    public bool finishedReading;
     // Use this for initialization
     void Start()
     {
-
+        canRead = false;
+        bool finishedReading = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(canRead == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if(curr > fileLength)
+                {
+                    finishedReading = true;
+                    Time.timeScale = 1.0f;
+                    textBoxObj.SetActive(false);
+                }
+                if(curr <= fileLength)
+                {
+                    finishedReading = false;
+                    Time.timeScale = 0f;
+                    textBoxObj.SetActive(true);
+                    Debug.Log("TextActive");
+                    Debug.Log("Line: " + curr);
+                    TextBoxText.text = line[curr];
+                    curr += 1;
+                }
+                
+            }
+        }
     }
 
     public void setText(TextAsset filename)
@@ -31,18 +56,5 @@ public class TextBoxManager : MonoBehaviour {
             line = file.text.Split('\n');
         }
         fileLength = line.Length - 1;
-    }
-    public void readText()
-    {
-        textBoxObj.enabled = true;
-        while(curr < fileLength)
-        {
-            TextBoxText.text = line[curr];
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                curr += 1;
-            }
-        }
-        textBoxObj.enabled = false;
-    }
+    }   
 }

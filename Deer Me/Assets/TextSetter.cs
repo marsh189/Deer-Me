@@ -19,9 +19,16 @@ public class TextSetter : MonoBehaviour {
         if(col.gameObject.tag == "Player")
         {
             tbm.setText(file);
-            if (Input.GetKeyDown(KeyCode.E)){
-                tbm.readText();
-            }
+            Debug.Log("Player is colliding");
+            tbm.canRead = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            tbm.canRead = false;
+            Debug.Log("Can't read no more");
         }
     }
 }
