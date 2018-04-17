@@ -20724,7 +20724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &478629999
 RectTransform:
   m_ObjectHideFlags: 0
@@ -90531,7 +90531,6 @@ GameObject:
   - component: {fileID: 1971783392}
   - component: {fileID: 1971783394}
   - component: {fileID: 1971783393}
-  - component: {fileID: 1971783395}
   m_Layer: 0
   m_Name: NewGround (1)
   m_TagString: Untagged
@@ -90613,26 +90612,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!114 &1971783395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1971783391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37cb14fc4fa66b4b904dc4f564de2ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  file: {fileID: 0}
-  line: []
-  TextBoxText: {fileID: 0}
-  textBoxObj: {fileID: 0}
-  curr: 0
-  fileLength: 0
-  canRead: 0
-  finishedReading: 0
-  boxAnim: {fileID: 0}
 --- !u!1001 &1972427248
 Prefab:
   m_ObjectHideFlags: 0
