@@ -29,23 +29,19 @@ public class TextBoxManager : MonoBehaviour {
             {
                 if(curr > fileLength)
                 {
-            
-                    finishedReading = true;
-                    //Time.timeScale = 1.0f;
-                    boxAnim.SetBool("Reading", false);
-                    textBoxObj.SetActive(false);
-                    curr = 0;
+                    StartCoroutine("closeBook");
                 }
                 else if(curr <= fileLength)
                 {
                     if(curr == 0)
                     {
                         Debug.Log("Animation");
+                        textBoxObj.SetActive(true);
                         boxAnim.SetBool("Reading", true);
                     }
                     finishedReading = false;
                     //Time.timeScale = 0f;
-                    textBoxObj.SetActive(true);
+                    
                     Debug.Log("TextActive");
                     Debug.Log("Line: " + curr);
                     TextBoxText.text = line[curr];
@@ -65,5 +61,15 @@ public class TextBoxManager : MonoBehaviour {
             line = file.text.Split('\n');
         }
         fileLength = line.Length - 1;
-    }   
+    }
+
+    IEnumerator closeBook()
+    {
+        finishedReading = true;
+        //Time.timeScale = 1.0f;
+        boxAnim.SetBool("Reading", false);
+        curr = 0;
+        yield return new WaitForSeconds(1f);
+        textBoxObj.SetActive(false);
+    }
 }
