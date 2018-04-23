@@ -39,8 +39,6 @@ namespace UnityStandardAssets._2D
         public Transform startPosition;
      
         public bool hasTorch;
-        public GameObject torchHandle;
-        public GameObject torchFlame;
 
         private void Awake()
         {
@@ -56,7 +54,6 @@ namespace UnityStandardAssets._2D
 
 			if (PlayerPrefs.GetString ("Level_Checkpoint") != null && PlayerPrefs.GetString ("Level_Checkpoint") != "") 
 			{
-                Debug.Log("HERE");
 				GameObject cp = GameObject.Find (PlayerPrefs.GetString ("Level_Checkpoint"));
 				this.gameObject.transform.position = cp.transform.position;
 			}
@@ -118,9 +115,7 @@ namespace UnityStandardAssets._2D
 			} 
 
 			else if (isDead) 
-            {
-                HideTorch(false);
-				
+            {			
 				if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("DEAD"))
 				{
 					m_Anim.SetBool ("DEAD", true);
@@ -139,7 +134,6 @@ namespace UnityStandardAssets._2D
 
 			else if (isDrowning) 
 			{
-                HideTorch(false);
 
 				if (fadeScreen.color.a < 0.8f) 
 				{
@@ -154,15 +148,7 @@ namespace UnityStandardAssets._2D
 
          
         }
-
-        public void HideTorch(bool t)
-        {
-            if (hasTorch)
-            {
-                torchFlame.SetActive(t);
-                torchHandle.SetActive(t);
-            }
-        }
+            
 
         private void FixedUpdate()
         {

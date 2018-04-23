@@ -1220,11 +1220,11 @@ Prefab:
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: torchHandle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1734760815}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: torchFlame
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 945075391}
     - target: {fileID: 5000000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_BodyType
       value: 0
@@ -7161,7 +7161,7 @@ Prefab:
     - target: {fileID: 114752973817878618, guid: 4ac09367aea67694ab08b956bc617c27,
         type: 2}
       propertyPath: spawnTime
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114752973817878618, guid: 4ac09367aea67694ab08b956bc617c27,
         type: 2}
@@ -9056,7 +9056,6 @@ GameObject:
   m_Component:
   - component: {fileID: 316166921}
   - component: {fileID: 316166923}
-  - component: {fileID: 316166922}
   m_Layer: 0
   m_Name: Foliage and Trees (2)
   m_TagString: Untagged
@@ -9077,31 +9076,6 @@ Transform:
   m_Father: {fileID: 831136148}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.326}
---- !u!61 &316166922
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 316166920}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.9660075, y: 1.072334}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.74, y: 7.11}
-    newSize: {x: 2.74, y: 7.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8280802, y: 0.08857679}
-  m_EdgeRadius: 0
 --- !u!212 &316166923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16120,7 +16094,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625460171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.404473, y: 1.2531428, z: -4.3281736}
+  m_LocalPosition: {x: 0, y: 0, z: -4.3281736}
   m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
   m_Children:
   - {fileID: 179997546}
@@ -25265,7 +25239,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919191838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 114, z: 0}
+  m_LocalPosition: {x: 0, y: -25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1753229335}
@@ -42720,7 +42694,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1565283176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 114, z: 0}
+  m_LocalPosition: {x: 0, y: -25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 179997546}
@@ -48411,7 +48385,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1753229331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.404473, y: 1.2531428, z: -4.3281736}
+  m_LocalPosition: {x: 0, y: 0, z: -4.3281736}
   m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
   m_Children:
   - {fileID: 919191839}
@@ -57161,7 +57135,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2107423621}
   - component: {fileID: 2107423623}
-  - component: {fileID: 2107423622}
   m_Layer: 0
   m_Name: Foliage and Trees (3)
   m_TagString: Untagged
@@ -57182,31 +57155,6 @@ Transform:
   m_Father: {fileID: 831136148}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.13901}
---- !u!61 &2107423622
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2107423620}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.9660075, y: 1.072334}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.74, y: 7.11}
-    newSize: {x: 2.74, y: 7.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8280802, y: 0.08857679}
-  m_EdgeRadius: 0
 --- !u!212 &2107423623
 SpriteRenderer:
   m_ObjectHideFlags: 0

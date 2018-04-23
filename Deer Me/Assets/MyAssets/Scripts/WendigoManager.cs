@@ -21,7 +21,7 @@ public class WendigoManager : MonoBehaviour {
         if (Pause == false)
         {
             timer += Time.deltaTime;
-            //Debug.Log(timer);
+            Debug.Log(timer);
         }
 
         if (timer > spawnTime && !wendigoSpawn)

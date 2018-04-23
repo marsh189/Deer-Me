@@ -21,7 +21,6 @@ public class PushingScript : MonoBehaviour {
         if(col.gameObject.name == "GrabZone")
         {
             anim.SetBool("Pushing", true);
-            Player.GetComponent< UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(false);
         }
        
     }
@@ -30,7 +29,6 @@ public class PushingScript : MonoBehaviour {
         if (col.gameObject.name == "GrabZone")
         {
             anim.SetBool("Pushing", false);
-            Player.GetComponent< UnityStandardAssets._2D.PlatformerCharacter2D>().HideTorch(true);
         }
     }
 }
