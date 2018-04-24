@@ -6,7 +6,7 @@ using UnityStandardAssets._2D;
 public class GrabScript : MonoBehaviour {
     public Transform player;
     private Rigidbody2D rBody;
-    private bool grabbed;
+    public bool grabbed;
     public GameObject grabObj;
     public GameObject carryPoint;
     private bool canGrab = false;
@@ -20,9 +20,6 @@ public class GrabScript : MonoBehaviour {
 	public RuntimeAnimatorController woodAnim;
 
 	public GameObject Icon;
-	public float maxSize;
-	Vector3 temp = new Vector3 (1, 1, 1);
-	public bool isMax;
 
     public GameObject Torch;
     public RuntimeAnimatorController normalAnims;
@@ -98,12 +95,10 @@ public class GrabScript : MonoBehaviour {
                     scaleY = grabObj.transform.localScale.y;
                     scaleZ = grabObj.transform.localScale.z;
                     Destroy(grabObj.gameObject);
+                    grabbed = true;
                     carryPoint.SetActive(false);
                     Icon.GetComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite; 
                     Icon.SetActive(true);
-                    Icon.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
-                    grabbed = true;
-                    grabObj = null;
                     transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
                 }
             }
