@@ -9,6 +9,7 @@
  *     As player enters darkness section,
  *     world darkens; lightens as they
  *     move back toward entrance.
+ *     Opposite occurs at exit of section.
  */
 
 using UnityEngine;
@@ -20,6 +21,7 @@ public class DarknessTrigger : MonoBehaviour {
 	public float minVisibility;
 	public float lightDeltaValue;
 	public float innerTriggerDist;
+	public bool isEntrance;
 
 	private bool hasTorch;
 	private bool hitTrigger;
@@ -28,9 +30,11 @@ public class DarknessTrigger : MonoBehaviour {
 	private float playerVelocity;
 	private float playerPosX;
 	private float colliderPosX;
-	private float triggerDistToLeftSide;
+	private float innerTriggerPos;
 	private float lightDelta;
 	private bool triggerLock;
+	private float fullDarkPos;
+	private bool fullDarkLock;
 
 	void Start() {
 
@@ -42,9 +46,14 @@ public class DarknessTrigger : MonoBehaviour {
 
 		collider = (BoxCollider2D) gameObject.GetComponent<Collider2D>();
 		colliderPosX = collider.transform.position.x;
-		triggerDistToLeftSide = collider.offset.x - collider.size.x / 2f;
+		if (isEntrance)
+            innerTriggerPos = colliderPosX - collider.size.x / 2 + innerTriggerDist;
+		else
+			innerTriggerPos = colliderPosX + collider.size.x / 2 - innerTriggerDist;
+
 
 		triggerLock = true;
+		fullDarkLock = true;
 	}
 
 	void Update() {
@@ -57,27 +66,59 @@ public class DarknessTrigger : MonoBehaviour {
 	}
 
 	private void CheckPlayerPosition() {
-		// IF PLAYER CROSSES TRIGGER RIGHT TO LEFT, IGNORE
-		if (hitTriggerCount % 2 != 1) return;
 
-		// IF PLAYER MOVING RIGHT
-		if (playerVelocity > 0.5f) {
-			triggerLock = true;
-			// DECREASE WORLD LIGHT INTENSITY
-			if (worldLight.intensity > minVisibility)
-				worldLight.intensity -= lightDeltaValue;
-        // IF PLAYER MOVING LEFT
-		} else if (playerVelocity < -0.5f) {
-			// IF PLAYER IS LEFT OF INNER TRIGGER
-			if (playerPosX <= colliderPosX + triggerDistToLeftSide + innerTriggerDist) {
-                // INCREASE WORLD LIGHT INTENSITY
-				if (triggerLock) {
-					lightDelta = 1f - worldLight.intensity;
-					triggerLock = false;
+        if (hitTriggerCount % 2 != 1) return;
+
+		// ENTRANCE
+		if (isEntrance) {
+			// IF PLAYER MOVING RIGHT
+			if (playerVelocity > 0.5f) {
+				// UNLOCK LIGHT DELTA LOCK
+				triggerLock = true;
+				// DECREASE WORLD LIGHT
+				if (worldLight.intensity > minVisibility)
+                    worldLight.intensity -= lightDeltaValue;
+				if (worldLight.intensity <= minVisibility && fullDarkLock) {
+					fullDarkPos = playerPosX;
+					print(fullDarkPos);
+					fullDarkLock = false;
 				}
-
-				if (worldLight.intensity < 1.0f)
-					worldLight.intensity += lightDelta * Time.deltaTime;
+			// IF PLAYER MOVING LEFT
+			} else {
+				// IF PLAYER INSIDE INNER TRIGGER BOX
+				if (playerPosX <= innerTriggerPos) {
+					// CAPTURE DELTA
+					if (triggerLock) {
+						lightDelta = 1f - worldLight.intensity;
+						triggerLock = false;
+					}
+					// INCREASE WORLD LIGHT
+					if (worldLight.intensity < 1f)
+						worldLight.intensity += lightDelta * Time.deltaTime;
+				}
+			}
+		// EXIT
+		} else {
+			// IF PLAYER MOVING LEFT
+			if (playerVelocity < -0.5f) {
+				// UNLOCK LIGHT DELTA LOCK
+				triggerLock = true;
+				// DECREASE WORLD LIGHT
+				if (worldLight.intensity > minVisibility)
+                    worldLight.intensity -= lightDeltaValue;
+			// IF PLAYER MOVING RIGHT
+			} else {
+				// IF PLAYER INSIDE INNER TRIGGER BOX
+				if (playerPosX >= innerTriggerPos) {
+					// CAPTURE DELTA
+					if (triggerLock) {
+						lightDelta = 1f - worldLight.intensity;
+						triggerLock = false;
+					}
+					// INCREASE WORLD LIGHT
+					if (worldLight.intensity < 1f)
+						worldLight.intensity += lightDelta * Time.deltaTime;
+				}
 			}
 		}
 	}
