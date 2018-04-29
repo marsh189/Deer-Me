@@ -14,6 +14,7 @@ public class TextBoxManager : MonoBehaviour {
     public bool finishedReading;
     public Animator boxAnim;
     public GameObject Player;
+    public bool startedLine;
     // Use this for initialization
     void Start()
     {
@@ -46,11 +47,23 @@ public class TextBoxManager : MonoBehaviour {
                     }
                     finishedReading = false;
                     //Time.timeScale = 0f;
-                    
-                    Debug.Log("TextActive");
+
+                    /*Debug.Log("TextActive");
                     Debug.Log("Line: " + curr);
                     TextBoxText.text = line[curr];
-                    curr += 1;
+                    curr += 1;*/
+                    StopAllCoroutines();
+                    if(startedLine == true)
+                    {
+                        TextBoxText.text = line[curr];
+                        startedLine = false;
+                        curr += 1;
+                    }
+                    else
+                    {
+                        StartCoroutine(readBook(line[curr]));
+                    }
+                    
                 }
                 
             }
@@ -78,5 +91,18 @@ public class TextBoxManager : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         textBoxObj.SetActive(false);
         Player.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().isReading = false;
+    }
+    IEnumerator readBook(string line)
+    {
+        TextBoxText.text = "";
+        startedLine = true;
+        foreach (char letter in line.ToCharArray())
+        {
+            TextBoxText.text += letter;
+            yield return new WaitForSeconds(0.1f);
+        }
+        curr += 1;
+        startedLine = false;
+        yield return null;
     }
 }
