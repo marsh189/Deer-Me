@@ -25,10 +25,10 @@ GameObject:
   - component: {fileID: 114714107824524612}
   - component: {fileID: 95121484400330752}
   - component: {fileID: 50360064667887832}
-  - component: {fileID: 61873147060499440}
+  - component: {fileID: 61049747206923634}
   m_Layer: 0
   m_Name: Wendigo
-  m_TagString: Untagged
+  m_TagString: Wendigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1781857719182082}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 688.18, y: 76.27, z: -2.3}
+  m_LocalPosition: {x: 56.50213, y: 18.33963, z: -2.3}
   m_LocalScale: {x: 0.8070449, y: 0.807045, z: 0.807045}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,33 +65,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &61483278311020194
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1781857719182082}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.8700004, y: 9.88}
-    newSize: {x: 4.11, y: 8.45}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.11, y: 8.45}
-  m_EdgeRadius: 0
---- !u!61 &61873147060499440
+  m_Constraints: 4
+--- !u!61 &61049747206923634
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,6 +90,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 6.8700004, y: 9.88}
+  m_EdgeRadius: 0
+--- !u!61 &61483278311020194
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781857719182082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000019073486, y: 0.18572903}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.8700004, y: 9.88}
+    newSize: {x: 4.11, y: 8.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.267411, y: 11.421677}
   m_EdgeRadius: 0
 --- !u!95 &95121484400330752
 Animator:

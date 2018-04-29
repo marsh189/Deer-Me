@@ -19,6 +19,10 @@ public class Obstacle : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
 		{
+            if(this.gameObject.tag == "Wendigo")
+            {
+                col.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+            }
 			col.gameObject.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D> ().isDead = true;
         }
     }

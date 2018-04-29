@@ -19,6 +19,7 @@ TagManager:
   - WendigoManager
   - DarknessTrigger
   - TextBoxManager
+  - Wendigo
   layers:
   - Default
   - TransparentFX
