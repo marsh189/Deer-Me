@@ -1850,7 +1850,7 @@ Prefab:
     - target: {fileID: 114752973817878618, guid: 4ac09367aea67694ab08b956bc617c27,
         type: 2}
       propertyPath: spawnTime
-      value: 1
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1645187112732262, guid: 4ac09367aea67694ab08b956bc617c27, type: 2}
       propertyPath: m_IsActive
@@ -17477,7 +17477,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 390866020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.78553, y: 9.253142, z: -9.820434}
+  m_LocalPosition: {x: 705.32556, y: 84.99314, z: -9.820434}
   m_LocalScale: {x: 0.018726591, y: 0.018726591, z: 0.018726591}
   m_Children:
   - {fileID: 672520775}
@@ -56216,11 +56216,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 87.16
+      value: 705.7
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.96
+      value: 82.7
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.z
@@ -92247,6 +92247,7 @@ MonoBehaviour:
   canRead: 0
   finishedReading: 0
   boxAnim: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!4 &1946591973
 Transform:
   m_ObjectHideFlags: 0

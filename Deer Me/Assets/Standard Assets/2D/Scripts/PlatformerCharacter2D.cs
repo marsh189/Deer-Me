@@ -37,7 +37,7 @@ namespace UnityStandardAssets._2D
 		public Sprite onRopeSprite;
 		public Sprite idleSprite;
         public Transform startPosition;
-     
+        public bool isReading = false;
         public bool hasTorch;
 
         private void Awake()
@@ -63,7 +63,7 @@ namespace UnityStandardAssets._2D
         public void Update()
         {
 
-			if (!isDead && !isDrowning) 
+			if (!isDead && !isDrowning & !isReading) 
 			{
                 if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Throwing") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PickingUp"))
                 {
@@ -172,7 +172,7 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-			if (!isDead &&  !isDrowning) 
+			if (!isDead &&  !isDrowning & !isReading) 
 			{
                 if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Throwing") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PickingUp"))
                 {
@@ -223,11 +223,15 @@ namespace UnityStandardAssets._2D
 			} 
 			else 
 			{
+                
 				m_Rigidbody2D.velocity = Vector2.zero;
-				if (!m_Anim.GetBool ("isDying")) 
-				{
-					m_Anim.SetBool ("isDying", true);
-				}
+                if (isDead || isDrowning)
+                {
+                    if (!m_Anim.GetBool("isDying"))
+                    {
+                        m_Anim.SetBool("isDying", true);
+                    }
+                }
 			}
         }
 

@@ -13,9 +13,11 @@ public class TextBoxManager : MonoBehaviour {
     public bool canRead;
     public bool finishedReading;
     public Animator boxAnim;
+    public GameObject Player;
     // Use this for initialization
     void Start()
     {
+        Player = GameObject.FindGameObjectWithTag("Player");
         canRead = false;
         boxAnim = textBoxObj.GetComponent<Animator>();
     }
@@ -33,11 +35,14 @@ public class TextBoxManager : MonoBehaviour {
                 }
                 else if(curr <= fileLength)
                 {
+                    Player.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().isReading = true;
+
                     if(curr == 0)
                     {
                         Debug.Log("Animation");
                         textBoxObj.SetActive(true);
                         boxAnim.SetBool("Reading", true);
+                        //GameObject.Find("BookText").SetActive(true);
                     }
                     finishedReading = false;
                     //Time.timeScale = 0f;
@@ -69,7 +74,9 @@ public class TextBoxManager : MonoBehaviour {
         //Time.timeScale = 1.0f;
         boxAnim.SetBool("Reading", false);
         curr = 0;
+        //GameObject.Find("BookText").SetActive(false);
         yield return new WaitForSeconds(1f);
         textBoxObj.SetActive(false);
+        Player.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().isReading = false;
     }
 }
