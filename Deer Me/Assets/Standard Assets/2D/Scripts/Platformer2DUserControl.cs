@@ -11,7 +11,9 @@ namespace UnityStandardAssets._2D
         private bool m_Jump;
         private AudioSource source;
         public AudioClip jump;
-        public AudioClip walk;
+        public AudioClip[] walk;
+        public float timer;
+        public float rate;
 
         private void Awake()
         {
@@ -37,21 +39,30 @@ namespace UnityStandardAssets._2D
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             if (h != 0 && GetComponent<Animator>().GetBool("Ground"))
             {
-                source.UnPause();
+                if (Time.time > timer)
+                {
+                    if (!m_Character.isDead && !m_Character.isDrowning)
+                    {
+                        Debug.Log("HERE");
+                        timer = Time.time + 1 / rate;
+                        FootstepRandomize();
+                    }
+                }
             }
-            else
+            else if(m_Jump)
             {
-                source.Pause();
-
-            }
-
-            if (m_Jump)
-            {
+                Debug.Log("HERE!!!");
                 source.PlayOneShot(jump);
             }
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
+        }
+
+        void FootstepRandomize()
+        {
+            AudioClip soundToPlay = walk[UnityEngine.Random.Range(0, walk.Length)];
+            source.PlayOneShot(soundToPlay);
         }
     }
 }

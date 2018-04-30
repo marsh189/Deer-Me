@@ -119,7 +119,7 @@ namespace UnityStandardAssets._2D
 				if (m_Anim.GetCurrentAnimatorStateInfo (0).IsName ("DEAD"))
 				{
 					m_Anim.SetBool ("DEAD", true);
-					if (fadeScreen.color.a < 0.8f) 
+					if (fadeScreen.color.a < 1f) 
 					{
 						tempColor.a += Time.deltaTime;
 						fadeScreen.color = tempColor;
@@ -135,7 +135,7 @@ namespace UnityStandardAssets._2D
 			else if (isDrowning) 
 			{
 
-				if (fadeScreen.color.a < 0.8f) 
+				if (fadeScreen.color.a < 1f) 
 				{
 					tempColor.a += Time.deltaTime;
 					fadeScreen.color = tempColor;
