@@ -16,7 +16,7 @@ public class GrabScript : MonoBehaviour {
     private float scaleZ;
     private PlatformerCharacter2D pScript;
     public string tagName;
-
+    public int layer;
 	public RuntimeAnimatorController woodAnim;
 
 	public GameObject Icon;
@@ -48,10 +48,8 @@ public class GrabScript : MonoBehaviour {
                 droppedObj.transform.localScale = new Vector3(scaleX, scaleY, scaleZ);
                 droppedObj.AddComponent<Rigidbody2D>();
                 droppedObj.gameObject.tag = tagName;
-                if (tagName == "Metal")
-                {
-                    droppedObj.gameObject.layer = 0;
-                }
+                droppedObj.gameObject.layer = layer;
+
                 if (droppedObj.gameObject.tag == "Grabbable")
                 {
                     droppedObj.AddComponent<Animator>().runtimeAnimatorController = woodAnim as RuntimeAnimatorController;
@@ -89,6 +87,7 @@ public class GrabScript : MonoBehaviour {
                 else
                 {
                     tagName = grabObj.gameObject.tag;
+                    layer = grabObj.gameObject.layer;
                     carryPoint.GetComponent<SpriteRenderer>().sprite = grabObj.gameObject.GetComponent<SpriteRenderer>().sprite;
                     carryPoint.transform.localScale = new Vector3(grabObj.transform.localScale.x * (1 / 0.3833752f), grabObj.transform.localScale.y * (1 / 0.3833752f), grabObj.transform.localScale.z * (1 / 0.3833752f));
                     scaleX = grabObj.transform.localScale.x;
@@ -99,6 +98,7 @@ public class GrabScript : MonoBehaviour {
                     carryPoint.SetActive(false);
                     Icon.GetComponent<SpriteRenderer>().sprite = carryPoint.GetComponent<SpriteRenderer>().sprite; 
                     Icon.SetActive(true);
+                    Icon.transform.localScale = carryPoint.transform.localScale;
                     transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
                 }
             }
@@ -137,12 +137,12 @@ public class GrabScript : MonoBehaviour {
         }
         if(droppedObj.gameObject.tag == "Metal")
         {
-            droppedObj.layer = LayerMask.NameToLayer("Default");
+            droppedObj.layer = 18;
         }
         yield return new WaitForSeconds(0.7f);
         droppedObj.AddComponent<PolygonCollider2D>();
         droppedObj.AddComponent<freezeZ>();
-        droppedObj.layer = 8;
+        droppedObj.layer = layer;
         yield return null;
     }
 }

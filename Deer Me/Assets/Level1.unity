@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: e7e1ca84a7ffb415e9ce06a55ed52961,
     type: 2}
   m_UseShadowmask: 1
@@ -269,7 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4159602}
   - component: {fileID: 4159601}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,9 +1022,25 @@ Prefab:
       propertyPath: clips.Array.size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_wood.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_metal.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_grass.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_stone.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 569.8
+      value: -19.05
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1069,11 +1084,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_JumpForce
@@ -1166,7 +1181,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_WhatIsGround.m_Bits
-      value: 4294942703
+      value: 4294746063
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Mass
@@ -1281,6 +1296,90 @@ Prefab:
       propertyPath: walk.Array.data[4]
       value: 
       objectReference: {fileID: 8300000, guid: ed94836f29e59fd41ab21d04f20153dd, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_metal.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 698874d9943a0544abfe009702213761, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_metal.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 562efc3ca4234b547aac603d8011ce6a, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_metal.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: d7e642c61d6001345888c7b591452a9c, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_metal.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: a823be27628a04b4280adcaac853ca74, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_metal.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: e02fc44c3b1ba314fba8ac7661a0c18b, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_wood.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: b910220736798794c882659bdbf117c4, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_wood.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: a3c6ad137f1bdfb40a986a076154fb7f, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_wood.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: d658583190ac1364698a256b5c257a42, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_wood.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 87c28135a522696458e9caf8817d42cc, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_wood.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f471846fe8ea954aa9d3fdca4ee8fbb, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_grass.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e228aedb1d5e9349a19160904788145, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_grass.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: f710b6f348a3dee4dbb71307156d4ea7, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_grass.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 745992de5f532764bb8385f8cf976257, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_grass.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: a4288493680bdcf46a027ecfa55f437b, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_grass.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: ed94836f29e59fd41ab21d04f20153dd, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_stone.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 62cc36d55e2d9d74bb98d4fb4495a146, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_stone.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 57712afe856e15a4ab9121209614d5fe, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_stone.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2544feab9655eb144a3be47823fdf014, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_stone.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 22b0b973776849e42a3e2bf89a44f013, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: walk_stone.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6da046128a76d0143a43b8213c929978, type: 3}
+    - target: {fileID: 11400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: pushRate
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
@@ -1716,7 +1815,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 48246315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 717741871}
@@ -3126,7 +3225,7 @@ GameObject:
   - component: {fileID: 98521852}
   - component: {fileID: 98521851}
   - component: {fileID: 98521850}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3662,7 +3761,7 @@ GameObject:
   - component: {fileID: 126685454}
   - component: {fileID: 126685453}
   - component: {fileID: 126685452}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: woodwall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4464,71 +4563,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 210
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &142352900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 142352901}
-  - component: {fileID: 142352902}
-  m_Layer: 0
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &142352901
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 142352900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.198, y: -0.63, z: -0.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 313371554}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &142352902
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 142352900}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 2
-  m_Range: 12
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &150949252
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,7 +4770,7 @@ GameObject:
   - component: {fileID: 153636235}
   - component: {fileID: 153636234}
   - component: {fileID: 153636233}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5659,7 +5693,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -5976,7 +6010,7 @@ GameObject:
   - component: {fileID: 208108405}
   - component: {fileID: 208108404}
   - component: {fileID: 208108403}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6203,7 +6237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210935844}
   - component: {fileID: 210935843}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6373,7 +6407,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 215365870}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -80, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1301656637}
@@ -6480,7 +6514,7 @@ GameObject:
   - component: {fileID: 216169759}
   - component: {fileID: 216169758}
   - component: {fileID: 216169757}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7369,7 +7403,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -7656,7 +7690,7 @@ GameObject:
   - component: {fileID: 271834247}
   - component: {fileID: 271834246}
   - component: {fileID: 271834245}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (4)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -8182,7 +8216,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 278993461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2030593464}
@@ -8793,7 +8827,7 @@ GameObject:
   - component: {fileID: 304045622}
   - component: {fileID: 304045621}
   - component: {fileID: 304045620}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8948,7 +8982,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -9300,7 +9334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -9463,7 +9497,7 @@ GameObject:
   - component: {fileID: 313371557}
   - component: {fileID: 313371556}
   - component: {fileID: 313371555}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (8)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -9479,8 +9513,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 525.62, y: -15.66, z: -2}
   m_LocalScale: {x: 1.4990599, y: 0.41250998, z: 1}
-  m_Children:
-  - {fileID: 142352901}
+  m_Children: []
   m_Father: {fileID: 255807188}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9752,7 +9785,7 @@ GameObject:
   - component: {fileID: 318893822}
   - component: {fileID: 318893821}
   - component: {fileID: 318893820}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (10)
   m_TagString: Floatable
   m_Icon: {fileID: 0}
@@ -11685,7 +11718,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -11895,7 +11928,6 @@ VideoPlayer:
   m_Enabled: 1
   m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
@@ -11943,7 +11975,7 @@ GameObject:
   - component: {fileID: 406757879}
   - component: {fileID: 406757878}
   - component: {fileID: 406757877}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (14)
   m_TagString: Floatable
   m_Icon: {fileID: 0}
@@ -12176,7 +12208,7 @@ GameObject:
   - component: {fileID: 411382226}
   - component: {fileID: 411382225}
   - component: {fileID: 411382224}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13311,7 +13343,7 @@ GameObject:
   - component: {fileID: 467209766}
   - component: {fileID: 467209765}
   - component: {fileID: 467209764}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13641,7 +13673,7 @@ GameObject:
   - component: {fileID: 476114051}
   - component: {fileID: 476114050}
   - component: {fileID: 476114049}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14094,8 +14126,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495182983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -19.424473, y: 3.5731428, z: -3.3281736}
+  m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
   m_Children:
   - {fileID: 275731760}
   - {fileID: 747083712}
@@ -14263,7 +14295,7 @@ GameObject:
   - component: {fileID: 502741931}
   - component: {fileID: 502741930}
   - component: {fileID: 502741929}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15058,7 +15090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 533452997}
   - component: {fileID: 533452996}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15394,7 +15426,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -16232,7 +16264,7 @@ GameObject:
   - component: {fileID: 578786491}
   - component: {fileID: 578786490}
   - component: {fileID: 578786489}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17782,7 +17814,7 @@ GameObject:
   - component: {fileID: 659185200}
   - component: {fileID: 659185199}
   - component: {fileID: 659185198}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18048,7 +18080,7 @@ GameObject:
   - component: {fileID: 669950217}
   - component: {fileID: 669950216}
   - component: {fileID: 669950215}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18261,7 +18293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673422059}
   - component: {fileID: 673422058}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18335,7 +18367,7 @@ GameObject:
   - component: {fileID: 673458841}
   - component: {fileID: 673458840}
   - component: {fileID: 673458839}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18534,7 +18566,7 @@ GameObject:
   - component: {fileID: 677158663}
   - component: {fileID: 677158662}
   - component: {fileID: 677158661}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (8)
   m_TagString: Floatable
   m_Icon: {fileID: 0}
@@ -18743,7 +18775,7 @@ GameObject:
   - component: {fileID: 678972750}
   - component: {fileID: 678972749}
   - component: {fileID: 678972748}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (5)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -19081,7 +19113,7 @@ GameObject:
   - component: {fileID: 699793992}
   - component: {fileID: 699793991}
   - component: {fileID: 699793990}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19636,7 +19668,7 @@ GameObject:
   - component: {fileID: 715877939}
   - component: {fileID: 715877938}
   - component: {fileID: 715877937}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BigRock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19950,7 +19982,7 @@ GameObject:
   - component: {fileID: 718887234}
   - component: {fileID: 718887233}
   - component: {fileID: 718887232}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20471,7 +20503,7 @@ GameObject:
   - component: {fileID: 729071762}
   - component: {fileID: 729071761}
   - component: {fileID: 729071760}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21370,7 +21402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756167801}
   - component: {fileID: 756167800}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24122,7 +24154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -24245,7 +24277,7 @@ GameObject:
   - component: {fileID: 835345066}
   - component: {fileID: 835345065}
   - component: {fileID: 835345064}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24338,7 +24370,7 @@ GameObject:
   - component: {fileID: 841608994}
   - component: {fileID: 841608993}
   - component: {fileID: 841608992}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24626,7 +24658,7 @@ GameObject:
   - component: {fileID: 850573846}
   - component: {fileID: 850573845}
   - component: {fileID: 850573844}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24834,7 +24866,7 @@ GameObject:
   - component: {fileID: 851400900}
   - component: {fileID: 851400903}
   - component: {fileID: 851400899}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (6)
   m_TagString: Floatable
   m_Icon: {fileID: 0}
@@ -25632,7 +25664,7 @@ GameObject:
   - component: {fileID: 888138370}
   - component: {fileID: 888138369}
   - component: {fileID: 888138368}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (2)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -25770,7 +25802,7 @@ GameObject:
   - component: {fileID: 898745629}
   - component: {fileID: 898745628}
   - component: {fileID: 898745627}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26634,7 +26666,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919191838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1753229335}
@@ -27971,7 +28003,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -29342,7 +29373,7 @@ GameObject:
   - component: {fileID: 1025222491}
   - component: {fileID: 1025222490}
   - component: {fileID: 1025222489}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (13)
   m_TagString: Floatable
   m_Icon: {fileID: 0}
@@ -30186,7 +30217,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -31368,7 +31399,7 @@ GameObject:
   - component: {fileID: 1099173697}
   - component: {fileID: 1099173696}
   - component: {fileID: 1099173695}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32107,7 +32138,7 @@ GameObject:
   - component: {fileID: 1132636715}
   - component: {fileID: 1132636714}
   - component: {fileID: 1132636716}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33881,7 +33912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197718016}
   - component: {fileID: 1197718015}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34592,7 +34623,7 @@ GameObject:
   - component: {fileID: 1229603214}
   - component: {fileID: 1229603213}
   - component: {fileID: 1229603212}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (3)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -38264,7 +38295,7 @@ GameObject:
   - component: {fileID: 1340644625}
   - component: {fileID: 1340644624}
   - component: {fileID: 1340644623}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40041,7 +40072,7 @@ GameObject:
   - component: {fileID: 1397714065}
   - component: {fileID: 1397714064}
   - component: {fileID: 1397714063}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40338,7 +40369,7 @@ GameObject:
   - component: {fileID: 1407839072}
   - component: {fileID: 1407839074}
   - component: {fileID: 1407839073}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: woodwall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40583,7 +40614,7 @@ GameObject:
   - component: {fileID: 1421820554}
   - component: {fileID: 1421820553}
   - component: {fileID: 1421820552}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40752,7 +40783,7 @@ GameObject:
   - component: {fileID: 1426525196}
   - component: {fileID: 1426525195}
   - component: {fileID: 1426525194}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40919,7 +40950,7 @@ GameObject:
   - component: {fileID: 1433533882}
   - component: {fileID: 1433533881}
   - component: {fileID: 1433533880}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (12)
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -41392,7 +41423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1441539118}
   - component: {fileID: 1441539117}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41493,7 +41524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444418832}
   - component: {fileID: 1444418831}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41567,7 +41598,7 @@ GameObject:
   - component: {fileID: 1445936068}
   - component: {fileID: 1445936067}
   - component: {fileID: 1445936066}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42724,7 +42755,7 @@ GameObject:
   - component: {fileID: 1509338052}
   - component: {fileID: 1509338051}
   - component: {fileID: 1509338050}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BigRock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42817,7 +42848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510104220}
   - component: {fileID: 1510104219}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44507,7 +44538,7 @@ GameObject:
   - component: {fileID: 1560214696}
   - component: {fileID: 1560214695}
   - component: {fileID: 1560214694}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44778,7 +44809,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1565283176}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 179997546}
@@ -44986,7 +45017,7 @@ GameObject:
   - component: {fileID: 1577428898}
   - component: {fileID: 1577428897}
   - component: {fileID: 1577428896}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: BigRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45960,7 +45991,7 @@ GameObject:
   - component: {fileID: 1616052070}
   - component: {fileID: 1616052069}
   - component: {fileID: 1616052072}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -47596,7 +47627,7 @@ GameObject:
   - component: {fileID: 1662710906}
   - component: {fileID: 1662710905}
   - component: {fileID: 1662710904}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47693,7 +47724,7 @@ GameObject:
   - component: {fileID: 1663861254}
   - component: {fileID: 1663861253}
   - component: {fileID: 1663861256}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (1)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -48862,7 +48893,7 @@ GameObject:
   - component: {fileID: 1701372611}
   - component: {fileID: 1701372610}
   - component: {fileID: 1701372609}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50516,7 +50547,7 @@ GameObject:
   - component: {fileID: 1752252433}
   - component: {fileID: 1752252432}
   - component: {fileID: 1752252431}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (11)
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -50894,7 +50925,7 @@ GameObject:
   - component: {fileID: 1767797811}
   - component: {fileID: 1767797810}
   - component: {fileID: 1767797809}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: CementMetal2 (2)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -51327,7 +51358,7 @@ GameObject:
   - component: {fileID: 1786938120}
   - component: {fileID: 1786938119}
   - component: {fileID: 1786938118}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Obstacles that aint deadly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52541,7 +52572,7 @@ GameObject:
   - component: {fileID: 1829337347}
   - component: {fileID: 1829337346}
   - component: {fileID: 1829337348}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Wood2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54580,7 +54611,7 @@ GameObject:
   - component: {fileID: 1905071244}
   - component: {fileID: 1905071243}
   - component: {fileID: 1905071242}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Puzzle Metal (7)
   m_TagString: Metal
   m_Icon: {fileID: 0}
@@ -54867,7 +54898,7 @@ GameObject:
   - component: {fileID: 1911543129}
   - component: {fileID: 1911543132}
   - component: {fileID: 1911543128}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55016,7 +55047,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1912209488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 40, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 226762402}
@@ -55382,7 +55413,7 @@ GameObject:
   - component: {fileID: 1934547882}
   - component: {fileID: 1934547881}
   - component: {fileID: 1934547880}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: DemoCrate (15)
   m_TagString: Floatable
   m_Icon: {fileID: 0}
@@ -55543,7 +55574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940171285}
   - component: {fileID: 1940171284}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57705,7 +57736,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034537105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -80, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 773867329}
@@ -57811,7 +57842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036607316}
   - component: {fileID: 2036607315}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58680,7 +58711,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1222806087177142, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4237855052870848, guid: 6ccf0ce9da7c5894492f1dd3ccc8c9ee, type: 2}
       propertyPath: m_LocalScale.x
@@ -58944,7 +58975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2066018314}
   - component: {fileID: 2066018313}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59818,7 +59849,7 @@ GameObject:
   - component: {fileID: 2101609865}
   - component: {fileID: 2101609864}
   - component: {fileID: 2101609863}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Wood1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60405,7 +60436,7 @@ GameObject:
   - component: {fileID: 2120616739}
   - component: {fileID: 2120616738}
   - component: {fileID: 2120616737}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: LeftBranch (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60972,6 +61003,7 @@ MonoBehaviour:
   carryPoint: {fileID: 1034177301}
   Player: {fileID: 660701811}
   tagName: 
+  layer: 0
   woodAnim: {fileID: 9100000, guid: 84c50824bba8eea4b98e45a5852ab800, type: 2}
   Icon: {fileID: 1123700714}
   Torch: {fileID: 1648332459}
@@ -61205,7 +61237,7 @@ GameObject:
   - component: {fileID: 2140550283}
   - component: {fileID: 2140550282}
   - component: {fileID: 2140550281}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: MiddleRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

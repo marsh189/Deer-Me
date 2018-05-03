@@ -160,7 +160,10 @@ namespace UnityStandardAssets._2D
             for (int i = 0; i < colliders.Length; i++)
             {
                 if (colliders[i].gameObject != gameObject)
+                {
                     m_Grounded = true;
+                    GetComponent<Platformer2DUserControl>().layer = colliders[i].gameObject.layer;
+                }
             }
             m_Anim.SetBool("Ground", m_Grounded);
 
