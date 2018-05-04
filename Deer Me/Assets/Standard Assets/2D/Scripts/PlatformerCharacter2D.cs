@@ -81,6 +81,7 @@ namespace UnityStandardAssets._2D
                         if (!m_Grounded && Input.GetKeyUp(KeyCode.Space))
                         {
                             m_Rigidbody2D.AddForce(new Vector2(0f, -m_JumpForce * 0.25f));
+							GetComponent<Platformer2DUserControl> ().Jump ();
                         }
 
                         if (climbing)

@@ -77,15 +77,16 @@ namespace UnityStandardAssets._2D
                     }
                 }
             }
-            else if(m_Jump)
-            {
-                Debug.Log("HERE!!!");
-                source.PlayOneShot(jump);
-            }
+
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
             m_Jump = false;
         }
+
+		public void Jump()
+		{
+			source.PlayOneShot(jump);
+		}
 
         void GrassFootstepRandomize()
         {

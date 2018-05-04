@@ -14,6 +14,7 @@ public class GrabScript : MonoBehaviour {
     private float scaleX;
     private float scaleY;
     private float scaleZ;
+	public float zPos;
     private PlatformerCharacter2D pScript;
     public string tagName;
     public int layer;
@@ -56,7 +57,7 @@ public class GrabScript : MonoBehaviour {
                     droppedObj.AddComponent<BreakingWood>();
                 }
 
-                droppedObj.transform.position = Player.transform.position;
+				droppedObj.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, zPos);
                 if (pScript.m_FacingRight)
                 {
                     droppedObj.GetComponent<Rigidbody2D>().velocity = (new Vector2(3f, 3f));
@@ -93,6 +94,7 @@ public class GrabScript : MonoBehaviour {
                     scaleX = grabObj.transform.localScale.x;
                     scaleY = grabObj.transform.localScale.y;
                     scaleZ = grabObj.transform.localScale.z;
+					zPos = grabObj.transform.position.z;
                     Destroy(grabObj.gameObject);
                     grabbed = true;
                     carryPoint.SetActive(false);
