@@ -6,6 +6,9 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="DoorLeverUnlock.cs" t="Include" />
+        <e p="DoorUnlock.cs" t="Include" />
+        <e p="EndGame.cs" t="Include" />
         <e p="MyAssets" t="Include">
           <e p="Scripts" t="Include">
             <e p="BreakingWood.cs" t="Include" />
@@ -14,6 +17,7 @@
             <e p="Checkpoint.cs" t="Include" />
             <e p="CheckpointManager.cs" t="Include" />
             <e p="CollisionHelp.cs" t="Include" />
+            <e p="CreditSceneManager.cs" t="Include" />
             <e p="DarknessTrigger.cs" t="Include" />
             <e p="destroyDESTROY.cs" t="Include" />
             <e p="DrowningDeath.cs" t="Include" />
@@ -45,6 +49,7 @@
                 <e p="PlatformOne.cs" t="Include" />
                 <e p="PlatformPulley.cs" t="Include" />
                 <e p="PlatformTwo.cs" t="Include" />
+                <e p="WeightedPlatformOne.cs" t="Include" />
               </e>
             </e>
             <e p="PushingScript.cs" t="Include" />
@@ -53,6 +58,8 @@
               <e p="PlayFootSteps.cs" t="Include" />
               <e p="WoodSounds.cs" t="Include" />
             </e>
+            <e p="TextBoxManager.cs" t="Include" />
+            <e p="TextSetter.cs" t="Include" />
             <e p="TorchLight.cs" t="Include" />
             <e p="TreeTorch.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
@@ -65,6 +72,11 @@
             <e p="WendigoManager.cs" t="Include" />
             <e p="WendigoPause.cs" t="Include" />
             <e p="WendigoUnPause.cs" t="Include" />
+          </e>
+          <e p="SoundFX" t="Include">
+            <e p="Background" t="Include">
+              <e p="FadeMenuSound.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -136,10 +148,9 @@
           </e>
         </e>
         <e p="Text" t="Include">
+          <e p="House2Book1.txt" t="Include" />
           <e p="Test.txt" t="Include" />
         </e>
-        <e p="TextBoxManager.cs" t="Include" />
-        <e p="TextSetter.cs" t="Include" />
       </e>
       <e p="Deer Me.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

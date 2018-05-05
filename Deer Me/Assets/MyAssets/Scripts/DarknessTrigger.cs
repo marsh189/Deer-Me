@@ -18,8 +18,11 @@ public class DarknessTrigger : MonoBehaviour {
 
 	public GameObject player;
 	public Light worldLight;
+	public Camera mainCamera;
 	public float minVisibility;
+	public float minCamColorVal;
 	public float lightDeltaValue;
+	public float camColorDelta;
 	public float innerTriggerDist;
 	public bool isEntrance;
 
@@ -76,8 +79,12 @@ public class DarknessTrigger : MonoBehaviour {
 				// UNLOCK LIGHT DELTA LOCK
 				triggerLock = true;
 				// DECREASE WORLD LIGHT
-				if (worldLight.intensity > minVisibility)
-                    worldLight.intensity -= lightDeltaValue;
+				if (worldLight.intensity > minVisibility) {
+					worldLight.intensity -= lightDeltaValue;
+					var temp = new Color(mainCamera.backgroundColor.r - camColorDelta, mainCamera.backgroundColor.b - camColorDelta, mainCamera.backgroundColor.g - camColorDelta);
+					mainCamera.backgroundColor = temp;
+				}
+
 				if (worldLight.intensity <= minVisibility && fullDarkLock) {
 					fullDarkPos = playerPosX;
 					print(fullDarkPos);
@@ -93,8 +100,11 @@ public class DarknessTrigger : MonoBehaviour {
 						triggerLock = false;
 					}
 					// INCREASE WORLD LIGHT
-					if (worldLight.intensity < 1f)
+					if (worldLight.intensity < 1f) {
 						worldLight.intensity += lightDelta * Time.deltaTime;
+                        var temp = new Color(mainCamera.backgroundColor.r + camColorDelta, mainCamera.backgroundColor.b + camColorDelta, mainCamera.backgroundColor.g + camColorDelta);
+                        mainCamera.backgroundColor = temp;
+					}
 				}
 			}
 		// EXIT
@@ -104,8 +114,11 @@ public class DarknessTrigger : MonoBehaviour {
 				// UNLOCK LIGHT DELTA LOCK
 				triggerLock = true;
 				// DECREASE WORLD LIGHT
-				if (worldLight.intensity > minVisibility)
-                    worldLight.intensity -= lightDeltaValue;
+				if (worldLight.intensity > minVisibility) {
+					worldLight.intensity -= lightDeltaValue;
+					var temp = new Color(mainCamera.backgroundColor.r - camColorDelta, mainCamera.backgroundColor.b - camColorDelta, mainCamera.backgroundColor.g - camColorDelta);
+					mainCamera.backgroundColor = temp;
+				}
 			// IF PLAYER MOVING RIGHT
 			} else {
 				// IF PLAYER INSIDE INNER TRIGGER BOX
@@ -116,8 +129,11 @@ public class DarknessTrigger : MonoBehaviour {
 						triggerLock = false;
 					}
 					// INCREASE WORLD LIGHT
-					if (worldLight.intensity < 1f)
+					if (worldLight.intensity < 1f) {
 						worldLight.intensity += lightDelta * Time.deltaTime;
+                        var temp = new Color(mainCamera.backgroundColor.r + camColorDelta * 1.15f, mainCamera.backgroundColor.b + camColorDelta * 1.15f, mainCamera.backgroundColor.g + camColorDelta * 1.15f);
+                        mainCamera.backgroundColor = temp;
+					}
 				}
 			}
 		}
