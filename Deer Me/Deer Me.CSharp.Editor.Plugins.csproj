@@ -279,13 +279,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Deer Me.CSharp.csproj">
-      <Project>{01955A53-4868-82F4-7421-9B931FB86D86}</Project>
-      <Name>Deer Me.CSharp</Name>
-    </ProjectReference>
     <ProjectReference Include="Deer Me.CSharp.Plugins.csproj">
       <Project>{0FBC6D4A-0A36-213D-6168-98FAA5C28F41}</Project>
       <Name>Deer Me.CSharp.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="Deer Me.CSharp.csproj">
+      <Project>{01955A53-4868-82F4-7421-9B931FB86D86}</Project>
+      <Name>Deer Me.CSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -294,6 +294,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Text\House2Book1.txt" />
     <None Include="Assets\Text\Test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

@@ -289,6 +289,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Text\House2Book1.txt" />
     <None Include="Assets\Text\Test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
