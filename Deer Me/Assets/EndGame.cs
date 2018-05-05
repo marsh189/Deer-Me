@@ -11,6 +11,7 @@ public class EndGame : MonoBehaviour {
     public bool startFade;
     private Color tempColor;
     public AudioListener audio;
+    public string SceneName;
 
 	// Update is called once per frame
 	void Update () 
@@ -24,7 +25,7 @@ public class EndGame : MonoBehaviour {
             }
             else
             {
-                SceneManager.LoadScene("Credits");
+                SceneManager.LoadScene(SceneName);
             }
         }
 	}

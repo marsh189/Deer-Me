@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BreakingWood : MonoBehaviour {
 
+    public AudioClip clip; 
 
 	void Update()
 	{
@@ -24,6 +25,7 @@ public class BreakingWood : MonoBehaviour {
 		if (col.gameObject.tag == "BreaksWood") 
 		{
 			GetComponent<Animator> ().SetBool ("isBreaking", true);
+            GetComponent<AudioSource>().PlayOneShot(clip);
 		}
 
 	}

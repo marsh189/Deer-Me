@@ -9,11 +9,8 @@ public class LowerPlatform : MonoBehaviour {
     //2= side player is moving
 
     public bool onPlatform;
-
     public GameObject plat;
-
     public GameObject rope;
-
 
     //where platform ends
     public Transform end;
@@ -22,16 +19,15 @@ public class LowerPlatform : MonoBehaviour {
 
     //scale the rope ends
     public Vector3 finalScale;
-
-
     Vector3 temp =  new Vector3(1,1,1);
-
+    public AudioClip pulleySound;
 
     // Update is called once per frame
     void Update () 
     {
         if (onPlatform)
         {
+            GetComponent<AudioSource>().PlayOneShot(pulleySound);
             MoveToEnd();
         }
     }

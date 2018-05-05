@@ -40,10 +40,11 @@ public class PlatformPulley : MonoBehaviour {
     Vector3 temp_1 =  new Vector3(1,1,1);
     Vector3 temp_2 =  new Vector3(1,1,1);
 
-	
+
 	// Update is called once per frame
 	void Update () 
     {
+
         if (onPlatform_1)
         {
             MoveToEnd();

@@ -9,6 +9,10 @@ public class PlatformTrigger : MonoBehaviour {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<LowerPlatform>().onPlatform = true;
+            if (!GetComponentInParent<AudioSource>().isPlaying)
+            {
+                GetComponentInParent<AudioSource>().Play();
+            }
         }
     }
 
@@ -17,6 +21,7 @@ public class PlatformTrigger : MonoBehaviour {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<LowerPlatform>().onPlatform = false;
+            GetComponentInParent<AudioSource>().Stop();
         }
     }
 }

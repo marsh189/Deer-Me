@@ -50,6 +50,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4419072255097906}
   - component: {fileID: 114389465994271574}
+  - component: {fileID: 82720194037957444}
   m_Layer: 0
   m_Name: PlatformPulleySystem
   m_TagString: Untagged
@@ -114,7 +115,7 @@ GameObject:
   - component: {fileID: 61479071360216366}
   - component: {fileID: 114677217791179634}
   - component: {fileID: 61939354845208326}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: PulleyPlatform_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +212,7 @@ GameObject:
   - component: {fileID: 61057795782146728}
   - component: {fileID: 61448756219792282}
   - component: {fileID: 114389136085244176}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: PulleyPlatform_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,8 +272,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1798497161990094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.099, y: -1.663, z: 0}
-  m_LocalScale: {x: 0.3, y: 1, z: 1}
+  m_LocalPosition: {x: 0.099, y: -2.17, z: 0}
+  m_LocalScale: {x: 0.3, y: 1.3668709, z: 1}
   m_Children: []
   m_Father: {fileID: 4448298096428204}
   m_RootOrder: 0
@@ -284,8 +285,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1874702424665340}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -3.393, z: 0}
-  m_LocalScale: {x: 0.29999998, y: 1.5097558, z: 1}
+  m_LocalPosition: {x: 0.09, y: -3.79, z: 0}
+  m_LocalScale: {x: 0.29999998, y: 1.9086531, z: 1}
   m_Children: []
   m_Father: {fileID: 4013483042452312}
   m_RootOrder: 0
@@ -314,7 +315,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1808989385514338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -3, z: 1.5898438}
+  m_LocalPosition: {x: -5.32, y: -4, z: 1.5898438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4419072255097906}
@@ -327,7 +328,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1389113875609580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -5, z: 1.5898438}
+  m_LocalPosition: {x: 4, y: -6.08, z: 1.5898438}
   m_LocalScale: {x: 0.88968754, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4419072255097906}
@@ -353,7 +354,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343386802106218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -5, z: 1.5898438}
+  m_LocalPosition: {x: -5.35, y: -6, z: 1.5898438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4151434446037484}
@@ -427,7 +428,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1322954934290142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -3, z: 1.5898438}
+  m_LocalPosition: {x: -5.35, y: -4, z: 1.5898438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4151434446037484}
@@ -440,7 +441,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1685941202198418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -3, z: 1.5898438}
+  m_LocalPosition: {x: 4, y: -4, z: 1.5898438}
   m_LocalScale: {x: 0.88968754, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4151434446037484}
@@ -453,7 +454,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1352964505791626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -5, z: 1.5898438}
+  m_LocalPosition: {x: 4, y: -6, z: 1.5898438}
   m_LocalScale: {x: 0.88968754, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4151434446037484}
@@ -559,6 +560,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.9595594, y: 0.55431247}
   m_EdgeRadius: 0
+--- !u!82 &82720194037957444
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230486611225658}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 7.9451294
+  MaxDistance: 12.837799
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114389136085244176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -583,7 +664,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onPlatform_1: 0
   onPlatform_2: 0
-  atEnd: 0
   atBottom: {fileID: 1389113875609580}
   plat_1: {fileID: 1808989385514338}
   plat_2: {fileID: 1389113875609580}
@@ -593,10 +673,11 @@ MonoBehaviour:
   start_2: {fileID: 4893564069313512}
   end_1: {fileID: 4344904066622488}
   end_2: {fileID: 4841226650673232}
-  speed_1: 0.3
-  speed_2: 0.25
-  finalScale_1: {x: 1, y: 1.6, z: 1}
-  finalScale_2: {x: 1, y: 0.7, z: 1}
+  speed_1: 0.2
+  speed_2: 0.14
+  finalScale_1: {x: 1, y: 1.4, z: 1}
+  finalScale_2: {x: 1, y: 0.75, z: 1}
+  pulleySound: {fileID: 8300000, guid: a7242a1eeb30d164789d69a106f1bd8b, type: 3}
 --- !u!114 &114677217791179634
 MonoBehaviour:
   m_ObjectHideFlags: 1

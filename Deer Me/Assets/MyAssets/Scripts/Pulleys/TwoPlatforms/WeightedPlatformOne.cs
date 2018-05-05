@@ -16,6 +16,10 @@ public class WeightedPlatformOne : MonoBehaviour {
             if (currMass == massNeeded)
             {
                 GetComponentInParent<PlatformPulley>().onPlatform_1 = true;
+                if (!GetComponentInParent<AudioSource>().isPlaying)
+                {
+                    GetComponentInParent<AudioSource>().Play();
+                }
             }
         }
     }
@@ -28,6 +32,7 @@ public class WeightedPlatformOne : MonoBehaviour {
             if (currMass != massNeeded)
             {
                 GetComponentInParent<PlatformPulley>().onPlatform_1 = false;
+                GetComponentInParent<AudioSource>().Stop();
             }
         }
     }

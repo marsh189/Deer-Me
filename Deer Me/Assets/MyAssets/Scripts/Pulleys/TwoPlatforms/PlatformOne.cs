@@ -10,6 +10,10 @@ public class PlatformOne : MonoBehaviour {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<PlatformPulley>().onPlatform_1 = true;
+            if (!GetComponentInParent<AudioSource>().isPlaying)
+            {
+                GetComponentInParent<AudioSource>().Play();
+            }
         }
     }
 
@@ -18,6 +22,7 @@ public class PlatformOne : MonoBehaviour {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<PlatformPulley>().onPlatform_1 = false;
+            GetComponentInParent<AudioSource>().Stop();
         }
     }
 }

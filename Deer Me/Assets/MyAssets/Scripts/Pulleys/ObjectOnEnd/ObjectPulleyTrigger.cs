@@ -9,6 +9,10 @@ public class ObjectPulleyTrigger : MonoBehaviour {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<ObjectPulley>().onPlatform_1 = true;
+            if (!GetComponentInParent<AudioSource>().isPlaying)
+            {
+                GetComponentInParent<AudioSource>().Play();
+            }
         }
     }
 
@@ -17,6 +21,8 @@ public class ObjectPulleyTrigger : MonoBehaviour {
         if (col.gameObject.tag == "Player" || col.gameObject.tag == "Box")
         {
             GetComponentInParent<ObjectPulley>().onPlatform_1 = false;
+            GetComponentInParent<AudioSource>().Stop();
+
         }
     }
 }

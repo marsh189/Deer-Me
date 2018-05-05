@@ -58,21 +58,24 @@ namespace UnityStandardAssets._2D
                         {
                             timer = Time.time + 1 / pushRate;
                         }
-                        if (layer == 0)
+                        if (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Walking") || GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Pushing"))
                         {
-                            GrassFootstepRandomize();
-                        }
-                        else if (layer == 8 || layer == 19)
-                        {
-                            WoodFootstepRandomize();
-                        }
-                        else if (layer == 18)
-                        {
-                            MetalFootstepRandomize();
-                        }
-                        else if (layer == 20)
-                        {
-                            StoneFootstepRandomize();
+                            if (layer == 0)
+                            {
+                                GrassFootstepRandomize();
+                            }
+                            else if (layer == 8 || layer == 19)
+                            {
+                                WoodFootstepRandomize();
+                            }
+                            else if (layer == 18)
+                            {
+                                MetalFootstepRandomize();
+                            }
+                            else if (layer == 20)
+                            {
+                                StoneFootstepRandomize();
+                            }
                         }
                     }
                 }

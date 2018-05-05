@@ -15,6 +15,9 @@ public class TextBoxManager : MonoBehaviour {
     public Animator boxAnim;
     public GameObject Player;
     public bool startedLine;
+
+    public AudioClip[] bookSounds;
+
     // Use this for initialization
     void Start()
     {
@@ -43,6 +46,8 @@ public class TextBoxManager : MonoBehaviour {
                         Debug.Log("Animation");
                         textBoxObj.SetActive(true);
                         boxAnim.SetBool("Reading", true);
+                        Player.GetComponent<AudioSource>().PlayOneShot(bookSounds[0]);
+
                         //GameObject.Find("BookText").SetActive(true);
                     }
                     finishedReading = false;
@@ -84,6 +89,7 @@ public class TextBoxManager : MonoBehaviour {
     IEnumerator closeBook()
     {
         finishedReading = true;
+        Player.GetComponent<AudioSource>().PlayOneShot(bookSounds[2]);
         //Time.timeScale = 1.0f;
         boxAnim.SetBool("Reading", false);
         curr = 0;
@@ -94,6 +100,7 @@ public class TextBoxManager : MonoBehaviour {
     }
     IEnumerator readBook(string line)
     {
+        Player.GetComponent<AudioSource>().PlayOneShot(bookSounds[1]);
         TextBoxText.text = "";
         startedLine = true;
         foreach (char letter in line.ToCharArray())

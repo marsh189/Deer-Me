@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 	public GameManager gm;
 	public CheckpointManager cm;
 	public bool isPaused = false;
+
+    public GameObject controls;
+    public GameObject pauseCanvas;
 
 	// Use this for initialization
 	void Start () {
@@ -52,4 +56,16 @@ public class UIManager : MonoBehaviour {
 		PlayerPrefs.SetString ("Level_Checkpoint", null);
 		PlayerPrefs.SetFloat("Lighting", 1f);
 	}
+
+    public void ControlsClicked()
+    {
+        pauseCanvas.SetActive(false);
+        controls.SetActive(true);
+    }
+
+    public void BackFromControls()
+    {
+        pauseCanvas.SetActive(true);
+        controls.SetActive(false);
+    }
 }

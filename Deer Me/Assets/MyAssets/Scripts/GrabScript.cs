@@ -19,6 +19,7 @@ public class GrabScript : MonoBehaviour {
     public string tagName;
     public int layer;
 	public RuntimeAnimatorController woodAnim;
+    public AudioClip woodBreakClip;
 
 	public GameObject Icon;
 
@@ -54,7 +55,10 @@ public class GrabScript : MonoBehaviour {
                 if (droppedObj.gameObject.tag == "Grabbable")
                 {
                     droppedObj.AddComponent<Animator>().runtimeAnimatorController = woodAnim as RuntimeAnimatorController;
+                    droppedObj.AddComponent<AudioSource>();
+
                     droppedObj.AddComponent<BreakingWood>();
+                    droppedObj.GetComponent<BreakingWood>().clip = woodBreakClip;
                 }
 
 				droppedObj.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, zPos);
@@ -102,6 +106,7 @@ public class GrabScript : MonoBehaviour {
                     Icon.SetActive(true);
                     Icon.transform.localScale = carryPoint.transform.localScale;
                     transform.parent.GetComponent<Animator>().SetTrigger("isPickingUp");
+                   
                 }
             }
         }
