@@ -20,6 +20,7 @@ TagManager:
   - DarknessTrigger
   - TextBoxManager
   - Wendigo
+  - FinalDoor
   layers:
   - Default
   - TransparentFX

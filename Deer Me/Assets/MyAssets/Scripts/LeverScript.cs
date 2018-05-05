@@ -7,8 +7,6 @@ public class LeverScript : MonoBehaviour {
     public bool leverActive = false;
     public GameObject NewPositionObj;
     public GameObject OldPositionObj;
-    Vector3 beginPosOffset;
-    Vector3 endPosOffset;
     LineRenderer waterLine;
 
 	public GameObject activeSprite;
@@ -16,14 +14,7 @@ public class LeverScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        /*if(gameObjectReference.gameObject.name == "WaterManager (10)")
-        {
-            waterLine = gameObjectReference.GetComponent<LineRenderer>();
-            beginPosOffset = gameObjectReference.transform.position - waterLine.GetPosition(0);
-            endPosOffset = gameObjectReference.transform.position - waterLine.GetPosition(1);
-            
-        } 
-        */
+        
 	}
 	
 	// Update is called once per frame
@@ -36,13 +27,7 @@ public class LeverScript : MonoBehaviour {
         if (leverActive && NewPositionObj.transform.position != gameObjectReference.transform.position)
         {
             gameObjectReference.transform.position = Vector3.MoveTowards(gameObjectReference.transform.position, NewPositionObj.transform.position, Time.deltaTime * 2);
-           /* if (gameObjectReference.gameObject.name == "WaterManager (10)")
-            {
-                Vector3 newBeginPos = gameObjectReference.transform.position + beginPosOffset;
-                Vector3 newEndPos = gameObjectReference.transform.position + endPosOffset;
-                waterLine.SetPosition(0, newBeginPos);
-                waterLine.SetPosition(1, newEndPos);
-            }*/
+           
             Debug.Log("moving up");
         }
         if(gameObjectReference.gameObject.tag == "buttonLog")
