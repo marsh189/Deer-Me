@@ -1,15 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MyAssets\SoundFX\Background\FadeMenuSound.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="84" Column="57" />
+      <File FileName="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="123" Column="6" />
       <File FileName="Assets\MyAssets\Scripts\BreakingWood.cs" Line="1" Column="1" />
-      <File FileName="Assets\MyAssets\Scripts\GrabScript.cs" Line="61" Column="43" />
-      <File FileName="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" Line="88" Column="29" />
+      <File FileName="Assets\MyAssets\Scripts\GrabScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
       <File FileName="Assets\MyAssets\Scripts\Pulleys\TwoPlatforms\PlatformPulley.cs" Line="1" Column="1" />
       <File FileName="Assets\MyAssets\Scripts\Pulleys\TwoPlatforms\PlatformOne.cs" Line="1" Column="1" />
       <File FileName="Assets\MyAssets\Scripts\Pulleys\TwoPlatforms\WeightedPlatformOne.cs" Line="1" Column="1" />
-      <File FileName="Assets\MyAssets\SoundFX\Background\FadeMenuSound.cs" Line="11" Column="12" />
+      <File FileName="Assets\MyAssets\SoundFX\Background\FadeMenuSound.cs" Line="24" Column="61" />
+      <File FileName="Assets\MyAssets\Scripts\CreditSceneManager.cs" Line="8" Column="5" />
+      <File FileName="Assets\EndGame.cs" Line="37" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

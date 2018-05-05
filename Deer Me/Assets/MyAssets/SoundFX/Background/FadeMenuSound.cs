@@ -6,6 +6,7 @@ public class FadeMenuSound : MonoBehaviour {
 
 	public AudioSource[] sources;
 	public float[] volumes;
+    public float speed;
 
 	// Use this for initialization
 	void Awake () 
@@ -20,7 +21,7 @@ public class FadeMenuSound : MonoBehaviour {
 	{
 		for (int i = 0; i < sources.Length; i++) {
 			if (sources [i].volume < volumes [i]) {
-				sources [i].volume += Time.deltaTime;
+                sources [i].volume += Time.deltaTime * speed;
 			}
 		}
 	}
