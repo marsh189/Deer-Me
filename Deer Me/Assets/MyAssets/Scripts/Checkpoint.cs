@@ -7,6 +7,7 @@ public class Checkpoint : MonoBehaviour {
     public Status state;
     public CheckpointManager cm;
     public float time;
+    public bool visited;
 	// Use this for initialization
 	void Start () {
         cm = GameObject.FindGameObjectWithTag("CheckpointManager").GetComponent<CheckpointManager>();
@@ -20,7 +21,16 @@ public class Checkpoint : MonoBehaviour {
     {
         if(col.gameObject.tag == "Player")
         {
-            cm.UpdateCheckpoints(this.gameObject, time);
+            if (!visited)
+            {
+                cm.UpdateCheckpoints(this.gameObject, time);
+                visited = true;
+            }
+            else
+            {
+                cm.UpdateCheckpoints(this.gameObject, 0);
+            }
+            
         }
     }
     

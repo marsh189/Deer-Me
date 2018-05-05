@@ -34,7 +34,7 @@ public class WendigoManager : MonoBehaviour {
 
     public void SpawnWendigo()
     {
-        
+        Player.GetComponent<UnityStandardAssets._2D.PlatformerCharacter2D>().isChased = true;
         GameObject Wendigo = (GameObject)Instantiate(Resources.Load("Wendigo"), new Vector3(Player.transform.position.x - 10, Player.transform.position.y, Player.transform.position.z), Quaternion.Euler(0, 180, 0));
     }
     public void ResetTimer(float time)

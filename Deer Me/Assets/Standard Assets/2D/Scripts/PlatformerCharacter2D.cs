@@ -26,6 +26,7 @@ namespace UnityStandardAssets._2D
         public float climbSpeed;
         public float climbVelocity;
 		public bool isDead;
+        public bool isChased = false;
 		public bool isDrowning;
 		public RawImage fadeScreen;
 		public Canvas deathScreen;
@@ -39,6 +40,7 @@ namespace UnityStandardAssets._2D
         public Transform startPosition;
         public bool isReading = false;
         public bool hasTorch;
+
 
         private void Awake()
         {
@@ -63,7 +65,7 @@ namespace UnityStandardAssets._2D
         public void Update()
         {
 
-			if (!isDead && !isDrowning & !isReading) 
+			if (!isDead && !isDrowning & !isReading && !isChased) 
 			{
                 if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Throwing") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PickingUp"))
                 {
@@ -176,7 +178,7 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-			if (!isDead &&  !isDrowning & !isReading) 
+			if (!isDead &&  !isDrowning & !isReading && !isChased) 
 			{
                 if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Throwing") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("PickingUp"))
                 {
