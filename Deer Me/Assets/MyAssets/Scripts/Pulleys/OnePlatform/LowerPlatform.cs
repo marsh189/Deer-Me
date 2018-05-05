@@ -20,14 +20,12 @@ public class LowerPlatform : MonoBehaviour {
     //scale the rope ends
     public Vector3 finalScale;
     Vector3 temp =  new Vector3(1,1,1);
-    public AudioClip pulleySound;
 
     // Update is called once per frame
     void Update () 
     {
         if (onPlatform)
         {
-            GetComponent<AudioSource>().PlayOneShot(pulleySound);
             MoveToEnd();
         }
     }
