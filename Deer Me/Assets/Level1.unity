@@ -15309,11 +15309,12 @@ RectTransform:
   m_GameObject: {fileID: 495182983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -19.374474, y: 3.5731428, z: -6.0982037}
-  m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
+  m_LocalScale: {x: 0.02710027, y: 0.02710027, z: 0.02710027}
   m_Children:
   - {fileID: 275731760}
   - {fileID: 31898496}
   - {fileID: 747083712}
+  - {fileID: 1586298350}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19090,7 +19091,7 @@ RectTransform:
   m_GameObject: {fileID: 625460171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -7.0982037}
-  m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
+  m_LocalScale: {x: 0.02710027, y: 0.02710027, z: 0.02710027}
   m_Children:
   - {fileID: 179997546}
   - {fileID: 545420037}
@@ -26910,6 +26911,7 @@ MonoBehaviour:
   startFade: 0
   audio: {fileID: 961172712}
   SceneName: Level2
+  loadingText: {fileID: 1586298351}
 --- !u!1 &835345063
 GameObject:
   m_ObjectHideFlags: 0
@@ -29310,7 +29312,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919191838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -25, z: 0}
+  m_LocalPosition: {x: 0, y: 159.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1753229335}
@@ -49080,6 +49082,80 @@ Transform:
   m_Father: {fileID: 570188582}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 4.953, y: 2.818, z: 29.566002}
+--- !u!1 &1586298349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1586298350}
+  - component: {fileID: 1586298352}
+  - component: {fileID: 1586298351}
+  m_Layer: 5
+  m_Name: LoadingText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1586298350
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586298349}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -169.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 495182987}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 15}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1586298351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586298349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f13eca86f0f04c446a7953df232f99ab, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Loading...
+--- !u!222 &1586298352
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586298349}
 --- !u!1 &1591018397
 GameObject:
   m_ObjectHideFlags: 0
@@ -54691,8 +54767,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1753229331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4.3281736}
-  m_LocalScale: {x: 0.035971224, y: 0.035971224, z: 0.035971224}
+  m_LocalPosition: {x: -19.374474, y: 3.5731428, z: -7.0982037}
+  m_LocalScale: {x: 0.02710027, y: 0.02710027, z: 0.02710027}
   m_Children:
   - {fileID: 919191839}
   - {fileID: 215365871}
@@ -55288,7 +55364,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Conrtols
+  m_Text: Controls
 --- !u!222 &1774189221
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57298,6 +57374,7 @@ MonoBehaviour:
   isPaused: 0
   controls: {fileID: 1614141098}
   pauseCanvas: {fileID: 625460171}
+  loadingText: {fileID: 1586298351}
 --- !u!4 &1844544470
 Transform:
   m_ObjectHideFlags: 0
