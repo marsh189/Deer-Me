@@ -27,3 +27,14 @@ I had joined the group halfway through the prototyping of the game. The main fun
   - Menu sounds
   - Background noises in game that are directional
   - Footsteps that change based on the type of ground you are running on
+
+
+## Game Images
+![DM](https://github.com/marsh189/Deer-Me/assets/11845697/c2fadebc-ccfa-4b6b-9517-4ec7b04de435)
+
+![rope](https://github.com/marsh189/Deer-Me/assets/11845697/33bfa96f-2f5b-4aa7-8ed3-aed749f9fa03)
+
+![water](https://github.com/marsh189/Deer-Me/assets/11845697/a5d3ff4a-7ae8-4dae-b314-b8ca5f3d9782)
+
+![wendigo](https://github.com/marsh189/Deer-Me/assets/11845697/7ee701c4-e855-48ba-95de-979e7a457296)
+
